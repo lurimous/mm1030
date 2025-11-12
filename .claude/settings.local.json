@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if [ -f \"index.html\" ])",
+      "Bash(then echo \"exists\")",
+      "Bash(else echo \"does not exist\")",
+      "Bash(fi:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

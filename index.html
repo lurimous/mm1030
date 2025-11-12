@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM1030 - Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mm-black': '#000000',
+                        'mm-gold': '#FDB913',
+                        'mm-gray': '#C4C4C4',
+                        'mm-dark-gray': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .page-transition {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+        }
+
+        .hero-accent::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: #FDB913;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+            opacity: 0.1;
+        }
+
+        /* Loading animation */
+        .loader {
+            border: 4px solid #C4C4C4;
+            border-top: 4px solid #FDB913;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Active nav link styles */
+        .nav-link.active {
+            color: #FDB913;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white shadow-lg border-b-4 border-mm-gold backdrop-blur-sm bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 cursor-pointer" onclick="navigateTo('home')">
+                    <div class="text-2xl font-bold text-mm-black flex items-center gap-2">
+                        <i data-lucide="building-2" class="w-8 h-8 text-mm-gold"></i>
+                        <span>MM<span class="text-mm-gold">1030</span></span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Home</a></li>
+                        <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">About</a></li>
+                        <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Mission</a></li>
+                        <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Achievements</a></li>
+                        <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Videos</a></li>
+                        <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="text-mm-black focus:outline-none" aria-label="Toggle mobile menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <ul class="px-2 pt-2 pb-3 space-y-1">
+                <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">About</a></li>
+                <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Mission</a></li>
+                <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Achievements</a></li>
+                <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Videos</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="mt-20 min-h-screen">
+        <div id="page-content" class="page-transition">
+            <!-- Loading state -->
+            <div class="flex items-center justify-center min-h-screen">
+                <div class="text-center">
+                    <div class="loader mx-auto mb-4"></div>
+                    <p class="text-mm-gold font-semibold">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 flex items-center justify-center p-4">
+        <div class="relative w-full max-w-6xl">
+            <button type="button" onclick="closeVideoModal()" class="absolute -top-16 right-0 text-white hover:text-mm-gold transition-colors bg-mm-black bg-opacity-50 rounded-full p-2" aria-label="Close video modal">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <div class="bg-black rounded-lg overflow-hidden shadow-2xl">
+                <video id="modal-video" class="w-full" controls>
+                    <source id="modal-video-source" src="" type="video/mp4">
+                </video>
+            </div>
+            <div class="text-center mt-6">
+                <h3 id="modal-video-title" class="text-2xl font-bold text-white"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-mm-black text-white text-center py-12 border-t-4 border-mm-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <i data-lucide="building-2" class="w-8 h-8 text-mm-gold"></i>
+                <p class="text-xl font-bold">MM<span class="text-mm-gold">1030</span></p>
+            </div>
+            <p class="mb-2 text-lg">
+                Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia
+            </p>
+            <p class="mb-4 text-mm-gold font-semibold text-xl">1 World 1 Hope</p>
+            <div class="flex items-center justify-center gap-6 mb-4">
+                <button type="button" onclick="navigateTo('about')" class="text-mm-gray hover:text-mm-gold transition-colors">About</button>
+                <span class="text-mm-gray">•</span>
+                <button type="button" onclick="navigateTo('mission')" class="text-mm-gray hover:text-mm-gold transition-colors">Mission</button>
+                <span class="text-mm-gray">•</span>
+                <button type="button" onclick="navigateTo('contact')" class="text-mm-gray hover:text-mm-gold transition-colors">Contact</button>
+            </div>
+            <p class="text-sm text-mm-gray">&copy; 2025 Sekretariat MMT1030. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Router State
+        let currentPage = '';
+
+        // Navigate to page function
+        async function navigateTo(pageName) {
+            if (currentPage === pageName) return;
+
+            currentPage = pageName;
+            const pageContent = document.getElementById('page-content');
+
+            // Close mobile menu
+            mobileMenu.classList.add('hidden');
+
+            // Update URL hash
+            window.location.hash = pageName;
+
+            // Update active nav links
+            updateActiveNavLinks(pageName);
+
+            // Show loading state
+            pageContent.innerHTML = `
+                <div class="flex items-center justify-center min-h-screen">
+                    <div class="text-center">
+                        <div class="loader mx-auto mb-4"></div>
+                        <p class="text-mm-gold font-semibold">Loading...</p>
+                    </div>
+                </div>
+            `;
+
+            try {
+                // Load page from static/pages
+                const response = await fetch(`static/pages/${pageName}.html`);
+
+                if (response.ok) {
+                    const content = await response.text();
+                    pageContent.innerHTML = content;
+                    pageContent.classList.add('page-transition');
+
+                    // Scroll to top
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                    // Reinitialize Lucide icons for the loaded content
+                    lucide.createIcons();
+                } else {
+                    // Page not found
+                    pageContent.innerHTML = `
+                        <div class="flex items-center justify-center min-h-screen">
+                            <div class="text-center">
+                                <i data-lucide="alert-circle" class="w-16 h-16 text-mm-gold mx-auto mb-4"></i>
+                                <h1 class="text-4xl font-bold text-mm-black mb-4">Page Not Found</h1>
+                                <p class="text-mm-dark-gray mb-6">The page you're looking for doesn't exist.</p>
+                                <button type="button" onclick="navigateTo('home')" class="bg-mm-gold text-mm-black px-6 py-3 rounded-lg font-bold hover:shadow-lg transition-shadow">
+                                    Go Home
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    lucide.createIcons();
+                }
+            } catch (error) {
+                // Error loading page
+                pageContent.innerHTML = `
+                    <div class="flex items-center justify-center min-h-screen">
+                        <div class="text-center">
+                            <i data-lucide="wifi-off" class="w-16 h-16 text-mm-gold mx-auto mb-4"></i>
+                            <h1 class="text-4xl font-bold text-mm-black mb-4">Connection Error</h1>
+                            <p class="text-mm-dark-gray mb-6">Unable to load the page. Please check your connection.</p>
+                            <button type="button" onclick="navigateTo('${pageName}')" class="bg-mm-gold text-mm-black px-6 py-3 rounded-lg font-bold hover:shadow-lg transition-shadow">
+                                Try Again
+                            </button>
+                        </div>
+                    </div>
+                `;
+                lucide.createIcons();
+            }
+        }
+
+        // Update active navigation links
+        function updateActiveNavLinks(pageName) {
+            // Desktop nav
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${pageName}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Mobile nav
+            document.querySelectorAll('.nav-link-mobile').forEach(link => {
+                link.classList.remove('text-mm-gold');
+                if (link.getAttribute('href') === `#${pageName}`) {
+                    link.classList.add('text-mm-gold');
+                }
+            });
+        }
+
+        // Handle browser back/forward buttons
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.substring(1) || 'home';
+            if (hash !== currentPage) {
+                navigateTo(hash);
+            }
+        });
+
+        // Load initial page on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1) || 'home';
+            navigateTo(hash);
+        });
+
+        // Video modal functions
+        function openVideoModal(videoSrc, videoTitle) {
+            const modal = document.getElementById('video-modal');
+            const video = document.getElementById('modal-video');
+            const videoSource = document.getElementById('modal-video-source');
+            const title = document.getElementById('modal-video-title');
+
+            videoSource.src = videoSrc;
+            title.textContent = videoTitle;
+            video.load();
+            modal.classList.remove('hidden');
+            video.play();
+
+            // Reinitialize Lucide icons for the modal
+            lucide.createIcons();
+
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const video = document.getElementById('modal-video');
+
+            video.pause();
+            modal.classList.add('hidden');
+
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeVideoModal();
+            }
+        });
+
+        // Close modal when clicking outside video
+        document.getElementById('video-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'video-modal') {
+                closeVideoModal();
+            }
+        });
+    </script>
+</body>
+</html>

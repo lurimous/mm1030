@@ -394,6 +394,11 @@
 
                     // Reinitialize Lucide icons for the loaded content
                     lucide.createIcons();
+
+                    // Trigger scroll reveal for newly loaded content
+                    setTimeout(() => {
+                        revealOnScroll();
+                    }, 100);
                 } else {
                     // Page not found
                     pageContent.innerHTML = `

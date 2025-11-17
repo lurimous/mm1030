@@ -395,6 +395,19 @@
                     // Reinitialize Lucide icons for the loaded content
                     lucide.createIcons();
 
+                    // Clean up animations after they complete
+                    setTimeout(() => {
+                        const animatedElements = pageContent.querySelectorAll('[class*="animate-"]');
+                        animatedElements.forEach(el => {
+                            el.addEventListener('animationend', function handler() {
+                                // Keep the final state but remove animation class to prevent re-runs
+                                this.style.opacity = '1';
+                                this.style.transform = 'none';
+                                this.removeEventListener('animationend', handler);
+                            }, { once: true });
+                        });
+                    }, 50);
+
                     // Trigger scroll reveal for newly loaded content
                     setTimeout(() => {
                         revealOnScroll();

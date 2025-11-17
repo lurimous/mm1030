@@ -1,17 +1,33 @@
 <!-- Hero Section -->
 <section class="hero-bg hero-accent relative overflow-hidden py-24 md:py-32">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-mm-black mb-6 animate-fade-in-up">
-            MISI MENAWAN 10 MENARA MALAYSIA<br>
-            <span class="font-light">& 30 MENARA TERTINGGI DUNIA</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">
-            1 World 1 Hope - Promoting Peace Through Vertical Running
-        </p>
-        <button type="button" onclick="navigateTo('about')" class="bg-mm-black text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition-all duration-300 animate-fade-in-up btn-hover inline-flex items-center gap-2" style="animation-delay: 0.4s;">
-            <span>Learn More</span>
-            <i data-lucide="arrow-down" class="w-5 h-5 animate-float"></i>
-        </button>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="text-center md:text-left relative z-10">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-mm-black mb-6 animate-fade-in-up">
+                    MISI MENAWAN 10 MENARA MALAYSIA<br>
+                    <span class="font-light">& 30 MENARA TERTINGGI DUNIA</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    1 World 1 Hope - Promoting Peace Through Vertical Running
+                </p>
+                <button type="button" onclick="navigateTo('about')" class="bg-mm-black text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition-all duration-300 animate-fade-in-up btn-hover inline-flex items-center gap-2" style="animation-delay: 0.4s;">
+                    <span>Learn More</span>
+                    <i data-lucide="arrow-down" class="w-5 h-5 animate-float"></i>
+                </button>
+            </div>
+
+            <!-- Hero Image Placeholder -->
+            <div class="animate-scale-in" style="animation-delay: 0.3s;">
+                <div class="image-placeholder aspect-square">
+                    <div>
+                        <i data-lucide="image" class="w-16 h-16 mx-auto mb-3 opacity-30"></i>
+                        <p class="font-medium">Hero Image</p>
+                        <p class="text-xs opacity-70">Add your mission photo here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -71,6 +87,47 @@
                     <span>Explore Mission</span>
                     <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-20 bg-mm-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-4">
+                Journey Highlights
+            </h2>
+            <p class="text-lg text-gray-700">
+                Visual moments from the MM1030 mission
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="scroll-reveal">
+                <div class="image-placeholder aspect-video">
+                    <div>
+                        <i data-lucide="mountain" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
+                        <p class="text-sm">Tower Climb Photo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-reveal" style="animation-delay: 0.1s;">
+                <div class="image-placeholder aspect-video">
+                    <div>
+                        <i data-lucide="trophy" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
+                        <p class="text-sm">Achievement Photo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-reveal" style="animation-delay: 0.2s;">
+                <div class="image-placeholder aspect-video">
+                    <div>
+                        <i data-lucide="flag" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
+                        <p class="text-sm">Mission Photo</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

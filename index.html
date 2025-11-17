@@ -18,9 +18,9 @@
                 extend: {
                     colors: {
                         'mm-black': '#000000',
-                        'mm-gold': '#FDB913',
-                        'mm-gray': '#C4C4C4',
-                        'mm-dark-gray': '#333333',
+                        'mm-white': '#FFFFFF',
+                        'mm-gray': '#F5F5F5',
+                        'mm-dark-gray': '#1A1A1A',
                     }
                 }
             }
@@ -31,7 +31,7 @@
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(40px);
             }
             to {
                 opacity: 1;
@@ -48,16 +48,75 @@
             }
         }
 
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
         .animate-fade-in-up {
-            animation: fadeInUp 1s ease-out;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .animate-slide-in-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .animate-slide-in-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .animate-scale-in {
+            animation: scaleIn 0.6s ease-out;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
         }
 
         .page-transition {
-            animation: fadeIn 0.5s ease-out;
+            animation: fadeIn 0.4s ease-out;
         }
 
         .hero-bg {
-            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            background: linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 100%);
+            position: relative;
         }
 
         .hero-accent::before {
@@ -67,19 +126,19 @@
             right: 0;
             width: 50%;
             height: 100%;
-            background: #FDB913;
+            background: #000000;
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-            opacity: 0.1;
+            opacity: 0.03;
         }
 
         /* Loading animation */
         .loader {
-            border: 4px solid #C4C4C4;
-            border-top: 4px solid #FDB913;
+            border: 3px solid #F5F5F5;
+            border-top: 3px solid #000000;
             border-radius: 50%;
             width: 50px;
             height: 50px;
-            animation: spin 1s linear infinite;
+            animation: spin 0.8s linear infinite;
         }
 
         @keyframes spin {
@@ -94,39 +153,92 @@
 
         /* Active nav link styles */
         .nav-link.active {
-            color: #FDB913;
+            color: #000000;
             font-weight: 700;
+            border-bottom: 2px solid #000000;
+        }
+
+        /* Smooth transitions */
+        * {
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Card hover effects */
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Button hover effects */
+        .btn-hover {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-hover::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.1);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-hover:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Scroll reveal */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-white">
     <!-- Navigation -->
-    <nav class="fixed w-full top-0 z-50 bg-white shadow-lg border-b-4 border-mm-gold backdrop-blur-sm bg-opacity-95">
+    <nav class="fixed w-full top-0 z-50 bg-white shadow-md border-b border-gray-200 backdrop-blur-sm bg-opacity-95 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="flex-shrink-0 cursor-pointer" onclick="navigateTo('home')">
-                    <div class="text-2xl font-bold text-mm-black flex items-center gap-2">
-                        <i data-lucide="building-2" class="w-8 h-8 text-mm-gold"></i>
-                        <span>MM<span class="text-mm-gold">1030</span></span>
+                <div class="flex-shrink-0 cursor-pointer animate-slide-in-left" onclick="navigateTo('home')">
+                    <div class="text-2xl font-bold text-mm-black flex items-center gap-2 hover:opacity-70 transition-opacity duration-300">
+                        <i data-lucide="building-2" class="w-8 h-8 text-mm-black"></i>
+                        <span>MM<span class="font-light">1030</span></span>
                     </div>
                 </div>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden md:block">
+                <div class="hidden md:block animate-slide-in-right">
                     <ul class="flex space-x-8">
-                        <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Home</a></li>
-                        <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">About</a></li>
-                        <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Mission</a></li>
-                        <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Achievements</a></li>
-                        <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Videos</a></li>
-                        <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link text-mm-black hover:text-mm-gold transition-colors duration-300 font-semibold">Contact</a></li>
+                        <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Home</a></li>
+                        <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">About</a></li>
+                        <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Mission</a></li>
+                        <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Achievements</a></li>
+                        <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Videos</a></li>
+                        <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Contact</a></li>
                     </ul>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button type="button" id="mobile-menu-button" class="text-mm-black focus:outline-none" aria-label="Toggle mobile menu">
+                    <button type="button" id="mobile-menu-button" class="text-mm-black focus:outline-none hover:opacity-70 transition-opacity" aria-label="Toggle mobile menu">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -134,14 +246,14 @@
         </div>
 
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-200">
             <ul class="px-2 pt-2 pb-3 space-y-1">
-                <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Home</a></li>
-                <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">About</a></li>
-                <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Mission</a></li>
-                <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Achievements</a></li>
-                <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Videos</a></li>
-                <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link-mobile block px-3 py-2 text-mm-black hover:text-mm-gold hover:bg-gray-50 rounded-md font-semibold">Contact</a></li>
+                <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">About</a></li>
+                <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Mission</a></li>
+                <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Achievements</a></li>
+                <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Videos</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -153,7 +265,7 @@
             <div class="flex items-center justify-center min-h-screen">
                 <div class="text-center">
                     <div class="loader mx-auto mb-4"></div>
-                    <p class="text-mm-gold font-semibold">Loading...</p>
+                    <p class="text-mm-black font-semibold">Loading...</p>
                 </div>
             </div>
         </div>
@@ -162,7 +274,7 @@
     <!-- Video Modal -->
     <div id="video-modal" class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 flex items-center justify-center p-4">
         <div class="relative w-full max-w-6xl">
-            <button type="button" onclick="closeVideoModal()" class="absolute -top-16 right-0 text-white hover:text-mm-gold transition-colors bg-mm-black bg-opacity-50 rounded-full p-2" aria-label="Close video modal">
+            <button type="button" onclick="closeVideoModal()" class="absolute -top-16 right-0 text-white hover:opacity-70 transition-opacity bg-mm-black bg-opacity-50 rounded-full p-2" aria-label="Close video modal">
                 <i data-lucide="x" class="w-8 h-8"></i>
             </button>
             <div class="bg-black rounded-lg overflow-hidden shadow-2xl">
@@ -177,24 +289,24 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-mm-black text-white text-center py-12 border-t-4 border-mm-gold">
+    <footer class="bg-mm-black text-white text-center py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-center gap-3 mb-4">
-                <i data-lucide="building-2" class="w-8 h-8 text-mm-gold"></i>
-                <p class="text-xl font-bold">MM<span class="text-mm-gold">1030</span></p>
+            <div class="flex items-center justify-center gap-3 mb-4 animate-fade-in-up">
+                <i data-lucide="building-2" class="w-8 h-8 text-white"></i>
+                <p class="text-xl font-bold">MM<span class="font-light">1030</span></p>
             </div>
-            <p class="mb-2 text-lg">
+            <p class="mb-2 text-lg text-gray-300">
                 Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia
             </p>
-            <p class="mb-4 text-mm-gold font-semibold text-xl">1 World 1 Hope</p>
+            <p class="mb-4 text-white font-semibold text-xl">1 World 1 Hope</p>
             <div class="flex items-center justify-center gap-6 mb-4">
-                <button type="button" onclick="navigateTo('about')" class="text-mm-gray hover:text-mm-gold transition-colors">About</button>
-                <span class="text-mm-gray">•</span>
-                <button type="button" onclick="navigateTo('mission')" class="text-mm-gray hover:text-mm-gold transition-colors">Mission</button>
-                <span class="text-mm-gray">•</span>
-                <button type="button" onclick="navigateTo('contact')" class="text-mm-gray hover:text-mm-gold transition-colors">Contact</button>
+                <button type="button" onclick="navigateTo('about')" class="text-gray-400 hover:text-white transition-colors duration-300">About</button>
+                <span class="text-gray-600">•</span>
+                <button type="button" onclick="navigateTo('mission')" class="text-gray-400 hover:text-white transition-colors duration-300">Mission</button>
+                <span class="text-gray-600">•</span>
+                <button type="button" onclick="navigateTo('contact')" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</button>
             </div>
-            <p class="text-sm text-mm-gray">&copy; 2025 Sekretariat MMT1030. All rights reserved.</p>
+            <p class="text-sm text-gray-500">&copy; 2025 Sekretariat MMT1030. All rights reserved.</p>
         </div>
     </footer>
 
@@ -256,12 +368,12 @@
                 } else {
                     // Page not found
                     pageContent.innerHTML = `
-                        <div class="flex items-center justify-center min-h-screen">
-                            <div class="text-center">
-                                <i data-lucide="alert-circle" class="w-16 h-16 text-mm-gold mx-auto mb-4"></i>
+                        <div class="flex items-center justify-center min-h-screen bg-white">
+                            <div class="text-center animate-fade-in-up">
+                                <i data-lucide="alert-circle" class="w-16 h-16 text-mm-black mx-auto mb-4"></i>
                                 <h1 class="text-4xl font-bold text-mm-black mb-4">Page Not Found</h1>
-                                <p class="text-mm-dark-gray mb-6">The page you're looking for doesn't exist.</p>
-                                <button type="button" onclick="navigateTo('home')" class="bg-mm-gold text-mm-black px-6 py-3 rounded-lg font-bold hover:shadow-lg transition-shadow">
+                                <p class="text-gray-600 mb-6">The page you're looking for doesn't exist.</p>
+                                <button type="button" onclick="navigateTo('home')" class="bg-mm-black text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition-all duration-300 btn-hover">
                                     Go Home
                                 </button>
                             </div>
@@ -272,12 +384,12 @@
             } catch (error) {
                 // Error loading page
                 pageContent.innerHTML = `
-                    <div class="flex items-center justify-center min-h-screen">
-                        <div class="text-center">
-                            <i data-lucide="wifi-off" class="w-16 h-16 text-mm-gold mx-auto mb-4"></i>
+                    <div class="flex items-center justify-center min-h-screen bg-white">
+                        <div class="text-center animate-fade-in-up">
+                            <i data-lucide="wifi-off" class="w-16 h-16 text-mm-black mx-auto mb-4"></i>
                             <h1 class="text-4xl font-bold text-mm-black mb-4">Connection Error</h1>
-                            <p class="text-mm-dark-gray mb-6">Unable to load the page. Please check your connection.</p>
-                            <button type="button" onclick="navigateTo('${pageName}')" class="bg-mm-gold text-mm-black px-6 py-3 rounded-lg font-bold hover:shadow-lg transition-shadow">
+                            <p class="text-gray-600 mb-6">Unable to load the page. Please check your connection.</p>
+                            <button type="button" onclick="navigateTo('${pageName}')" class="bg-mm-black text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition-all duration-300 btn-hover">
                                 Try Again
                             </button>
                         </div>
@@ -299,12 +411,28 @@
 
             // Mobile nav
             document.querySelectorAll('.nav-link-mobile').forEach(link => {
-                link.classList.remove('text-mm-gold');
+                link.classList.remove('text-mm-black', 'font-bold');
                 if (link.getAttribute('href') === `#${pageName}`) {
-                    link.classList.add('text-mm-gold');
+                    link.classList.add('text-mm-black', 'font-bold');
                 }
             });
         }
+
+        // Scroll reveal animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.scroll-reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('revealed');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
 
         // Handle browser back/forward buttons
         window.addEventListener('hashchange', () => {
@@ -318,6 +446,7 @@
         window.addEventListener('DOMContentLoaded', () => {
             const hash = window.location.hash.substring(1) || 'home';
             navigateTo(hash);
+            revealOnScroll();
         });
 
         // Video modal functions

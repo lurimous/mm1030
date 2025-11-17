@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MM1030 - Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="static/images/logo.jpg">
+    <link rel="apple-touch-icon" href="static/images/logo.jpg">
+
+    <!-- Google Fonts - Light Weight -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -21,6 +30,15 @@
                         'mm-white': '#FFFFFF',
                         'mm-gray': '#F5F5F5',
                         'mm-dark-gray': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    fontWeight: {
+                        'light': '300',
+                        'normal': '400',
+                        'medium': '500',
+                        'semibold': '600',
                     }
                 }
             }
@@ -28,6 +46,25 @@
     </script>
 
     <style>
+        /* Set base font to light weight */
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 400;
+        }
+
+        strong, b {
+            font-weight: 500;
+        }
+
+        .font-bold {
+            font-weight: 600 !important;
+        }
         @keyframes fadeInUp {
             0% {
                 opacity: 0;
@@ -163,7 +200,7 @@
         /* Active nav link styles */
         .nav-link.active {
             color: #000000;
-            font-weight: 700;
+            font-weight: 500;
             border-bottom: 2px solid #000000;
         }
 
@@ -247,21 +284,24 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 cursor-pointer animate-slide-in-left" onclick="navigateTo('home')">
-                    <div class="text-2xl font-bold text-mm-black flex items-center gap-2 hover:opacity-70 transition-opacity duration-300">
-                        <i data-lucide="building-2" class="w-8 h-8 text-mm-black"></i>
-                        <span>MM<span class="font-light">1030</span></span>
+                    <div class="flex items-center gap-3 hover:opacity-70 transition-opacity duration-300">
+                        <img src="static/images/logo.jpg" alt="MM1030 Logo" class="h-14 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="text-2xl font-normal text-mm-black flex items-center gap-2" style="display: none;">
+                            <i data-lucide="building-2" class="w-8 h-8 text-mm-black"></i>
+                            <span>MM<span class="font-light">1030</span></span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block animate-slide-in-right">
                     <ul class="flex space-x-8">
-                        <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Home</a></li>
-                        <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">About</a></li>
-                        <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Mission</a></li>
-                        <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Achievements</a></li>
-                        <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Videos</a></li>
-                        <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-medium">Contact</a></li>
+                        <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Home</a></li>
+                        <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">About</a></li>
+                        <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Mission</a></li>
+                        <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Achievements</a></li>
+                        <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Videos</a></li>
+                        <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Contact</a></li>
                     </ul>
                 </div>
 
@@ -277,12 +317,12 @@
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-200">
             <ul class="px-2 pt-2 pb-3 space-y-1">
-                <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Home</a></li>
-                <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">About</a></li>
-                <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Mission</a></li>
-                <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Achievements</a></li>
-                <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Videos</a></li>
-                <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-medium transition-all duration-300">Contact</a></li>
+                <li><a href="#home" onclick="navigateTo('home'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">About</a></li>
+                <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Mission</a></li>
+                <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Achievements</a></li>
+                <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Videos</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -322,7 +362,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-center gap-3 mb-4 animate-fade-in-up">
                 <i data-lucide="building-2" class="w-8 h-8 text-white"></i>
-                <p class="text-xl font-bold">MM<span class="font-light">1030</span></p>
+                <p class="text-xl font-normal">MM<span class="font-light">1030</span></p>
             </div>
             <p class="mb-2 text-lg text-gray-300">
                 Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia
@@ -458,9 +498,9 @@
 
             // Mobile nav
             document.querySelectorAll('.nav-link-mobile').forEach(link => {
-                link.classList.remove('text-mm-black', 'font-bold');
+                link.classList.remove('text-mm-black', 'font-medium');
                 if (link.getAttribute('href') === `#${pageName}`) {
-                    link.classList.add('text-mm-black', 'font-bold');
+                    link.classList.add('text-mm-black', 'font-medium');
                 }
             });
         }

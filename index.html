@@ -6,8 +6,8 @@
     <title>MM1030 - Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="static/images/logo.jpg">
-    <link rel="apple-touch-icon" href="static/images/logo.jpg">
+    <link rel="icon" type="image/jpeg" href="/static/images/logo.jpg">
+    <link rel="apple-touch-icon" href="/static/images/logo.jpg">
 
     <!-- Google Fonts - Light Weight -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,19 +137,27 @@
         }
 
         .animate-fade-in-up {
-            animation: fadeInUp 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
         .animate-slide-in-left {
-            animation: slideInLeft 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: slideInLeft 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
         .animate-slide-in-right {
-            animation: slideInRight 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0;
+            transform: translateX(30px);
+            animation: slideInRight 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
         .animate-scale-in {
-            animation: scaleIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0;
+            transform: scale(0.95);
+            animation: scaleIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
         .animate-float {
@@ -157,7 +165,14 @@
         }
 
         .page-transition {
-            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        /* Prevent animation re-runs - keep final state */
+        .animation-done {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: translateY(0) translateX(0) scale(1) !important;
         }
 
         .hero-bg {
@@ -285,7 +300,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 cursor-pointer animate-slide-in-left" onclick="navigateTo('home')">
                     <div class="flex items-center gap-3 hover:opacity-70 transition-opacity duration-300">
-                        <img src="static/images/logo.jpg" alt="MM1030 Logo" class="h-14 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="/static/images/logo.jpg" alt="MM1030 Logo" class="h-14 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="text-2xl font-normal text-mm-black flex items-center gap-2" style="display: none;">
                             <i data-lucide="building-2" class="w-8 h-8 text-mm-black"></i>
                             <span>MM<span class="font-light">1030</span></span>
@@ -300,6 +315,7 @@
                         <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">About</a></li>
                         <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Mission</a></li>
                         <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Achievements</a></li>
+                        <li><a href="#chairman" onclick="navigateTo('chairman'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Chairman</a></li>
                         <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Videos</a></li>
                         <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link text-gray-700 hover:text-mm-black transition-colors duration-300 font-normal">Contact</a></li>
                     </ul>
@@ -321,6 +337,7 @@
                 <li><a href="#about" onclick="navigateTo('about'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">About</a></li>
                 <li><a href="#mission" onclick="navigateTo('mission'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Mission</a></li>
                 <li><a href="#achievements" onclick="navigateTo('achievements'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Achievements</a></li>
+                <li><a href="#chairman" onclick="navigateTo('chairman'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Chairman</a></li>
                 <li><a href="#videos" onclick="navigateTo('videos'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Videos</a></li>
                 <li><a href="#contact" onclick="navigateTo('contact'); return false;" class="nav-link-mobile block px-3 py-2 text-gray-700 hover:text-mm-black hover:bg-mm-gray rounded-md font-normal transition-all duration-300">Contact</a></li>
             </ul>
@@ -393,6 +410,35 @@
 
         // Router State
         let currentPage = '';
+        let navAnimationsDone = false;
+
+        // Mark navigation animations as complete after initial load
+        function completeNavAnimations() {
+            if (navAnimationsDone) return;
+            navAnimationsDone = true;
+
+            document.querySelectorAll('nav [class*="animate-"]').forEach(el => {
+                el.classList.add('animation-done');
+            });
+            document.querySelectorAll('footer [class*="animate-"]').forEach(el => {
+                el.classList.add('animation-done');
+            });
+        }
+
+        // Complete animations after they finish playing
+        function setupAnimationCleanup(container) {
+            const animatedElements = container.querySelectorAll('[class*="animate-"]:not(.animation-done):not(.animate-float)');
+            animatedElements.forEach(el => {
+                // Get animation duration from computed style
+                const style = window.getComputedStyle(el);
+                const duration = parseFloat(style.animationDuration) * 1000 || 1000;
+                const delay = parseFloat(style.animationDelay) * 1000 || 0;
+
+                setTimeout(() => {
+                    el.classList.add('animation-done');
+                }, duration + delay + 50);
+            });
+        }
 
         // Navigate to page function
         async function navigateTo(pageName) {
@@ -421,12 +467,16 @@
             `;
 
             try {
-                // Load page from static/pages
-                const response = await fetch(`static/pages/${pageName}.html`);
+                // Load page from /static/pages
+                const response = await fetch(`/static/pages/${pageName}.html`);
 
                 if (response.ok) {
                     const content = await response.text();
                     pageContent.innerHTML = content;
+
+                    // Remove and re-add page-transition to trigger animation once
+                    pageContent.classList.remove('page-transition');
+                    void pageContent.offsetWidth; // Force reflow
                     pageContent.classList.add('page-transition');
 
                     // Scroll to top
@@ -435,18 +485,8 @@
                     // Reinitialize Lucide icons for the loaded content
                     lucide.createIcons();
 
-                    // Clean up animations after they complete
-                    setTimeout(() => {
-                        const animatedElements = pageContent.querySelectorAll('[class*="animate-"]');
-                        animatedElements.forEach(el => {
-                            el.addEventListener('animationend', function handler() {
-                                // Keep the final state but remove animation class to prevent re-runs
-                                this.style.opacity = '1';
-                                this.style.transform = 'none';
-                                this.removeEventListener('animationend', handler);
-                            }, { once: true });
-                        });
-                    }, 50);
+                    // Setup animation cleanup for loaded content
+                    setupAnimationCleanup(pageContent);
 
                     // Trigger scroll reveal for newly loaded content
                     setTimeout(() => {
@@ -505,9 +545,9 @@
             });
         }
 
-        // Scroll reveal animation
+        // Scroll reveal animation - only reveal once per element
         function revealOnScroll() {
-            const reveals = document.querySelectorAll('.scroll-reveal');
+            const reveals = document.querySelectorAll('.scroll-reveal:not(.revealed)');
             reveals.forEach(element => {
                 const windowHeight = window.innerHeight;
                 const elementTop = element.getBoundingClientRect().top;
@@ -519,7 +559,7 @@
             });
         }
 
-        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('scroll', revealOnScroll, { passive: true });
 
         // Handle browser back/forward buttons
         window.addEventListener('hashchange', () => {
@@ -534,6 +574,11 @@
             const hash = window.location.hash.substring(1) || 'home';
             navigateTo(hash);
             revealOnScroll();
+
+            // Complete nav/footer animations after they play once
+            setTimeout(() => {
+                completeNavAnimations();
+            }, 1500);
         });
 
         // Video modal functions

@@ -290,6 +290,93 @@
             text-align: center;
             padding: 20px;
         }
+
+        /* Floating Decorations */
+        .decoration-container {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .decoration {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+            filter: blur(1px);
+        }
+
+        .decoration-red {
+            background: #E53935;
+        }
+
+        .decoration-yellow {
+            background: #FDD835;
+        }
+
+        .decoration-blue {
+            background: #1E88E5;
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+        }
+
+        @keyframes floatMedium {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(-3deg); }
+        }
+
+        @keyframes floatFast {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(2deg); }
+        }
+
+        .float-slow {
+            animation: floatSlow 8s ease-in-out infinite;
+        }
+
+        .float-medium {
+            animation: floatMedium 6s ease-in-out infinite;
+        }
+
+        .float-fast {
+            animation: floatFast 4s ease-in-out infinite;
+        }
+
+        /* Decoration shapes */
+        .decoration-circle {
+            border-radius: 50%;
+        }
+
+        .decoration-square {
+            border-radius: 8px;
+            transform: rotate(45deg);
+        }
+
+        .decoration-triangle {
+            width: 0 !important;
+            height: 0 !important;
+            background: transparent !important;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 35px solid currentColor;
+            opacity: 0.12;
+        }
+
+        .decoration-triangle.decoration-red {
+            border-bottom-color: #E53935;
+        }
+
+        .decoration-triangle.decoration-yellow {
+            border-bottom-color: #FDD835;
+        }
+
+        .decoration-triangle.decoration-blue {
+            border-bottom-color: #1E88E5;
+        }
     </style>
 </head>
 <body class="bg-white">

@@ -377,6 +377,34 @@
         .decoration-triangle.decoration-blue {
             border-bottom-color: #1E88E5;
         }
+
+        /* Sliding Message Banner */
+        .sliding-banner {
+            background: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
+            border-bottom: 2px solid #E53935;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .sliding-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: slide-left 45s linear infinite;
+        }
+
+        @keyframes slide-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .sliding-banner:hover .sliding-text {
+            animation-play-state: paused;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -387,7 +415,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 cursor-pointer animate-slide-in-left" onclick="navigateTo('home')">
                     <div class="flex items-center gap-3 hover:opacity-70 transition-opacity duration-300">
-                        <img src="/static/images/logo.jpg" alt="MM1030 Logo" class="h-14 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="/static/images/logo-transparent.jpg" alt="MM1030 Logo" class="h-14 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="text-2xl font-normal text-mm-black flex items-center gap-2" style="display: none;">
                             <i data-lucide="building-2" class="w-8 h-8 text-mm-black"></i>
                             <span>MM<span class="font-light">1030</span></span>

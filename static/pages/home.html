@@ -12,180 +12,511 @@
     </div>
 </div>
 
-<!-- Hero Section -->
-<section class="hero-bg hero-accent relative overflow-hidden py-24 md:py-32">
-    <!-- Floating Decorations -->
-    <div class="decoration-container">
-        <div class="decoration decoration-circle decoration-red float-slow w-16 h-16" style="top: 15%; right: 8%;"></div>
-        <div class="decoration decoration-circle decoration-yellow float-medium w-10 h-10" style="top: 60%; right: 15%;"></div>
-        <div class="decoration decoration-circle decoration-blue float-fast w-8 h-8" style="top: 25%; left: 5%;"></div>
-        <div class="decoration decoration-square decoration-yellow float-slow w-12 h-12" style="bottom: 20%; left: 10%;"></div>
-        <div class="decoration decoration-square decoration-red float-medium w-6 h-6" style="top: 70%; left: 20%;"></div>
+<!-- Hero Section - Cinematic Opening -->
+<section class="hero-bg hero-accent relative overflow-hidden min-h-screen">
+    <!-- Full-bleed background image -->
+    <div class="absolute inset-0">
+        <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate her wearing red and white vertical running gear with Malaysian flag colors, standing confidently at the base of Petronas Twin Towers in Kuala Lumpur. Golden hour lighting, dramatic low-angle shot looking up at both the athlete and towers. Professional sports photography, Sony A1, 24mm lens, f/2.8, cinematic color grading with teal and orange tones. The towers soar into a partly cloudy blue sky. Running shoes and athletic compression wear, posture radiating strength and determination."
+             class="w-full h-full object-cover"
+             src="/static/images/image_1.png"/>
+        <!-- Stronger gradient overlay from left to right -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
     </div>
+
+    <!-- Logo - Top Left -->
+    <div class="absolute top-8 left-8 z-20 animate-fade-in-up">
+        <img src="/static/images/logo-transparent.png" alt="MM1030 Logo"
+             class="h-20 md:h-24 w-auto" />
+    </div>
+
+    <!-- Hero content -->
+    <div class="relative z-10 min-h-screen flex items-center pt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Left: Tagline -->
+                <div class="text-white text-left animate-fade-in-up">
+                    <!-- Malaysian flag accent bar with text -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex flex-col gap-1 flex-shrink-0">
+                            <div class="w-1.5 h-16 bg-red-600"></div>
+                            <div class="w-1.5 h-16 bg-white"></div>
+                            <div class="w-1.5 h-16 bg-blue-600"></div>
+                            <div class="w-1.5 h-16 bg-yellow-400"></div>
+                        </div>
+                        <div>
+                            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                                1 World<br/>
+                                1 Hope
+                            </h1>
+                            <p class="text-xl md:text-2xl font-light mb-2">
+                                10 Malaysian Towers
+                            </p>
+                            <p class="text-xl md:text-2xl font-light mb-8">
+                                30 World's Tallest Towers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: The Mission content -->
+                <div class="text-white text-left animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <!-- Malaysian flag accent bar -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex flex-col gap-1 flex-shrink-0">
+                            <div class="w-1.5 h-16 bg-red-600"></div>
+                            <div class="w-1.5 h-16 bg-white"></div>
+                            <div class="w-1.5 h-16 bg-blue-600"></div>
+                            <div class="w-1.5 h-16 bg-yellow-400"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm uppercase tracking-widest text-white/90 mb-4">The Mission</p>
+                            <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                                Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia
+                            </h2>
+                            <p class="text-lg md:text-xl text-white/95 leading-relaxed mb-8">
+                                Join Dr. Suwaibah Muhammad Nasir on an extraordinary journey to conquer
+                                Malaysia's iconic towers and the world's tallest structures, promoting peace
+                                and unity through vertical running.
+                            </p>
+                            <button type="button" onclick="navigateTo('about')" class="bg-white text-mm-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-all duration-300 btn-hover inline-flex items-center gap-2">
+                                <span>Discover the Journey</span>
+                                <i data-lucide="arrow-down" class="w-5 h-5 animate-float"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
+        <i data-lucide="chevron-down" class="w-8 h-8 text-white"></i>
+    </div>
+</section>
+
+<!-- Stats Section - Bento Grid Impact -->
+<section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <!-- Text Content -->
-            <div class="text-center md:text-left relative z-10">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-mm-black mb-6 animate-fade-in-up">
-                    MISI MENAWAN 10 MENARA MALAYSIA<br>
-                    <span class="font-light">& 30 MENARA TERTINGGI DUNIA</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">
-                    1 World 1 Hope - Promoting Peace Through Vertical Running
-                </p>
-                <button type="button" onclick="navigateTo('about')" class="bg-mm-black text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition-all duration-300 animate-fade-in-up btn-hover inline-flex items-center gap-2" style="animation-delay: 0.4s;">
-                    <span>Learn More</span>
-                    <i data-lucide="arrow-down" class="w-5 h-5 animate-float"></i>
-                </button>
+        <!-- Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+
+            <!-- Large feature image (spans 2 cols × 2 rows) -->
+            <div class="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden shadow-xl scroll-reveal">
+                <div class="relative h-full min-h-[400px] md:min-h-full">
+                    <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate dramatic upward perspective photograph of her mid-climb on tower stairs, shot from below looking up. Wearing athletic gear with Malaysian flag elements (red, white, yellow, blue accents), climbing modern glass and steel stairwell with strong geometric lines. Intense focus, sweat glistening, muscles engaged. Strong directional lighting from above creates dramatic shadows. Architectural photography meets sports action, ultra-sharp, Nikon Z9, 14-24mm ultra-wide lens, f/4, high contrast black and white with selective color on Malaysian flag elements."
+                         class="w-full h-full object-cover" 
+                         src="/static/images/image_2.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
+                        <div class="text-white">
+                            <h2 class="text-4xl md:text-5xl font-bold mb-2">The Challenge</h2>
+                            <p class="text-lg font-light">Vertical running for peace and unity</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Hero Image -->
-            <div class="animate-scale-in" style="animation-delay: 0.3s;">
-                <img src="/static/images/hero.jpg" alt="MM1030 Mission - Tower Climbing" class="w-full aspect-square object-cover rounded-xl shadow-2xl">
+            <!-- Stat card: 10 Malaysian Towers -->
+            <div class="bg-gradient-to-br from-red-600 to-red-700 text-white rounded-2xl p-8 flex flex-col justify-center items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal">
+                <div class="text-8xl font-bold mb-4">10</div>
+                <div class="text-xl font-light">Malaysian Towers</div>
+                <div class="mt-4">
+                    <i data-lucide="flag" class="w-8 h-8 opacity-70"></i>
+                </div>
+            </div>
+
+            <!-- Image card: Malaysian landmark -->
+            <div class="rounded-2xl overflow-hidden shadow-lg scroll-reveal" style="animation-delay: 0.1s;">
+                <img alt="Stunning golden hour photograph of Kuala Lumpur city skyline featuring Petronas Twin Towers and KL Tower silhouetted against vibrant orange and purple sunset. Malaysian flag prominently displayed in foreground, waving in wind. Wide-angle cityscape shot from elevated viewpoint, professional travel photography, Canon EOS R5, 16-35mm, f/11 for deep focus, HDR processing, rich warm tones, dramatic clouds."
+                     class="w-full h-64 object-cover" 
+                     src="/static/images/image_3.png"/>
+            </div>
+
+            <!-- Stat card: 30 Global Towers -->
+            <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-2xl p-8 flex flex-col justify-center items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="animation-delay: 0.2s;">
+                <div class="text-8xl font-bold mb-4">30</div>
+                <div class="text-xl font-light">Global Towers</div>
+                <div class="mt-4">
+                    <i data-lucide="globe" class="w-8 h-8 opacity-70"></i>
+                </div>
+            </div>
+
+            <!-- 1 Hope card (spans 2 cols) -->
+            <div class="md:col-span-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-12 flex items-center justify-between scroll-reveal" style="animation-delay: 0.3s;">
+                <div>
+                    <div class="text-7xl font-bold mb-2">1</div>
+                    <div class="text-2xl font-light">World • 1 Hope</div>
+                    <p class="text-sm mt-4 opacity-90 max-w-md">
+                        Uniting nations through the spirit of vertical running,
+                        promoting peace and Malaysian excellence worldwide.
+                    </p>
+                </div>
+                <div class="hidden md:block">
+                    <i data-lucide="heart-handshake" class="w-24 h-24 opacity-30"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Dr. Suwaibah Feature - Magazine Split Layout -->
+<section class="bg-mm-gray py-0 md:py-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-0 md:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-0 md:gap-12 items-center">
+
+            <!-- Left: Large portrait -->
+            <div class="relative h-[60vh] md:h-[700px] scroll-reveal">
+                <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate powerful portrait photograph, professional headshot with athletic build, confident smile, wearing sports attire with subtle Malaysian flag colors. Studio lighting with dramatic side lighting creating depth, sharp focus on eyes showing determination and warmth. Background: subtle bokeh of Kuala Lumpur skyline. Shot with Hasselblad X2D, 80mm portrait lens, f/2.8, professional color grading, magazine cover quality. Hair tied back athletically, natural makeup, embodies strength and grace."
+                     class="w-full h-full object-cover md:rounded-2xl shadow-2xl" 
+                     src="/static/images/image_4.png"/>
+                <!-- Floating quote card -->
+                <div class="absolute bottom-8 md:bottom-12 left-4 md:-left-8 right-4 md:right-auto md:w-96 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl">
+                    <i data-lucide="quote" class="w-8 h-8 text-mm-black mb-3"></i>
+                    <p class="text-gray-800 font-light italic text-lg mb-3">
+                        "Every step upward is a step toward unity, peace, and Malaysian pride."
+                    </p>
+                    <p class="text-sm font-semibold text-mm-black">- Dr. Suwaibah Muhammad Nasir</p>
+                </div>
+            </div>
+
+            <!-- Right: Staggered content blocks -->
+            <div class="px-6 md:px-0 py-12 md:py-0 space-y-8">
+
+                <!-- Title block -->
+                <div class="scroll-reveal" style="animation-delay: 0.1s;">
+                    <p class="text-sm uppercase tracking-widest text-gray-500 mb-3">The Pioneer</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-mm-black mb-4">
+                        Dr. Suwaibah Muhammad Nasir
+                    </h2>
+                    <div class="w-20 h-1 bg-red-600"></div>
+                </div>
+
+                <!-- Achievement highlight -->
+                <div class="bg-white rounded-xl p-8 shadow-lg transform md:translate-x-8 scroll-reveal" style="animation-delay: 0.2s;">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="award" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-mm-black mb-2">First Malaysian Woman</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                To solo run across the Sahara Desert: 1,111 km in 32 days from Aswan to Port Said, Egypt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Background -->
+                <div class="bg-white rounded-xl p-8 shadow-lg scroll-reveal" style="animation-delay: 0.3s;">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-mm-black mb-2">Royal Malaysian Air Force</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Former RMAF (TUDM) member, bringing military discipline and determination to vertical running.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="transform md:translate-x-8 scroll-reveal" style="animation-delay: 0.4s;">
+                    <button type="button" onclick="navigateTo('about')" class="bg-mm-black text-white px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all duration-300 inline-flex items-center gap-3 btn-hover">
+                        <span>Read Full Story</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
-<!-- Quick Overview -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 scroll-reveal">
-            <h2 class="text-4xl md:text-5xl font-bold text-mm-black mb-4">
-                The MM1030 Journey
-            </h2>
-            <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-                Join Dr. Suwaibah Muhammad Nasir on an extraordinary mission to conquer the highest towers across Malaysia and the world.
-            </p>
-        </div>
+<!-- Mission Section - Diagonal Split with Overlapping Images -->
+<section class="relative py-24 overflow-hidden">
+    <!-- Diagonal background split -->
+    <div class="absolute inset-0 bg-mm-black diagonal-split"></div>
+    <div class="absolute inset-0 bg-white diagonal-split-inverse"></div>
 
-        <!-- Stats -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-            <div class="bg-white border-2 border-gray-200 text-mm-black rounded-xl p-8 text-center hover:border-mm-black transition-all duration-300 card-hover scroll-reveal">
-                <div class="text-6xl font-bold text-mm-black mb-2">10</div>
-                <div class="text-xl text-gray-700">Malaysian Towers</div>
-            </div>
-            <div class="bg-white border-2 border-gray-200 text-mm-black rounded-xl p-8 text-center hover:border-mm-black transition-all duration-300 card-hover scroll-reveal" style="animation-delay: 0.1s;">
-                <div class="text-6xl font-bold text-mm-black mb-2">30</div>
-                <div class="text-xl text-gray-700">Global Towers</div>
-            </div>
-            <div class="bg-white border-2 border-gray-200 text-mm-black rounded-xl p-8 text-center hover:border-mm-black transition-all duration-300 card-hover scroll-reveal" style="animation-delay: 0.2s;">
-                <div class="text-6xl font-bold text-mm-black mb-2">1</div>
-                <div class="text-xl text-gray-700">Hope for Unity</div>
-            </div>
-        </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
 
-        <!-- Featured Content Grid -->
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-mm-gray rounded-xl p-8 hover:shadow-xl transition-all duration-300 card-hover scroll-reveal">
-                <div class="flex items-center gap-3 mb-4">
-                    <i data-lucide="user-circle" class="w-10 h-10 text-mm-black"></i>
-                    <h3 class="text-2xl font-bold text-mm-black">Meet Dr. Suwaibah</h3>
+            <!-- Left: Mission content -->
+            <div class="text-white scroll-reveal">
+                <p class="text-sm uppercase tracking-widest text-gray-400 mb-4">Our Mission</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Building Malaysia's Vertical Running Legacy
+                </h2>
+                <div class="space-y-6 text-gray-300">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="users" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Youth Development</h3>
+                            <p class="leading-relaxed">
+                                Promote vertical running among Malaysian youth, nurturing the next generation of world-class athletes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Training Academy</h3>
+                            <p class="leading-relaxed">
+                                Establish a world-class training academy to prepare athletes for SEA Games, Commonwealth Games, and beyond.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="heart-handshake" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Peace Through Sport</h3>
+                            <p class="leading-relaxed">
+                                Carry the message of 1 World 1 Hope across the globe, promoting peace and unity through vertical running.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-gray-700 mb-6 leading-relaxed">
-                    A remarkable solo runner and former Royal Malaysian Air Force member who became the first Malaysian woman to run solo across the Sahara Desert, covering 1,111 km in 32 days.
-                </p>
-                <button type="button" onclick="navigateTo('about')" class="inline-flex items-center gap-2 text-mm-black hover:opacity-70 font-semibold transition-opacity duration-300">
-                    <span>Learn More</span>
-                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                </button>
-            </div>
 
-            <div class="bg-mm-gray rounded-xl p-8 hover:shadow-xl transition-all duration-300 card-hover scroll-reveal" style="animation-delay: 0.1s;">
-                <div class="flex items-center gap-3 mb-4">
-                    <i data-lucide="target" class="w-10 h-10 text-mm-black"></i>
-                    <h3 class="text-2xl font-bold text-mm-black">Our Mission</h3>
-                </div>
-                <p class="text-gray-700 mb-6 leading-relaxed">
-                    To promote vertical running among Malaysian youth, establish a world-class training academy, and carry the message of peace through sport across the globe.
-                </p>
-                <button type="button" onclick="navigateTo('mission')" class="inline-flex items-center gap-2 text-mm-black hover:opacity-70 font-semibold transition-opacity duration-300">
+                <button type="button" onclick="navigateTo('mission')" class="mt-8 bg-white text-mm-black px-8 py-4 rounded-lg font-bold hover:bg-gray-200 transition-all duration-300 inline-flex items-center gap-3 btn-hover">
                     <span>Explore Mission</span>
                     <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </button>
             </div>
+
+            <!-- Right: Overlapping image collage -->
+            <div class="relative h-[500px] md:h-[600px] scroll-reveal" style="animation-delay: 0.2s;">
+                <!-- Image 1: Back -->
+                <div class="absolute top-0 right-0 w-64 h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-6">
+                    <img alt="Action photograph of Malaysian youth athletes training on tower stairs, diverse group of teenagers wearing matching red and white training gear, energetic and motivated expressions. Indoor modern stairwell training facility, bright lighting, coach supervising in background. Dynamic training scene showing teamwork and determination. Sports photography, Canon R6, 24-70mm, f/4, vibrant colors emphasizing youth energy and Malaysian national colors."
+                         class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Image 2: Middle -->
+                <div class="absolute top-16 left-8 w-72 h-96 rounded-2xl overflow-hidden shadow-2xl transform -rotate-3 z-10">
+                    <img alt="Inspiring photograph of Malaysian children aged 8-12 at tower running workshop, wearing colorful athletic wear, learning proper stair climbing technique from instructor. Indoor sports facility with modern stairs visible. Kids showing excitement and determination, mix of boys and girls, diverse Malaysian ethnicities. Bright educational environment, natural lighting, professional sports education photography, Nikon Z6, 35mm, f/2.8, warm tones, shallow depth of field."
+                         class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Image 3: Front (Malaysian flag/unity) -->
+                <div class="absolute bottom-0 right-16 w-80 h-64 rounded-2xl overflow-hidden shadow-2xl z-20">
+                    <img alt="Emotional photograph of diverse group of Malaysian athletes standing together holding Malaysian flag (Jalur Gemilang) at top of tower, victorious poses, arms raised in celebration. Mix of ages and ethnicities representing Malaysian unity. Rooftop location with Kuala Lumpur skyline visible in background, late afternoon golden light. Wide-angle group shot, professional sports documentary photography, Sony A7IV, 24mm, f/5.6, patriotic and inspiring mood, rich colors with flag prominently displayed."
+                         class="w-full h-full object-cover" />
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- Chairman Section -->
-<section class="py-20 bg-mm-gray">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="scroll-reveal">
-                <img src="/static/images/dsfi.webp" alt="Dato' Seri Farid Ibrahim - Chairman MM1030" class="w-full aspect-[3/4] object-cover rounded-xl shadow-lg">
+<!-- Chairman Section - Immersive Full-Width with Parallax -->
+<section class="relative py-32 overflow-hidden">
+    <!-- Parallax background image -->
+    <div class="absolute inset-0 parallax-bg">
+        <img alt="Professional corporate portrait of Dato' Seri Farid Ibrahim in business attire (dark suit, Malaysian flag pin), standing confidently in modern office with floor-to-ceiling windows showing Kuala Lumpur skyline. Mature Malaysian businessman, authoritative yet approachable expression. Executive photography, shallow depth of field with subject sharp and city bokeh background. Professional lighting setup, Hasselblad H6D, 80mm, f/2.8, corporate color grading with slight warm tones, dignified and leadership-focused composition."
+             class="w-full h-full object-cover scale-110" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+    </div>
+
+    <!-- Content card -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12 scroll-reveal">
+
+            <!-- Header -->
+            <div class="flex items-center gap-6 mb-8 pb-8 border-b-2 border-gray-200">
+                <div class="w-24 h-24 rounded-full overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="/static/images/dsfi.webp"
+                         alt="Dato' Seri Farid Ibrahim"
+                         class="w-full h-full object-cover" />
+                </div>
+                <div>
+                    <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">Chairman's Message</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-mm-black">
+                        Dato' Seri Farid Ibrahim
+                    </h2>
+                </div>
             </div>
-            <div class="scroll-reveal" style="animation-delay: 0.2s;">
-                <p class="text-sm uppercase tracking-widest text-gray-500 mb-4">Chairman's Message</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-6">Dato' Seri Farid Ibrahim</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    The MM1030 initiative is more than an athletic challenge. It is a nation-building platform, a global branding opportunity, and a symbol of Malaysia's soft power on the world stage.
+
+            <!-- Quote -->
+            <div class="mb-8">
+                <i data-lucide="quote" class="w-12 h-12 text-gray-300 mb-4"></i>
+                <blockquote class="text-xl md:text-2xl text-gray-800 font-light italic leading-relaxed mb-6">
+                    "Through MM1030, we are not just climbing towers - we are elevating Malaysia's spirit,
+                    unity, and global presence in tower running sports."
+                </blockquote>
+            </div>
+
+            <!-- Body text -->
+            <div class="space-y-4 text-gray-700 leading-relaxed mb-8">
+                <p>
+                    The MM1030 initiative is more than an athletic challenge. It is a nation-building platform,
+                    a global branding opportunity, and a symbol of Malaysia's soft power on the world stage.
                 </p>
-                <p class="text-gray-700 leading-relaxed mb-6">
+                <p>
                     Together, we climb. Together, we rise. Together, we bring Malaysia to the world.
                 </p>
-                <button type="button" onclick="navigateTo('chairman')" class="inline-flex items-center gap-2 bg-mm-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 btn-hover">
-                    <span>Read Full Message</span>
-                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                </button>
             </div>
+
+            <!-- CTA -->
+            <button type="button" onclick="navigateTo('chairman')" class="bg-mm-black text-white px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all duration-300 inline-flex items-center gap-3 btn-hover">
+                <span>Read Full Message</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+
         </div>
     </div>
 </section>
 
-<!-- Gallery Section -->
-<section class="py-20 bg-white">
+<!-- Gallery Section - Masonry Grid -->
+<section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 scroll-reveal">
-            <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-4">
+
+        <!-- Header -->
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-mm-black mb-4">
                 Journey Highlights
             </h2>
-            <p class="text-lg text-gray-700">
-                Visual moments from the MM1030 mission
+            <p class="text-xl text-gray-600">
+                Moments that define the MM1030 mission
             </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="scroll-reveal">
-                <div class="image-placeholder aspect-video">
-                    <div>
-                        <i data-lucide="mountain" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
-                        <p class="text-sm">Tower Climb Photo</p>
-                    </div>
+        <!-- Masonry grid -->
+        <div class="gallery-grid gap-4 md:gap-6">
+
+            <!-- Large feature image (tall) -->
+            <div class="gallery-item gallery-tall rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal">
+                <div class="gallery-image-wrapper">
+                    <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate breathtaking vertical photograph looking straight up a modern glass and steel tower stairwell with her climbing in center, shot from ground level looking up 50+ floors. Geometric spiral pattern of stairs creates mesmerizing symmetry. Natural light filtering from top, creating dramatic lighting gradient. Architectural sports photography, ultra-wide angle lens, Nikon 14mm, f/8 for maximum depth of field, high contrast, vertiginous perspective emphasizing height and challenge."
+                         class="w-full h-full object-cover gallery-image" />
                 </div>
             </div>
-            <div class="scroll-reveal" style="animation-delay: 0.1s;">
-                <div class="image-placeholder aspect-video">
-                    <div>
-                        <i data-lucide="trophy" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
-                        <p class="text-sm">Achievement Photo</p>
-                    </div>
+
+            <!-- Wide landscape -->
+            <div class="gallery-item gallery-wide rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.1s;">
+                <div class="gallery-image-wrapper">
+                    <img alt="Panoramic sunrise photograph of Kuala Lumpur skyline with all major towers visible: Petronas Twin Towers, KL Tower, Merdeka 118, Exchange 106. Shot from elevated viewpoint, city awakening with warm golden light, light morning mist. Ultra-wide cityscape, professional architectural photography, Phase One camera, 28mm tilt-shift lens, f/11, HDR blend, rich warm tones, Malaysian pride and ambition visualized."
+                         class="w-full h-full object-cover gallery-image" />
                 </div>
             </div>
-            <div class="scroll-reveal" style="animation-delay: 0.2s;">
-                <div class="image-placeholder aspect-video">
-                    <div>
-                        <i data-lucide="flag" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
-                        <p class="text-sm">Mission Photo</p>
+
+            <!-- Square image -->
+            <div class="gallery-item rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.2s;">
+                <div class="gallery-image-wrapper">
+                    <img alt="Close-up detail shot of athletic legs in compression wear and running shoes on modern tower stairs, mid-stride. Focus on powerful calf muscles, professional running shoes gripping stair edge. Shallow depth of field, background stairs blurred. Sports detail photography emphasizing strength and technique, Sony A1, 85mm, f/1.8, high shutter speed freezing motion, dramatic side lighting creating texture."
+                         class="w-full h-full object-cover gallery-image" />
+                </div>
+            </div>
+
+            <!-- Tall portrait -->
+            <div class="gallery-item gallery-tall rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.3s;">
+                <div class="gallery-image-wrapper">
+                    <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate powerful full-body portrait of her in training gear, standing on tower stairs with Malaysian flag draped over shoulders, looking up toward light source above with determined expression. Dramatic low-angle shot emphasizing height and aspiration. Backlit creating rim light effect, stairwell extending up behind her. Inspirational sports portrait, medium format, 50mm, f/4, cinematic color grading, heroic composition."
+                         class="w-full h-full object-cover gallery-image" />
+                </div>
+            </div>
+
+            <!-- Square image -->
+            <div class="gallery-item rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.4s;">
+                <div class="gallery-image-wrapper">
+                    <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate candid training moment of her checking sports watch/fitness tracker on wrist while pausing on stairs, sweat visible, focused expression studying metrics. Close-up shot showing determination and data-driven training. Natural gym lighting, professional sports documentary photography, Canon R3, 35mm, f/2, authentic moment, slightly desaturated with punch of color on watch display."
+                         class="w-full h-full object-cover gallery-image" />
+                </div>
+            </div>
+
+            <!-- Wide landscape -->
+            <div class="gallery-item gallery-wide rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.5s;">
+                <div class="gallery-image-wrapper">
+                    <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate group celebration photo with her alongside young Malaysian athletes (mixed ages 10-18) at finish line of tower climb event, everyone wearing race bibs and medals, arms raised in victory, genuine smiles and exhausted but happy faces. Malaysian flags and MM1030 banners visible in background. Community sports event photography, wide-angle, Fuji GFX, 23mm, f/5.6, vibrant colors, joyful and inclusive atmosphere."
+                         class="w-full h-full object-cover gallery-image" />
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View more button -->
+        <div class="text-center mt-12 scroll-reveal">
+            <button type="button" onclick="navigateTo('achievements')" class="bg-mm-black text-white px-8 py-4 rounded-lg font-bold hover:bg-gray-800 transition-all duration-300 inline-flex items-center gap-3 btn-hover">
+                <i data-lucide="images" class="w-5 h-5"></i>
+                <span>View All Achievements</span>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Section - Bold Full-Bleed Split -->
+<section class="relative min-h-[70vh] overflow-hidden">
+    <div class="grid md:grid-cols-2 h-full min-h-[70vh]">
+
+        <!-- Left: CTA content -->
+        <div class="bg-gradient-to-br from-red-600 via-red-700 to-red-800 text-white flex items-center justify-center p-12 md:p-16 scroll-reveal">
+            <div class="max-w-xl">
+                <div class="mb-8">
+                    <i data-lucide="heart-handshake" class="w-16 h-16 mb-6"></i>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Be Part of<br/>
+                        Our Journey
+                    </h2>
+                    <p class="text-xl md:text-2xl font-light mb-8 text-red-100">
+                        Support Malaysia's vertical running revolution. Help us inspire the next generation of champions.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <button type="button" onclick="navigateTo('contact')" class="w-full bg-white text-red-700 px-8 py-5 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 inline-flex items-center justify-center gap-3 btn-hover text-lg">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                        <span>Get Involved</span>
+                    </button>
+
+                    <button type="button" onclick="navigateTo('mission')" class="w-full bg-transparent border-2 border-white text-white px-8 py-5 rounded-xl font-bold hover:bg-white hover:text-red-700 transition-all duration-300 inline-flex items-center justify-center gap-3 text-lg">
+                        <i data-lucide="info" class="w-6 h-6"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+
+                <!-- Social proof badges -->
+                <div class="mt-12 pt-8 border-t border-red-400/30">
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-3xl font-bold mb-1">10+</div>
+                            <div class="text-sm text-red-200">Towers</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-1">1000+</div>
+                            <div class="text-sm text-red-200">Supporters</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-1">1</div>
+                            <div class="text-sm text-red-200">Mission</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- Call to Action -->
-<section class="py-20 bg-mm-black text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6 scroll-reveal">
-            Support the Mission
-        </h2>
-        <p class="text-xl mb-8 max-w-2xl mx-auto text-gray-300 scroll-reveal" style="animation-delay: 0.1s;">
-            Help us inspire the next generation of athletes and promote peace through vertical running.
-        </p>
-        <button type="button" onclick="navigateTo('contact')" class="bg-white text-mm-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-200 transition-all duration-300 btn-hover inline-flex items-center gap-2 scroll-reveal" style="animation-delay: 0.2s;">
-            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
-            <span>Get Involved</span>
-        </button>
+        <!-- Right: Action image -->
+        <div class="relative h-[40vh] md:h-auto scroll-reveal" style="animation-delay: 0.2s;">
+            <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate epic action photograph of her running up tower stairs at full speed, captured mid-stride showing explosive power and determination. Dynamic angle from side/below, motion blur on background stairs emphasizing speed, subject sharp. Wearing Malaysian flag-colored athletic gear, expression intense and focused. Dramatic lighting with strong highlights and shadows. High-speed sports photography, Sony A9 III, 70-200mm at 135mm, f/2.8, 1/2000s shutter, panning technique, cinematic action movie poster aesthetic."
+                 class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-red-700/40 to-transparent"></div>
+
+            <!-- Floating stat badge -->
+            <div class="absolute top-8 right-8 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl">
+                <div class="text-5xl font-bold text-mm-black mb-2">1030</div>
+                <div class="text-sm text-gray-600 uppercase tracking-wide">One Mission</div>
+            </div>
+        </div>
+
     </div>
 </section>

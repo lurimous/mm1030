@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>His Excellency Pehin Seri Diraja Dato Seri Farid Bin Ibrahim - Curriculum Vitae</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 15mm;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        }
+
+        /* A4 Page dimensions */
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        @media screen {
+            body {
+                background: #f5f5f5;
+                padding: 20px 0;
+            }
+        }
+
+        @media print {
+            .a4-page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        /* Masonry Gallery Layout */
+        .masonry-gallery {
+            column-count: 4;
+            column-gap: 1rem;
+        }
+
+        .masonry-gallery img {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 1024px) {
+            .masonry-gallery {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .masonry-gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .masonry-gallery {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="a4-page p-12">
+        <!-- Header Section -->
+        <div class="border-b-2 border-gray-800 pb-6 mb-8 text-center">
+            <img src="images/profile_photo.png" alt="Profile Photo" 
+                 class="w-48 h-64 rounded-full mx-auto mb-4 border-2 border-gray-300 object-cover bg-gray-100">
+            <h1 class="text-3xl font-bold text-gray-900 uppercase tracking-wide mb-2">
+                His Excellency Pehin Seri Diraja<br>Dato Seri Farid Bin Ibrahim
+            </h1>
+            <p class="text-sm text-gray-600 uppercase tracking-widest">Diplomat • Business Leader • Special Envoy</p>
+        </div>
+
+        <!-- Personal Information -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="user" class="w-5 h-5"></i>
+                Personal Information
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="border-l-2 border-gray-300 pl-3">
+                    <p class="text-xs font-semibold text-gray-500 uppercase">Age</p>
+                    <p class="text-sm text-gray-900">53 years old</p>
+                </div>
+                <div class="border-l-2 border-gray-300 pl-3">
+                    <p class="text-xs font-semibold text-gray-500 uppercase">Date of Birth</p>
+                    <p class="text-sm text-gray-900">26 November 1972</p>
+                </div>
+                <div class="border-l-2 border-gray-300 pl-3">
+                    <p class="text-xs font-semibold text-gray-500 uppercase">Passport</p>
+                    <p class="text-sm text-gray-900">A55322515</p>
+                </div>
+                <div class="border-l-2 border-gray-300 pl-3">
+                    <p class="text-xs font-semibold text-gray-500 uppercase">Marital Status</p>
+                    <p class="text-sm text-gray-900">Married</p>
+                </div>
+                <div class="border-l-2 border-gray-300 pl-3">
+                    <p class="text-xs font-semibold text-gray-500 uppercase">Citizenship</p>
+                    <p class="text-sm text-gray-900">Malaysian</p>
+                </div>
+            </div>
+            
+            <!--
+            <div class="mt-4">
+                <p class="text-xs font-semibold text-gray-500 uppercase mb-2">Children</p>
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li>1st Daughter - 35 years</li>
+                    <li>2nd Son - 26 years</li>
+                    <li>3rd Daughter - 24 years</li>
+                    <li>4th Daughter - 5 years</li>
+                </ul>
+            </div>
+            -->
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+                Contact Information
+            </h2>
+            
+            <div class="space-y-3">
+                <div>
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1 flex items-center gap-1">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i>
+                        Philippines Residence
+                    </p>
+                    <p class="text-sm text-gray-700">Unit 309, Gramercy Residence, Century City, Salamanca St, Brgy. Poblacion, Makati City, Manila, Philippines</p>
+                </div>
+                
+                <div>
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1 flex items-center gap-1">
+                        <i data-lucide="building-2" class="w-4 h-4"></i>
+                        Philippines Office Address
+                    </p>
+                    <p class="text-sm text-gray-700">Km. 12 Davao-Bukidnon Road, Catalunan Pequeño, Davao City</p>
+                </div>
+                
+                <div>
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1 flex items-center gap-1">
+                        <i data-lucide="home" class="w-4 h-4"></i>
+                        Malaysia Address
+                    </p>
+                    <p class="text-sm text-gray-700">Wisma THIVIYA, No 13-1, Tingkat 1, Jalan Sp 2/4, Taman Serdang Perdana Seksyen 2, 43300 Seri Kembangan, Selangor</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-3 mt-4">
+                <div class="border border-gray-300 p-2 rounded">
+                    <p class="text-xs font-semibold text-gray-500 flex items-center gap-1 mb-1">
+                        <i data-lucide="smartphone" class="w-3 h-3"></i>
+                        Mobile
+                    </p>
+                    <p class="text-sm text-gray-900">+60 11-1167 7236</p>
+                </div>
+                <div class="border border-gray-300 p-2 rounded">
+                    <p class="text-xs font-semibold text-gray-500 flex items-center gap-1 mb-1">
+                        <i data-lucide="message-circle" class="w-3 h-3"></i>
+                        WhatsApp
+                    </p>
+                    <p class="text-sm text-gray-900">+60 11-1167 7236</p>
+                </div>
+                <div class="border border-gray-300 p-2 rounded">
+                    <p class="text-xs font-semibold text-gray-500 flex items-center gap-1 mb-1">
+                        <i data-lucide="mail" class="w-3 h-3"></i>
+                        Email
+                    </p>
+                    <p class="text-sm text-gray-900">farid.aquam@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!-- Diplomatic Service -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+                Diplomatic Service
+            </h2>
+            
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Southern Philippines Development Authority (SPDA)</h3>
+                    <p class="text-xs text-gray-600 uppercase">Office of the President of the Philippines</p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Special Envoy for Trade & Investment</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">April 2018 - Present</span>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-700 text-justify mb-3">
+                    His Excellency Pehin Seri Diraja Dato Seri Farid Bin Ibrahim serves as the Special Envoy for Trade & Investment for the Southern Philippines Development Authority (SPDA), Office of the President of the Philippines. With over 34 years of expertise in property development, heavy civil engineering, construction, agriculture, tourism, business, and diplomacy, he plays a crucial role in driving economic growth and investment in the Southern Philippines.
+                </p>
+                
+                <p class="text-sm text-gray-700 text-justify mb-3">
+                    SPDA was established by Presidential Decree No. 690 (April 22nd 1975) to dramatize the Government's serious concern for the development of Mindanao, Sulu, Tawi-Tawi including Palawan.
+                </p>
+                
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Advocacy for Development</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li><strong>Halal Industry Development</strong> – Strengthening the Halal sector for food security and global market integration.</li>
+                        <li><strong>Major Infrastructure Projects</strong> – Spearheading key initiatives such as the Basilan International Airport, Zamboanga Air Logistics Hub, and urbanization plans for Basilan Island.</li>
+                        <li><strong>Economic Corridors & Trade Expansion</strong> – Promoting integration with RCEP and ASEAN markets, enhancing logistics, and creating new trade routes.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Philippines Economic Zone Authority (PEZA)</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Special Envoy for Trade & Investment</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">December 2017 - April 2018</span>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-700 mb-2"><strong>Reporting to:</strong> Director General Brig. Gen. Charito B. Plaza</p>
+                <p class="text-sm text-gray-700 text-justify">
+                    His Excellency was appointed as a Special Envoy For Trade And Investment to mobilize investors into Philippines from Malaysia, Hong Kong, China, Japan, Indonesia and Singapore across banking, manufacturing, and trading sectors.
+                </p>
+            </div>
+
+            <div class="border-l-4 border-gray-600 pl-4 py-3 mb-4 bg-gray-50">
+                <h4 class="text-base font-bold text-gray-900 mb-2">Drug Enforcement Group Leader (Association of Chiefs of Police of the Philippines Inc)</h4>
+                <p class="text-sm text-gray-700 text-justify">
+                    His Excellency works diligently to support the Philippines Government in combating drug misuse and advocates for family-focused retreat programs.
+                </p>
+            </div>
+
+            <div class="border-l-4 border-gray-600 pl-4 py-3 bg-gray-50">
+                <h4 class="text-base font-bold text-gray-900 mb-2">Honorary Military Recognition from Komandan Pusat Penerbangan TNI Angkatan Laut (Indonesia)</h4>
+                <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded mb-2">June 25, 2018</span>
+                <p class="text-sm text-gray-700 text-justify">
+                    <strong>Conferred as Honorary Member:</strong> Comandon of Special Air Unit Forces and Marine Unit Forces Indonesian National Armed Forces (TNI)
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Key Leadership Positions -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="award" class="w-5 h-5"></i>
+                Key Leadership Positions
+            </h2>
+
+            <!-- PERPENS Profile -->
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Persatuan Peruncit Pembekal dan Peniaga Sabah (PERPENS)</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: International Relations Board Advisor</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Present</span>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Introduction</p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim is a distinguished Malaysian statesman, businessman, and international economic envoy with more than 34 years of experience across infrastructure development, trade diplomacy, logistics, agribusiness, and investment facilitation. Recognised for his strategic insights, diplomatic stature, and extensive cross-border networks spanning ASEAN, the Middle East, China, and Europe, he plays a pivotal leadership role in advancing PERPENS' mission to uplift Sabah's retail, supply, and trading ecosystem.
+                    </p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        As International Relations Board Advisor, His Excellency's appointment strengthens PERPENS' ambition to position Sabah as a regional gateway for Halal trade, food security, digital retail empowerment, and SME globalisation.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Strategic Role in PERPENS</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2 ml-2">
+                        <li><strong>Lead Cross-Border Government Engagements</strong> – Strengthening Sabah's retail and supply-chain diplomacy through bilateral and multilateral cooperation. Supporting engagement with Malaysia's Federal ministries, ASEAN partners, the Middle East, China, and global trade institutions.</li>
+                        <li><strong>Position Sabah Retailers & SMEs for International Markets</strong> – Opening global channels for export of Sabahan products, including Halal goods, agricultural commodities, and MSME innovations. Connecting international buyers, distributers, and investors directly to PERPENS members.</li>
+                        <li><strong>Drive Foreign Direct Investment (FDI) for Sabah</strong> – Advocating for investments in logistics hubs, warehouses, cold-chain facilities, Halal processing, e-commerce fulfilment centres, and rural economic transformation.</li>
+                        <li><strong>Champion Halal Industry Growth in Sabah</strong> – Leveraging his experience with Philippines Halal Hub Corporation (PHHC) and international Halal advocacy. Positioning Sabah as an ASEAN Halal Supply Gateway under the BIMP-EAGA framework.</li>
+                        <li><strong>Support Youth Entrepreneurship and Digital Retail Transformation</strong> – Promoting Sabah Digital Youth, a PERPENS initiative uplifting young Sabahan entrepreneurs through TVET certification in Digital Marketing, AI, and Online Business.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Vision for Sabah Through PERPENS</p>
+                    <p class="text-sm text-gray-700 text-justify mb-2">
+                        His Excellency champions a long-term vision where Sabah becomes a competitive, internationally connected retail and supply-chain powerhouse. His strategic priorities include:
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li>Retail & wholesale modernization through digitalisation and logistics optimisation</li>
+                        <li>Strengthening SME competitiveness via international exposure and market access</li>
+                        <li>Ensuring food security and Halal compliance excellence for Sabah products</li>
+                        <li>Building a retail workforce capable of thriving in the global digital economy</li>
+                        <li>Transforming Sabah into a regional trade distribution centre that serves Malaysia, Borneo, and wider ASEAN markets</li>
+                    </ul>
+                </div>
+            </div>
+
+            <br><br>
+
+            <!-- MM1030 Profile -->
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Chairman, MM1030 Tower Climb Event</h3>
+                    <p class="text-sm text-gray-600 uppercase">World Tower Legacy</p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Chairman</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Present</span>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim is a distinguished Malaysian statesman, entrepreneur, and international economic advisor whose leadership spans more than three decades across infrastructure development, energy, trade, and global diplomacy. A visionary advocate for Malaysia's strategic role on the world stage, he has earned recognition at the highest levels, including international honours such as the Anugerah Kehormatan Penerbangan TNI Angkatan Laut of Indonesia.
+                    </p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        As Chairman of the MM1030 Tower Climb Event, His Excellency brings world-class leadership to a movement that unites sports, national pride, international friendship, and global advocacy. Appointed exclusively by Dr. Suwaibah Nasir, Malaysia's ultra-endurance icon and global peace ambassador, His Excellency plays a pivotal role in elevating Malaysia's presence in the international tower-climb circuit through the collaboration between World Tower Legacy, Yayasan Atlet Kebangsaan (YAKEB), and the World Federation of Great Towers.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">A Leader of International Standing</p>
+                    <p class="text-sm text-gray-700 mb-2">His Excellency currently serves as:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li>Special Envoy for Trade & Investment to the Southern Philippines Development Authority (SPDA)</li>
+                        <li>Deputy President, Johor Import & Export Industries Association</li>
+                        <li>International Advisor to multiple regional institutions in Malaysia, the Philippines, China, and the Middle East</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Championing the MM1030 Vision</p>
+                    <p class="text-sm text-gray-700 text-justify mb-2">
+                        The MM1030 Tower Climb Initiative is more than an endurance challenge — it is a global advocacy movement led by Dr. Suwaibah Nasir, carrying the Malaysian flag to 103 iconic towers across the world. Under His Excellency's chairmanship, the initiative is positioned to become:
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li>A world-recognised Malaysian sports diplomacy programme</li>
+                        <li>A platform for international cooperation and peace-building</li>
+                        <li>A new era of Malaysian global branding</li>
+                        <li>A catalyst for national athlete empowerment</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Exclusive Appointment by Dr. Suwaibah Nasir</p>
+                    <p class="text-sm text-gray-700 text-justify mb-2">
+                        Dr. Suwaibah Nasir, Malaysia's most decorated ultra-endurance athlete, personally appointed His Excellency as Chairman for MM1030 due to:
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li>His global influence</li>
+                        <li>His proven ability to unify governments, corporations, and international bodies</li>
+                        <li>His strong commitment to national athletes and youth empowerment</li>
+                        <li>His visionary approach to putting Malaysia on the world map</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">A Vision of Unity, Endurance & Global Malaysian Excellence</p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        His Excellency champions MM1030 as a symbol of Malaysia's resilience, international friendship and peace, women's empowerment in sports, and Malaysia's ability to lead global initiatives. Under his chairmanship, MM1030 is set to inspire Malaysians from all walks of life while building a new global identity for the nation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Business Leadership -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+                Business Leadership
+            </h2>
+
+            <!-- PWTC Profile -->
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Executive Chairman, Petroleum World Trade Centre Sdn. Bhd. (PWTC)</h3>
+                    <p class="text-sm text-gray-600">Visionary Leader in Energy, Maritime Logistics & Regional Economic Transformation</p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Executive Chairman</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Present</span>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim is a distinguished Malaysian industrialist, statesman, and global investment advocate whose leadership spans three decades across energy, heavy civil engineering, infrastructure development, maritime logistics, and international trade diplomacy.
+                    </p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        As Chairman of Petroleum World Trade Centre Sdn. Bhd. (PWTC), His Excellency spearheads one of Malaysia's most ambitious private-sector energy infrastructure initiatives — the 374.4-acre Umbai Melaka Free-Zone Petroleum World Trade Centre, a transformative mega-project featuring deep-sea tank farms, private jetties, ship-to-ship (STS) operations, global petroleum trading platforms, desalination and green-energy integration, and a future-ready maritime logistics ecosystem designed to position Malaysia as "The Energy Storage & Trading Gateway of the Straits of Malacca."
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">A Leader Shaping Southeast Asia's Energy Corridor</p>
+                    <p class="text-sm text-gray-700 mb-2">With over 34 years of industry experience, His Excellency brings expertise in:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li>Oil & Gas operations and trading strategy</li>
+                        <li>Large-scale reclamation and maritime engineering</li>
+                        <li>Global investor relations and sovereign-level diplomacy</li>
+                        <li>Infrastructure concession structuring (Sukuk, SPV equity arrangements, project financing)</li>
+                        <li>Regional development mandates involving RCEP and BIMP-EAGA frameworks</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Strategic Vision for PWTC</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2 ml-2">
+                        <li><strong>Establishing Malaysia's Premier Free-Zone Energy Hub</strong> – A state-of-the-art oil, gas, and clean-energy storage terminal capable of serving global shipping lanes and cross-border energy flows.</li>
+                        <li><strong>Building a Long-Term Maritime Economic Ecosystem</strong> – Including reclamation works, jetties, tank farms, desalination, bunkering terminals, warehousing, ship support services, and digital trade platforms.</li>
+                        <li><strong>Driving International Partnerships</strong> – Engaging sovereign investors, global banks, EPC giants, and energy traders to deliver a project valued in the billions of ringgit.</li>
+                        <li><strong>Strengthening Malaysia's Geo-Economic Position</strong> – Especially along the Straits of Malacca, one of the world's busiest energy and export routes.</li>
+                        <li><strong>Integrating Green and Sustainable Technologies</strong> – Preparing PWTC for future hydrogen, ammonia, and carbon-efficient maritime requirements.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Leadership Excellence</p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        His Excellency is widely recognized for his strategic foresight in complex mega-projects, ability to secure multibillion-ringgit investment commitments, strong relationships with government leaders across ASEAN, GCC, China, and beyond, diplomatic negotiation skills at ministerial and sovereign levels, and commitment to national development and economic upliftment.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">The Chairman's Legacy</p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        Under His Excellency's guidance, PWTC is not merely a project — it is a national and regional energy gateway, designed to strengthen Malaysia's global standing while generating long-term economic growth, employment, technological uplift, and investor confidence. His leadership embodies vision, integrity, diplomacy, industry mastery, and nation-building commitment.
+                    </p>
+                </div>
+            </div>
+        
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Lekas Takzim Sdn. Bhd.</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Executive Chairman</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Present</span>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-700 text-justify mb-3">
+                    His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim is the Executive Chairman of Lekas Takzim Sdn. Bhd., the original proponent and project company behind the Cadangan Projek Lebuhraya Bertingkat Johor Baharu–Pasir Gudang (PAGE), a 34.4-kilometre elevated highway conceived under a privatisation model to transform Johor's urban mobility and logistics connectivity.
+                </p>
+
+                <p class="text-sm text-gray-700 text-justify mb-3">
+                    With more than three decades of experience spanning property development, heavy civil engineering, infrastructure, trade and investment, His Excellency leads Lekas Takzim Sdn. Bhd. with a clear mission: to deliver a world-class, future-ready expressway that eases chronic congestion between Johor Bahru and Pasir Gudang, enhances port and industrial access, and supports Johor's long-term economic growth. Under his stewardship, PAGE has been meticulously developed from an early conceptual proposal into a structured concession highway project, backed by detailed technical, commercial and financial planning.
+                </p>
+
+                <p class="text-sm text-gray-700 text-justify mb-3">
+                    As Executive Chairman, he plays a central role in engaging Federal and State agencies, regulators, financiers and strategic partners to ensure that the highway concession is structured on a strong foundation of public–private collaboration. His leadership focuses on balancing commercial viability with national and state development objectives—optimising toll-road economics, encouraging private investment, and at the same time delivering tangible benefits in terms of reduced travel time, improved road safety and higher productivity for commuters and industries.
+                </p>
+
+                <p class="text-sm text-gray-700 text-justify mb-3">
+                    His Excellency also brings to the project his wider regional and diplomatic exposure in trade and investment, enabling Lekas Takzim Sdn. Bhd. to position PAGE as more than just a highway. Under his direction, the project is framed as a strategic economic corridor—unlocking new growth areas, catalysing adjacent developments, and strengthening Johor's role as a dynamic gateway within the broader Malaysian and ASEAN transport network.
+                </p>
+
+                <p class="text-sm text-gray-700 text-justify">
+                    Respected for his strategic vision, negotiation skills and ability to align diverse stakeholders towards a common goal, His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim stands as the driving force behind Lekas Takzim Sdn. Bhd.'s commitment to deliver the Lebuhraya Bertingkat Johor Baharu–Pasir Gudang as a landmark concession highway serving the people and economy of Johor for generations to come.
+                </p>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Renewable Green Energy Ventures</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: President</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">August 2017 - Present</span>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-700 text-justify">
+                    Leading the team in venturing into renewable green energy using the combination of solar and hydrogen technology, primarily in The Philippines. Ongoing discussions and implementations are advancing sustainable energy solutions.
+                </p>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Virtual Currency Philippines Inc.</h3>
+                    <p class="text-sm text-gray-600">Licensed Virtual Asset Service Provider (Type A: Fiat ↔ Virtual Currency Exchange) - Authorized by Bangko Sentral ng Pilipinas (BSP)</p>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: President</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">August 2017 - Present</span>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Executive Summary</p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim is a distinguished regional economic strategist, financier, and technologist whose leadership spans over 34 years across infrastructure, trade, digital transformation, and cross-border financial systems.
+                    </p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        As President of Virtual Currency Philippines Inc., a BSP-licensed Type A Virtual Currency Exchange (VCE), H.E. Dato' Seri Farid provides strategic guidance to one of the Philippines' pioneering platforms enabling regulated conversion between fiat currency and virtual digital assets. His role is anchored on strict adherence to BSP Circular No. 944, RA 9160 (AMLA), KYC/AML/CFT compliance frameworks, and emerging global standards in virtual-asset governance.
+                    </p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        His appointment strengthens the company's position as a trusted institutional gateway for blockchain-driven financial inclusion, halal-compliant fintech innovation, and digital economy growth within the Philippines and the ASEAN region.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Leadership Vision in Virtual Asset Transformation</p>
+                    <p class="text-sm text-gray-700 text-justify mb-2">
+                        As President, H.E. Dato' Seri Farid Ibrahim champions a mission to build a secure, transparent, and future-ready virtual currency ecosystem for the Philippines, focusing on:
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li><strong>Regulated Digital Asset Access for All Filipinos</strong> – Providing safe, compliant, and user-friendly channels for fiat-to-virtual currency conversion aligned with BSP's highest supervisory standards.</li>
+                        <li><strong>Strengthening AML, KYC, and CFT Protocols</strong> – Implementing world-class governance, risk, and compliance mechanisms to ensure the exchange remains among the Philippines' most trusted VASPs.</li>
+                        <li><strong>Driving Innovation Through Security & Transparency</strong> – Prioritizing cybersecurity, blockchain integrity, real-time monitoring, and international best practices to protect consumer assets.</li>
+                        <li><strong>Positioning the Philippines as a Regional Digital Finance Hub</strong> – Leveraging ASEAN networks, cross-border partnerships, and economic diplomacy to expand virtual asset adoption and digital payments infrastructure.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Strategic Role within Virtual Currency Philippines Inc.</p>
+                    <p class="text-sm text-gray-700 mb-2">H.E. Dato' Seri Farid provides leadership across several mission-critical areas:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li>Corporate Governance & Board Oversight for a BSP-licensed VASP</li>
+                        <li>Regulatory Compliance Alignment with BSP, AMLC, SEC, and DICT cybersecurity frameworks</li>
+                        <li>Fintech Investment Strategy, Capital Raising & Institutional Partnerships</li>
+                        <li>Exchange Growth, Adoption, Merchant Integration & Cross-border Use Cases</li>
+                        <li>Cybersecurity Framework Strengthening in line with ISO/IEC 27001 and NIST standards</li>
+                        <li>Innovation in Digital Wallets, Tokenization, Remittance Optimization, and Halal Fintech Ecosystems</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Leadership in Regulatory & Risk Governance</p>
+                    <p class="text-sm text-gray-700 mb-2">Under H.E. Dato' Seri Farid's presidency, the organization enforces:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li><strong>Full BSP Licensing Compliance (Type A VCE)</strong> – Including transaction monitoring, capital adequacy, liquidity thresholds, and reporting obligations.</li>
+                        <li><strong>Best-In-Class AML/CFT Program</strong> – Aligned with AMLA (RA 9160) and BSP Circulars 950, 1022, and 1108.</li>
+                        <li><strong>Comprehensive KYC & Customer Risk Grading</strong> – Ensuring safe onboarding for retail, corporate, and institutional clients.</li>
+                        <li><strong>Strong Internal Audit & Governance Systems</strong> – Enhancing trust, transparency, and operational excellence.</li>
+                        <li><strong>International-Standard Cybersecurity</strong> – Protection from hacking, fraud, and virtual asset theft through multi-layered defenses.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Advancing the Philippines' Digital Economy</p>
+                    <p class="text-sm text-gray-700 mb-2">H.E. Dato' Seri Farid's leadership aligns with the national direction of:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                        <li>Expanding digital payments adoption</li>
+                        <li>Supporting the Philippine fintech regulatory sandbox</li>
+                        <li>Strengthening remittance infrastructure for OFWs</li>
+                        <li>Encouraging financial inclusion in underserved regions</li>
+                        <li>Preparing the Philippines for Web3, blockchain, and tokenized asset adoption</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Commitment to Integrity, Innovation & Public Trust</p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        H.E. Dato' Seri Farid champions the principles of accountability and transparency, consumer protection and data security, ethical innovation, investor confidence, and regulatory cooperation with BSP and AMLC. His stewardship ensures that the exchange remains a trusted, compliant, and future-ready institution within the Philippines' evolving financial ecosystem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Precious Metal Exchange Philippines Inc</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: President</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">October 2017 - Present</span>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Leadership in Precious Metals & Digital Asset Economy</p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        As President of Precious Metal Exchange Philippines Inc. since October 2017, H.E. Dato' Seri Farid has been at the forefront of modernizing how Filipinos invest in physical precious metals. His visionary leadership transformed the company into a regulated, compliant, and innovative digital trading platform, making gold and silver accessible, liquid, and secure for retail and institutional investors alike.
+                    </p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        The company operates a peer-to-peer precious metals exchange under a 24/7 live online marketplace structure, offering secure storage, vault services, and transparent pricing. Backed by internationally recognized mints and adherence to strict purity standards, the platform ensures integrity and investor confidence, serving as a national alternative to traditional gold trading and storage methods.
+                    </p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        His stewardship has been critical in establishing compliance frameworks aligned with BSP regulations, AML/CFT laws, and best practices for physical asset tokenization. Under his leadership, the platform has expanded its product range to include investment-grade bullion, facilitating wealth preservation and portfolio diversification for Filipino households, OFWs, and corporate treasuries.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Strategic Contributions to National & Regional Economic Growth</p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        H.E. Dato' Seri Farid has positioned the company as a strategic contributor to the Philippine financial ecosystem, particularly in:
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2 mb-3">
+                        <li><strong>Supporting Financial Inclusion</strong> – Providing access to precious metal investments for Filipinos who traditionally lacked entry into institutional markets.</li>
+                        <li><strong>Enhancing Reserve Asset Diversity</strong> – Offering individuals and institutions an inflation-hedging alternative amid currency volatility.</li>
+                        <li><strong>Promoting Regulated Trading</strong> – Ensuring that all precious metal transactions comply with Philippine law, preventing illegal smuggling and unregulated gold trading.</li>
+                        <li><strong>Strengthening the Philippines' Role in ASEAN Precious Metals Markets</strong> – Establishing Manila as a credible hub for gold and silver trading within Southeast Asia.</li>
+                        <li><strong>Integrating with Digital Finance Ecosystems</strong> – Preparing the platform for potential blockchain-based gold-backed tokens and stablecoins, aligned with evolving BSP policies.</li>
+                    </ul>
+                    <p class="text-sm text-gray-700 text-justify">
+                        His leadership also aligns with the broader agenda of modernizing Philippine financial infrastructure, particularly through the digitalization of physical asset ownership and promoting trust in non-traditional investment vehicles.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">A Visionary Driving Trust, Stability & Modernization</p>
+                    <p class="text-sm text-gray-700 text-justify mb-3">
+                        H.E. Dato' Seri Farid's approach to precious metals trading reflects his unwavering commitment to:
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2 mb-3">
+                        <li><strong>Transparency and Accountability</strong> – Ensuring full product traceability, secure custodianship, and clear pricing models.</li>
+                        <li><strong>Investor Protection</strong> – Implementing anti-counterfeiting measures, third-party vault audits, and customer insurance policies.</li>
+                        <li><strong>Regulatory Excellence</strong> – Collaborating with BSP, SEC, and AMLC to maintain industry standards.</li>
+                        <li><strong>Innovation in Asset Ownership</strong> – Pioneering fractional gold ownership and exploring tokenization possibilities for digital-native investors.</li>
+                        <li><strong>Economic Resilience</strong> – Advocating for precious metals as a pillar of individual and national financial security during global uncertainties.</li>
+                    </ul>
+                    <p class="text-sm text-gray-700 text-justify">
+                        Through his leadership, the platform has gained the trust of thousands of Filipino investors who now view gold and silver as practical, tradable assets rather than inaccessible luxury goods.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Personal Distinction & Honours</p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        Beyond his business acumen, H.E. Dato' Seri Farid's international diplomatic standing enhances his credibility as a leader in precious metals and financial services. His role as His Majesty The King's Special Envoy to ASEAN & The Pacific, combined with his appointments as International Relations Board Advisor for PERPENS and Chairman for multiple organizations (MM1030, PWTC), positions him as a figure of global influence, bridging government, private enterprise, and international diplomacy. His dual expertise in diplomacy and commerce allows him to advocate for fair trade practices, financial transparency, and cross-border collaboration, strengthening the Philippines' role in the global precious metals supply chain.
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Conclusion</p>
+                    <p class="text-sm text-gray-700 text-justify">
+                        H.E. Dato' Seri Farid's presidency of Precious Metal Exchange Philippines Inc. exemplifies his dedication to economic innovation, financial security, and investor empowerment. By establishing a regulated, transparent, and accessible precious metals marketplace, he has contributed to the Philippines' financial modernization agenda, promoted wealth preservation strategies, and elevated Manila's standing as a regional trading hub. His leadership continues to ensure that the exchange operates with the highest levels of integrity, compliance, and customer trust, making it a cornerstone of the country's alternative investment landscape.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Business Consulting and Advisory Co.</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: President</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">November 2017 - Present</span>
+                    </div>
+                </div>
+                
+                <p class="text-xs font-semibold text-gray-600 uppercase mb-2">Comprehensive Business Solutions</p>
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                    <li>Establishing and jumpstarting businesses in the Philippines</li>
+                    <li>Securities and Exchange Commission (SEC) Registration</li>
+                    <li>Business Permits, Licenses, and Clearances</li>
+                    <li>Legal Services & Management</li>
+                    <li>Bureau of Customs Importation services</li>
+                    <li>Board of Investments (BOI) Incentives</li>
+                    <li>Mining/Minerals Exploration Investments</li>
+                    <li>Solid Waste Management Projects</li>
+                    <li>Economic and Freeport Zones Consultation</li>
+                    <li>Central Bank approvals for financial investments</li>
+                    <li>Department of Education permits</li>
+                    <li>Department of Energy Investments</li>
+                    <li>Infrastructure Projects (DPWH)</li>
+                    <li>Department of Health supplies and equipment</li>
+                    <li>Armed Forces supplies and logistics</li>
+                    <li>Marine and Resort Investments</li>
+                    <li>Land titling, transfer, and due diligence</li>
+                </ul>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Besteel Berhad</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Executive Chairman</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">June 2020 - Present</span>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-700 text-justify">
+                    World leader in the design, construction, installation, and commissioning of palm oil mills. BESTEEL has constructed more than a hundred palm oil mills across Malaysia, Indonesia, Thailand, Cambodia, Papua New Guinea, Cameroon, Sierra Leone, Congo, Ghana, Sao Tome, and Brazil.
+                </p>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">Special Monster Sdn. Bhd.</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Executive Chairman & Shareholder</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">January 2022 - Present</span>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-700 text-justify mb-2">
+                    Malaysian-based company specializing in defense industry design and smart security solutions. Drawing from accumulated experiences from Middle Eastern events, the company provides innovative solutions for risk response and protection.
+                </p>
+                
+                <p class="text-sm text-gray-700">
+                    <strong>Additional Operations:</strong> Exclusive river mouth sand operator at Sg. Tiram, Johor for exports (February 2017 - Present)
+                </p>
+            </div>
+
+            <div class="border-l-4 border-gray-800 pl-4 py-3 mb-6 bg-gray-50">
+                <div class="mb-3">
+                    <h3 class="text-lg font-bold text-gray-900">SKF Frozen Food Products Sdn.Bhd.</h3>
+                    <div class="flex gap-2 mt-2">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Executive Chairman & Shareholder</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">July 2010 - Present</span>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-700 text-justify mb-3">
+                    Leading business planning and technical advisory for major agricultural projects including the Kazakhstan Ministry of Agriculture (NAK LLP) Onion Project for Pre and Post Harvesting (2015), and establishing HALAL ABATTOIR for the cattle industry.
+                </p>
+                
+                <p class="text-sm text-gray-700 text-justify mb-2">
+                    <strong>International Recognition:</strong> Won Gold Medal at the 27th International Award For Quality In Food & Beverages in Madrid, Spain (October 2011) for catfish farming livelihood project in Malaysia.
+                </p>
+                
+                <p class="text-sm text-gray-700 text-justify">
+                    Pioneered Industrial Building Technology using Light Gauge Steel and concrete wall and flooring structures, with most projects implemented in the Philippines.
+                </p>
+            </div>
+        </div>
+
+        <!-- Previous Ventures -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="archive" class="w-5 h-5"></i>
+                Previous Business Ventures
+            </h2>
+            
+            <div class="space-y-3">
+                <div class="border-l-4 border-gray-600 pl-4 py-2 bg-gray-50">
+                    <h3 class="text-base font-bold text-gray-900">MCRB Travel & Tours Sdn. Bhd.</h3>
+                    <div class="flex gap-2 mt-1">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Managing Director</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">2000-2003</span>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-gray-600 pl-4 py-2 bg-gray-50">
+                    <h3 class="text-base font-bold text-gray-900">Premier Language Centre</h3>
+                    <div class="flex gap-2 mt-1">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Partnership</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">2015-2017</span>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-gray-600 pl-4 py-2 bg-gray-50">
+                    <h3 class="text-base font-bold text-gray-900">Abutcher Group of Company</h3>
+                    <div class="flex gap-2 mt-1">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Founder</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">2003-2007</span>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-gray-600 pl-4 py-2 bg-gray-50">
+                    <h3 class="text-base font-bold text-gray-900">Bumihiway (M) Sdn. Bhd.</h3>
+                    <div class="flex gap-2 mt-1">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Project Manager</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">1995-2000</span>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-gray-600 pl-4 py-2 bg-gray-50">
+                    <h3 class="text-base font-bold text-gray-900">Paximas Metal Sdn. Bhd.</h3>
+                    <div class="flex gap-2 mt-1">
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">Position: Director & Shareholder</span>
+                        <span class="inline-block px-2 py-1 bg-gray-800 text-white text-xs rounded">2000-2003</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                Education & Qualifications
+            </h2>
+            
+            <div class="space-y-4">
+                <div class="border-l-4 border-gray-800 pl-4 py-3 bg-gray-50">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">1993-1995</p>
+                    <h3 class="text-base font-bold text-gray-900">BTEC Building Studies (Project Management)</h3>
+                    <p class="text-sm text-gray-700">Brunel University, United Kingdom</p>
+                </div>
+
+                <div class="border-l-4 border-gray-800 pl-4 py-3 bg-gray-50">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">1993-1995</p>
+                    <h3 class="text-base font-bold text-gray-900">Certificate of Competency in Surveying</h3>
+                    <p class="text-sm text-gray-700">Chartered Institute of Builders (CIOB) United Kingdom</p>
+                </div>
+
+                <div class="border-l-4 border-gray-800 pl-4 py-3 bg-gray-50">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">1991-1992</p>
+                    <h3 class="text-base font-bold text-gray-900">Certificate in Civil Engineering</h3>
+                    <p class="text-sm text-gray-700">Ungku Omar Polytechnic, Malaysia</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional References -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="users" class="w-5 h-5"></i>
+                Professional References
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="border-l-4 border-gray-800 pl-4 py-3 bg-gray-50">
+                    <h4 class="text-sm font-bold text-gray-900">8th Congressman Al Ignatius G. Lopez</h4>
+                    <p class="text-sm text-gray-700 flex items-center gap-1 mt-1">
+                        <i data-lucide="phone" class="w-3 h-3"></i>
+                        +63 928 038855
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-gray-800 pl-4 py-3 bg-gray-50">
+                    <h4 class="text-sm font-bold text-gray-900">Director General Brig. Gen. Charito Plaza</h4>
+                    <p class="text-sm text-gray-700 flex items-center gap-1 mt-1">
+                        <i data-lucide="phone" class="w-3 h-3"></i>
+                        +63 917 5972573
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-gray-800 pl-4 py-3 bg-gray-50">
+                    <h4 class="text-sm font-bold text-gray-900">Undersecretary of Cabinet Secretary<br>USEC Dale S. Cabrera</h4>
+                    <p class="text-sm text-gray-700 flex items-center gap-1 mt-1">
+                        <i data-lucide="phone" class="w-3 h-3"></i>
+                        +63 917 5829895
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-gray-800 pl-4 py-3 bg-gray-50">
+                    <h4 class="text-sm font-bold text-gray-900">Administrator, SPDA<br>Congressman Gerry A. Salapuddin</h4>
+                    <p class="text-sm text-gray-700 flex items-center gap-1 mt-1">
+                        <i data-lucide="phone" class="w-3 h-3"></i>
+                        +63 917 1777669
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- Professional Portfolio Gallery -->
+        <div class="mt-12 border-t-2 border-gray-800 pt-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
+                <i data-lucide="image" class="w-5 h-5"></i>
+                Professional Portfolio & Achievements
+            </h2>
+            
+            <div class="masonry-gallery">
+                <img src="images/image_01.jpeg" alt="Achievement 1" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_02.jpeg" alt="Achievement 2" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_03.png" alt="Achievement 3" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_04.png" alt="Achievement 4" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_05.png" alt="Achievement 5" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_06.png" alt="Achievement 6" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_07.png" alt="Achievement 7" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_08.jpeg" alt="Achievement 8" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_09.jpeg" alt="Achievement 9" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_10.jpeg" alt="Achievement 10" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_11.jpeg" alt="Achievement 11" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_12.jpeg" alt="Achievement 12" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_13.jpeg" alt="Achievement 13" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_14.jpeg" alt="Achievement 14" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_15.jpeg" alt="Achievement 15" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_16.jpeg" alt="Achievement 16" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_17.jpeg" alt="Achievement 17" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_18.jpeg" alt="Achievement 18" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_19.jpeg" alt="Achievement 19" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_20.jpeg" alt="Achievement 20" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_21.jpeg" alt="Achievement 21" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_22.jpeg" alt="Achievement 22" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_23.jpeg" alt="Achievement 23" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_24.jpeg" alt="Achievement 24" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_25.jpeg" alt="Achievement 25" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_26.jpeg" alt="Achievement 26" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_27.jpeg" alt="Achievement 27" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_28.jpeg" alt="Achievement 28" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_29.jpeg" alt="Achievement 29" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_30.jpeg" alt="Achievement 30" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_31.jpeg" alt="Achievement 31" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_32.jpeg" alt="Achievement 32" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_33.jpeg" alt="Achievement 33" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_34.jpeg" alt="Achievement 34" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_36.jpeg" alt="Achievement 36" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_37.jpeg" alt="Achievement 37" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_38.jpeg" alt="Achievement 38" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_39.jpeg" alt="Achievement 39" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_40.jpeg" alt="Achievement 40" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_41.jpeg" alt="Achievement 41" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_42.jpeg" alt="Achievement 42" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_43.jpeg" alt="Achievement 43" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_44.jpeg" alt="Achievement 44" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_45.jpeg" alt="Achievement 45" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_46.jpeg" alt="Achievement 46" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_47.jpeg" alt="Achievement 47" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_48.jpeg" alt="Achievement 48" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_49.jpeg" alt="Achievement 49" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_50.jpeg" alt="Achievement 50" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_51.jpeg" alt="Achievement 51" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_52.jpeg" alt="Achievement 52" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_53.jpeg" alt="Achievement 53" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_54.jpeg" alt="Achievement 54" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_55.jpeg" alt="Achievement 55" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_56.jpeg" alt="Achievement 56" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_57.jpeg" alt="Achievement 57" class="rounded border border-gray-300 bg-gray-100">
+                <img src="images/image_60.jpeg" alt="Achievement 60" class="rounded border border-gray-300 bg-gray-100">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -16,21 +16,52 @@
 </section>
 
 <!-- Program Video -->
-<section class="py-16 bg-mm-gray">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-8 scroll-reveal">
-            <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-4">
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 scroll-reveal">
+            <p class="text-sm uppercase tracking-widest text-gray-500 mb-3">Our Programme</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-mm-black mb-4">
                 The Predators Programme
             </h2>
-            <p class="text-lg text-gray-600">
-                Discover what makes our program unique
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover how we're creating Malaysia's next generation of digital marketing professionals
             </p>
         </div>
-        <div class="scroll-reveal bg-black rounded-2xl overflow-hidden shadow-2xl" style="animation-delay: 0.1s;">
-            <video controls class="w-full" controlsList="nodownload">
-                <source src="/static/videos/the_predators_programme.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+
+        <div class="scroll-reveal" style="animation-delay: 0.1s;">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-black">
+                <video
+                    controls
+                    class="w-full"
+                    poster="/static/images/video-poster-predators.jpg"
+                    preload="metadata">
+                    <source src="/static/videos/the_predators_programme.mp4" type="video/mp4">
+                    <track kind="captions" />
+                    <!-- Poster image with AI-descriptive alt for fallback -->
+                    <img alt="Dynamic group photo of diverse Malaysian students and graduates from The Predators Programme, wearing matching red and white branded athletic-style jerseys with World Tower Legacy logo. Modern digital marketing training facility with LED screens displaying social media analytics and AI tools in background. Professional corporate group photography, students arranged in confident poses, mix of ages 18-25, representing Malaysian diversity. Bright modern lighting, Canon EOS R5, 24-70mm, f/4, vibrant colors emphasizing energy and professionalism, tech-forward educational environment."
+                         class="w-full" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Video description card -->
+            <div class="mt-8 bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-8 text-white">
+                <div class="flex items-start gap-4">
+                    <div class="flex flex-col gap-1 flex-shrink-0">
+                        <div class="w-1.5 h-12 bg-white"></div>
+                        <div class="w-1.5 h-12 bg-blue-600"></div>
+                        <div class="w-1.5 h-12 bg-yellow-400"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">Empowering Digital Leaders</h3>
+                        <p class="text-red-100 leading-relaxed">
+                            Watch how our TVET Diploma programme transforms students into skilled digital marketing professionals,
+                            each equipped with their own exclusive channel under World Tower Legacy. Learn about our comprehensive
+                            curriculum combining AI technology, retail management, and real-world digital marketing experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

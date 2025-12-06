@@ -5,7 +5,8 @@
       "Bash(then echo \"exists\")",
       "Bash(else echo \"does not exist\")",
       "Bash(fi:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

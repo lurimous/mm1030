@@ -1,0 +1,366 @@
+<style>
+    @keyframes glow-pulse {
+        0%, 100% {
+            box-shadow: 0 0 5px rgba(34, 197, 94, 0.5), 0 0 10px rgba(34, 197, 94, 0.3);
+        }
+        50% {
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.8), 0 0 20px rgba(34, 197, 94, 0.5), 0 0 30px rgba(34, 197, 94, 0.3);
+        }
+    }
+    
+    .date-confirmed {
+        background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        font-weight: 600;
+        color: #065f46;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.375rem;
+        animation: glow-pulse 2s ease-in-out infinite;
+        display: inline-block;
+    }
+</style>
+
+<!-- Hero Header -->
+<section class="relative py-16 bg-gradient-to-br from-gray-900 to-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-3">
+            mm1030
+        </h1>
+        <p class="text-lg text-gray-300">
+            10 Malaysian Towers + 30 International Towers (One Per Country)
+        </p>
+    </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="py-6 bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-gray-900">10</div>
+                <div class="text-sm text-gray-600">Malaysian Towers</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-gray-900">30</div>
+                <div class="text-sm text-gray-600">International Towers</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-gray-900">30+</div>
+                <div class="text-sm text-gray-600">Countries</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-green-600">1</div>
+                <div class="text-sm text-gray-600">Conquered</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Malaysian Towers -->
+<section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-blue-600">
+            Top 10 Malaysian Towers
+        </h2>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                    <tr>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">#</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Tower</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Location</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Owner</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Height</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Floors</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Date</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Organiser</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">1</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Merdeka 118</td>
+                        <td class="px-4 py-3 text-gray-700">Kuala Lumpur</td>
+                        <td class="px-4 py-3 text-gray-700">PNB Merdeka Ventures</td>
+                        <td class="px-4 py-3 text-gray-700">679m</td>
+                        <td class="px-4 py-3 text-gray-700">118</td>
+                        <td class="px-4 py-3"><span class="date-confirmed">31 August 2026</span></td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">2</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Petronas Twin Towers</td>
+                        <td class="px-4 py-3 text-gray-700">Kuala Lumpur</td>
+                        <td class="px-4 py-3 text-gray-700">Petronas</td>
+                        <td class="px-4 py-3 text-gray-700">452m</td>
+                        <td class="px-4 py-3 text-gray-700">88</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">3</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">The Exchange 106</td>
+                        <td class="px-4 py-3 text-gray-700">Kuala Lumpur</td>
+                        <td class="px-4 py-3 text-gray-700">Mulia Group</td>
+                        <td class="px-4 py-3 text-gray-700">445m</td>
+                        <td class="px-4 py-3 text-gray-700">106</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">4</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Four Seasons Place KL</td>
+                        <td class="px-4 py-3 text-gray-700">Kuala Lumpur</td>
+                        <td class="px-4 py-3 text-gray-700">Venus Assets</td>
+                        <td class="px-4 py-3 text-gray-700">343m</td>
+                        <td class="px-4 py-3 text-gray-700">65</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">5</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Telekom Tower</td>
+                        <td class="px-4 py-3 text-gray-700">Kuala Lumpur</td>
+                        <td class="px-4 py-3 text-gray-700">Telekom Malaysia</td>
+                        <td class="px-4 py-3 text-gray-700">310m</td>
+                        <td class="px-4 py-3 text-gray-700">55</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">6</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">The Astaka Tower A</td>
+                        <td class="px-4 py-3 text-gray-700">Johor Bahru</td>
+                        <td class="px-4 py-3 text-gray-700">Daing A. Malek</td>
+                        <td class="px-4 py-3 text-gray-700">270m</td>
+                        <td class="px-4 py-3 text-gray-700">65</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">7</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">KL Tower</td>
+                        <td class="px-4 py-3 text-gray-700">Kuala Lumpur</td>
+                        <td class="px-4 py-3 text-gray-700">Federal Territory</td>
+                        <td class="px-4 py-3 text-gray-700">421m</td>
+                        <td class="px-4 py-3 text-gray-700">-</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">8</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">KOMTAR Tower</td>
+                        <td class="px-4 py-3 text-gray-700">George Town, Penang</td>
+                        <td class="px-4 py-3 text-gray-700">Penang State Govt</td>
+                        <td class="px-4 py-3 text-gray-700">249m</td>
+                        <td class="px-4 py-3 text-gray-700">65</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">9</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Kuantan Tower</td>
+                        <td class="px-4 py-3 text-gray-700">Kuantan, Pahang</td>
+                        <td class="px-4 py-3 text-gray-700">Public</td>
+                        <td class="px-4 py-3 text-gray-700">6m</td>
+                        <td class="px-4 py-3 text-gray-700">-</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-green-100 text-green-600 rounded text-xs">Conquered</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">10</td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Dr. Suwaibah Nasir Batu Caves Stairs climbing challenge</td>
+                        <td class="px-4 py-3 text-gray-700">Batu Caves</td>
+                        <td class="px-4 py-3 text-gray-700">Batu Caves Management</td>
+                        <td class="px-4 py-3 text-gray-700">256m</td>
+                        <td class="px-4 py-3 text-gray-700">60</td>
+                        <td class="px-4 py-3"><span class="date-confirmed">28 March 2026</span></td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- International Towers -->
+<section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-4 border-red-600">
+            30 International Towers (One Per Country)
+        </h2>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm bg-white">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                    <tr>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">#</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Country</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Tower</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">City</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Owner</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Height</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Floors</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Date</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Organiser</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">1</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/AE/flat/32.png" alt="UAE" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">UAE</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Burj Khalifa</td>
+                        <td class="px-4 py-3 text-gray-700">Dubai</td>
+                        <td class="px-4 py-3 text-gray-700">Emaar Properties</td>
+                        <td class="px-4 py-3 text-gray-700">828m</td>
+                        <td class="px-4 py-3 text-gray-700">163</td>
+                        <td class="px-4 py-3"><span class="date-confirmed">25 December 2026</span></td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">2</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/CN/flat/32.png" alt="China" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">China</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Shanghai Tower</td>
+                        <td class="px-4 py-3 text-gray-700">Shanghai</td>
+                        <td class="px-4 py-3 text-gray-700">Shanghai Tower Co.</td>
+                        <td class="px-4 py-3 text-gray-700">632m</td>
+                        <td class="px-4 py-3 text-gray-700">128</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">3</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/SA/flat/32.png" alt="Saudi Arabia" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">Saudi Arabia</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Makkah Royal Clock Tower</td>
+                        <td class="px-4 py-3 text-gray-700">Mecca</td>
+                        <td class="px-4 py-3 text-gray-700">Saudi Binladin Group</td>
+                        <td class="px-4 py-3 text-gray-700">601m</td>
+                        <td class="px-4 py-3 text-gray-700">120</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">4</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/KR/flat/32.png" alt="South Korea" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">South Korea</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Lotte World Tower</td>
+                        <td class="px-4 py-3 text-gray-700">Seoul</td>
+                        <td class="px-4 py-3 text-gray-700">Lotte Corporation</td>
+                        <td class="px-4 py-3 text-gray-700">555m</td>
+                        <td class="px-4 py-3 text-gray-700">123</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">5</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/US/flat/32.png" alt="USA" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">USA</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">One World Trade Center</td>
+                        <td class="px-4 py-3 text-gray-700">New York</td>
+                        <td class="px-4 py-3 text-gray-700">Port Authority NY/NJ</td>
+                        <td class="px-4 py-3 text-gray-700">541m</td>
+                        <td class="px-4 py-3 text-gray-700">94</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">6</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/RU/flat/32.png" alt="Russia" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">Russia</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Lakhta Center</td>
+                        <td class="px-4 py-3 text-gray-700">St. Petersburg</td>
+                        <td class="px-4 py-3 text-gray-700">Gazprom</td>
+                        <td class="px-4 py-3 text-gray-700">462m</td>
+                        <td class="px-4 py-3 text-gray-700">87</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">7</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/VN/flat/32.png" alt="Vietnam" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">Vietnam</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Vincom Landmark 81</td>
+                        <td class="px-4 py-3 text-gray-700">Ho Chi Minh City</td>
+                        <td class="px-4 py-3 text-gray-700">Vingroup</td>
+                        <td class="px-4 py-3 text-gray-700">461m</td>
+                        <td class="px-4 py-3 text-gray-700">81</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">8</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/TW/flat/32.png" alt="Taiwan" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">Taiwan</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">Taipei 101</td>
+                        <td class="px-4 py-3 text-gray-700">Taipei</td>
+                        <td class="px-4 py-3 text-gray-700">Taipei Financial Center</td>
+                        <td class="px-4 py-3 text-gray-700">508m</td>
+                        <td class="px-4 py-3 text-gray-700">101</td>
+                        <td class="px-4 py-3 text-gray-700">To be confirmed</td>
+                        <td class="px-4 py-3 text-gray-700">WTL</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Upcoming</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium text-gray-900">9</td>
+                        <td class="px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <img src="https://flagsapi.com/HK/flat/32.png" alt="Hong Kong" class="w-6 h-4 rounded shadow-sm"/>
+                                <span class="text-gray-900">Hong Kong</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-3 text-gray-700 font-medium">International Commerce Centre</td>
+                        <td class="px-4 py-3

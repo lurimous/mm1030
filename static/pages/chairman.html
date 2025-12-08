@@ -23,7 +23,6 @@
             </div>
 
             <div class="scroll-reveal" style="animation-delay: 0.2s;">
-                <p class="text-sm uppercase tracking-widest text-gray-500 mb-4">By</p>
                 <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-4">Dato' Seri Farid Ibrahim</h2>
                 <div class="space-y-2 text-gray-700 mb-6">
                     <p class="flex items-center gap-2">
@@ -32,27 +31,41 @@
                     </p>
                     <p class="flex items-center gap-2">
                         <i data-lucide="globe" class="w-5 h-5 text-mm-black"></i>
-                        <span>Special Envoy for Trade & Investment (SPDA)</span>
+                        <span>Special Envoy for Trade & Investment Southern Philippines Development Authority - SPDA<br>(Office of the President of the Philippines)</span>
                     </p>
                     <p class="flex items-center gap-2">
                         <i data-lucide="award" class="w-5 h-5 text-mm-black"></i>
                         <span>Corporate Advisor | Master Planner | Sports Diplomacy Advocate</span>
                     </p>
                 </div>
+                <div class="mt-6">
+                    <button type="button" onclick="openBiographyModal()" class="bg-mm-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 inline-flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-5 h-5"></i>
+                        <span>Chairman Biography</span>
+                    </button>
+                </div>
             </div>
         </div>
 
         <!-- Welcome Message -->
-        <div class="bg-mm-gray rounded-xl p-8 md:p-12 mb-16 scroll-reveal">
-            <p class="text-xl md:text-2xl text-gray-700 leading-relaxed mb-6">
-                Welcome to the official MM1030 Tower Climb platform — a historic movement that unites sports, national identity, international diplomacy, and global peace advocacy under one extraordinary mission.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                The MM1030 initiative is more than an athletic challenge. It is a <strong>nation-building platform</strong>, a <strong>global branding opportunity</strong>, and a <strong>symbol of Malaysia's soft power</strong> on the world stage.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                At the heart of this movement stands an exceptional Malaysian, <strong>Dr. Suwaibah Muhammad Nasir</strong>, a world-renowned ultra-endurance athlete and humanitarian whose courage, discipline, and determination inspire millions.
-            </p>
+        <div class="bg-mm-gray rounded-xl p-8 md:p-12 mb-16 scroll-reveal relative" style="text-align: justify;">
+            <!-- Opening Quote Mark -->
+            <div class="absolute top-4 left-4 md:top-6 md:left-8 text-6xl md:text-8xl text-mm-black opacity-20 font-serif leading-none">"</div>
+
+            <div class="relative z-10 pl-8 md:pl-16 pr-8 md:pr-16">
+                <p class="text-2xl md:text-3xl lg:text-4xl text-gray-800 leading-relaxed mb-8 font-light">
+                    Welcome to the official MM1030 Tower Climb platform — a historic movement that unites sports, national identity, international diplomacy, and global peace advocacy under one extraordinary mission.
+                </p>
+                <p class="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+                    The MM1030 initiative is more than an athletic challenge. It is a <strong class="font-extrabold text-mm-black text-2xl md:text-3xl">nation-building platform</strong>, a <strong class="font-extrabold text-mm-black text-2xl md:text-3xl">global branding opportunity</strong>, and a <strong class="font-extrabold text-mm-black text-2xl md:text-3xl">symbol of Malaysia's soft power</strong> on the world stage.
+                </p>
+                <p class="text-xl md:text-2xl text-gray-700 leading-relaxed">
+                    At the heart of this movement stands an exceptional Malaysian, <strong class="font-extrabold text-mm-black text-2xl md:text-3xl">Dr. Suwaibah Muhammad Nasir</strong>, a world-renowned ultra-endurance athlete and humanitarian whose courage, discipline, and determination inspire millions.
+                </p>
+            </div>
+
+            <!-- Closing Quote Mark -->
+            <div class="absolute bottom-4 right-4 md:bottom-6 md:right-8 text-6xl md:text-8xl text-mm-black opacity-20 font-serif leading-none">"</div>
         </div>
 
         <!-- Mission Points -->
@@ -308,3 +321,117 @@
         </div>
     </div>
 </section>
+
+<!-- Biography Modal -->
+<div id="biographyModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4" onclick="closeBiographyModal()">
+    <div class="bg-white rounded-xl max-w-4xl max-h-[90vh] overflow-y-auto relative" onclick="event.stopPropagation()">
+        <div class="sticky top-0 bg-mm-black text-white p-6 flex items-center justify-between rounded-t-xl">
+            <h2 class="text-2xl font-bold">Chairman Biography</h2>
+            <button type="button" onclick="closeBiographyModal()" class="text-white hover:text-gray-300 transition-colors" aria-label="Close biography modal">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div class="p-8 prose max-w-none" style="text-align: justify;">
+            <h1 class="text-3xl font-bold text-mm-black mb-6">CHAIRMAN BIOGRAPHY FOR MM1030<br>WORLD TOWER LEGACY</h1>
+
+            <h2 class="text-2xl font-bold text-mm-black mb-4">HIS EXCELLENCY PEHIN SERI DI RAJA DATO' SERI FARID IBRAHIM</h2>
+
+            <div class="space-y-2 mb-6 text-gray-700">
+                <p>Special Envoy for Trade & Investment to the Southern Philippines Development Authority (SPDA)<br>Office of the President of the Philippines</p>
+                <p>Chairman, World Tower Legacy (WTL)</p>
+                <p>Executive Chairman, Petroleum World Trade Centre Sdn Bhd (PWTC)</p>
+                <p>Executive Chairman, Lekas Takzim Sdn Bhd</p>
+            </div>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">INTRODUCTION</h3>
+            <p class="text-gray-700 mb-6">His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim is a distinguished Malaysian–Filipino statesman, economic strategist, and international investment diplomat whose work spans more than three decades across Malaysia, the Philippines, and the wider ASEAN region. He is widely recognised for his leadership in major national development initiatives, cross-border economic cooperation, and visionary contributions to regional growth.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">NOBLE LINEAGE & HERITAGE</h3>
+            <p class="text-gray-700 mb-4">His Excellency descends from a lineage of honour and historical significance. He is the first direct-line descendant of the first son of Dato Sagor, the revered Perak warrior who stood as a symbol of courage, loyalty, and steadfastness in Malay history.</p>
+            <p class="text-gray-700 mb-6">Carrying both Malaysian and Filipino heritage, His Excellency is a bridge between two nations and represents a lineage rooted in leadership, diplomacy, and service to the people.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">DIPLOMATIC APPOINTMENT</h3>
+            <p class="text-gray-700 mb-4">His Excellency presently serves as the Special Envoy for Trade and Investment to the Southern Philippines Development Authority (SPDA), a federal instrumentality that reports directly to the Office of the President of the Republic of the Philippines.</p>
+            <p class="text-gray-700 mb-3">In this esteemed capacity, His Excellency advances:</p>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+                <li>Bilateral trade and investment cooperation</li>
+                <li>Regional infrastructure initiatives</li>
+                <li>Food security, agricultural modernisation & halal industry development</li>
+                <li>Community upliftment programmes</li>
+                <li>Peace-supporting socio-economic development in Mindanao</li>
+                <li>Cross-border integration under BIMP–EAGA and RCEP (Regional Comprehensive Economic Partnership)</li>
+            </ul>
+            <p class="text-gray-700 mb-6">His diplomatic role exemplifies trust, influence, and commitment to regional advancement.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">INTERNATIONAL COLLABORATION & GLOBAL BRANDING</h3>
+            <p class="text-gray-700 mb-4">His Excellency is the Chairman of World Tower Legacy (WTL), the Malaysian-led body collaborating with the World Federation of Great Towers (WFGT)—an international organisation representing the world's most iconic architectural landmarks.</p>
+            <p class="text-gray-700 mb-3">Through this partnership, His Excellency advances:</p>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+                <li>Global sports diplomacy</li>
+                <li>Tourism and cultural branding</li>
+                <li>International tower-climbing initiatives</li>
+                <li>Malaysia's and the Philippines' presence on the global stage</li>
+            </ul>
+            <p class="text-gray-700 mb-6">He jointly leads the MM1030 Global Tower Climb Legacy with Malaysia's endurance icon Dr. Suwaibah Nasir, a programme spanning 30 years for 10 towers nationwide and 30 towers worldwide.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">DEVELOPMENT LEADERSHIP IN MALAYSIA</h3>
+            <p class="text-gray-700 mb-3">His Excellency serves as:</p>
+            <p class="text-gray-700 mb-4"><strong>Executive Chairman — Petroleum World Trade Centre Sdn. Bhd. (PWTC)</strong><br>
+            Leader of the 3.9 million metric-ton petroleum storage megaproject on 374.4 acres of reclaimed land in Umbai, Melaka — positioning Malaysia as a future energy and maritime centre of excellence.</p>
+            <p class="text-gray-700 mb-6"><strong>Executive Chairman — Lekas Takzim Sdn Bhd</strong><br>
+            Steward of the 34.4 km Johor Bahru–Pasir Gudang Elevated Highway (PAGE), a long-term concession under Malaysia's modern infrastructure portfolio.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">REGIONAL ECONOMIC ADVOCACY</h3>
+            <p class="text-gray-700 mb-3">Under the SPDA diplomatic framework, His Excellency champions transformative initiatives including:</p>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+                <li>Basilan International Airport (Lamitan)</li>
+                <li>Zamboanga Air Logistics Hub</li>
+                <li>Economic, tourism & industrial masterplans</li>
+                <li>Halal export and certification centres</li>
+                <li>Organic agriculture and food security reforms</li>
+            </ul>
+            <p class="text-gray-700 mb-6">These endeavours strengthen regional stability, enhance connectivity, and support the long-term prosperity of the Southern Philippines.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">EDUCATION</h3>
+            <p class="text-gray-700 mb-6">His Excellency was educated at Brunel University, United Kingdom, where he earned a BTEC in Building Studies, forming a strong foundation for his lifelong engagement in infrastructure and national development including sports development advocacy involving buildings and iconic towers.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">PERSONAL CHARACTER</h3>
+            <p class="text-gray-700 mb-3">His Excellency is known for his:</p>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+                <li>Diplomatic finesse</li>
+                <li>Leadership grounded in noble heritage</li>
+                <li>Commitment to national and regional service</li>
+                <li>Strong sense of duty, honour, and integrity</li>
+                <li>Ability to unify diverse stakeholders in pursuit of shared goals</li>
+            </ul>
+            <p class="text-gray-700 mb-6">His cross-cultural identity and lineage distinguish him as a respected figure in ASEAN's political, social, and economic spheres.</p>
+
+            <hr class="my-8 border-gray-300"/>
+
+            <h3 class="text-xl font-bold text-mm-black mb-4">CONCLUSION</h3>
+            <p class="text-gray-700 mb-6">His Excellency Pehin Seri Di Raja Dato' Seri Farid Ibrahim stands as a respected Malaysian–Filipino leader whose noble ancestry, diplomatic mandate, and transformative development initiatives exemplify dedication to the advancement of Malaysia, the Philippines, and the wider ASEAN region.</p>
+            <p class="text-gray-700">His presence reflects his distinguished service, cross-border influence, and enduring commitment to peace, progress, and unity among nations.</p>
+        </div>
+        <div class="sticky bottom-0 bg-gray-100 p-4 flex justify-end rounded-b-xl">
+            <button type="button" onclick="closeBiographyModal()" class="bg-mm-black text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+</div>

@@ -618,6 +618,7 @@
                             </span>
                             <div class="dropdown-menu">
                                 <a href="#videos" onclick="navigateTo('videos'); return false;">Videos</a>
+                                <a href="#gallery" onclick="navigateTo('gallery'); return false;">Gallery</a>
                                 <a href="#predator" onclick="navigateTo('predator'); return false;">Predator</a>
                             </div>
                         </li>
@@ -673,6 +674,7 @@
                     </button>
                     <div class="mobile-dropdown-content pl-4">
                         <a href="#videos" onclick="navigateTo('videos'); return false;" class="block px-3 py-2 text-gray-600 hover:text-mm-black hover:bg-mm-gray rounded-md text-sm transition-all duration-300">Videos</a>
+                        <a href="#gallery" onclick="navigateTo('gallery'); return false;" class="block px-3 py-2 text-gray-600 hover:text-mm-black hover:bg-mm-gray rounded-md text-sm transition-all duration-300">Gallery</a>
                         <a href="#predator" onclick="navigateTo('predator'); return false;" class="block px-3 py-2 text-gray-600 hover:text-mm-black hover:bg-mm-gray rounded-md text-sm transition-all duration-300">Predator</a>
                     </div>
                 </li>
@@ -969,6 +971,35 @@
         document.getElementById('video-modal').addEventListener('click', (e) => {
             if (e.target.id === 'video-modal') {
                 closeVideoModal();
+            }
+        });
+
+        // Biography modal functions
+        function openBiographyModal() {
+            const modal = document.getElementById('biographyModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                // Re-initialize lucide icons in the modal
+                lucide.createIcons();
+            }
+        }
+
+        function closeBiographyModal() {
+            const modal = document.getElementById('biographyModal');
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close biography modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modal = document.getElementById('biographyModal');
+                if (modal && !modal.classList.contains('hidden')) {
+                    closeBiographyModal();
+                }
             }
         });
 

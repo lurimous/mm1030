@@ -1,0 +1,212 @@
+<!-- Gallery Page Header -->
+<section class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center scroll-reveal">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Gallery
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto">
+                Capturing Moments from Our Tower Running Journey
+            </p>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Explore our collection of memorable moments, achievements, and experiences
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Stats -->
+<section class="py-6 bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-gray-900">0</div>
+                <div class="text-sm text-gray-600">Photos</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-gray-900">3</div>
+                <div class="text-sm text-gray-600">Videos</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-gray-900">3</div>
+                <div class="text-sm text-gray-600">Events Captured</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Videos Section -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-4">
+                Videos & Media
+            </h2>
+            <p class="text-lg text-gray-600">
+                Watch our journey conquering towers around the world
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- MM1030 Trailer -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 card-hover scroll-reveal">
+                <div class="relative bg-black aspect-video group cursor-pointer" onclick="openVideoModal('/static/videos/mm1030 trailer.mp4', 'MM1030 Mission Trailer')">
+                    <video class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity duration-300" muted>
+                        <source src="/static/videos/mm1030 trailer.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-full p-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="play" class="w-12 h-12 text-mm-black"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="video" class="w-5 h-5 text-mm-black"></i>
+                        <h3 class="text-xl font-bold text-mm-black">MM1030 Mission Trailer</h3>
+                    </div>
+                    <p class="text-gray-700">Watch the official mission trailer showcasing the journey to conquer 10 Malaysian towers and 30 global towers.</p>
+                </div>
+            </div>
+
+            <!-- Towers Conquered -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 card-hover scroll-reveal" style="animation-delay: 0.1s;">
+                <div class="relative bg-black aspect-video group cursor-pointer" onclick="openVideoModal('/static/videos/mm1030 towers, conquered.mp4', 'Towers Conquered')">
+                    <video class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity duration-300" muted>
+                        <source src="/static/videos/mm1030 towers, conquered.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-full p-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="play" class="w-12 h-12 text-mm-black"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="building-2" class="w-5 h-5 text-mm-black"></i>
+                        <h3 class="text-xl font-bold text-mm-black">Towers Conquered</h3>
+                    </div>
+                    <p class="text-gray-700">Highlights of the towers successfully conquered throughout the MM1030 mission journey.</p>
+                </div>
+            </div>
+
+            <!-- Christina Reaching Out -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 card-hover scroll-reveal" style="animation-delay: 0.2s;">
+                <div class="relative bg-black aspect-video group cursor-pointer" onclick="openVideoModal('/static/videos/christina reaching out video.mp4', 'Christina Reaching Out')">
+                    <video class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity duration-300" muted>
+                        <source src="/static/videos/christina reaching out video.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-full p-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="play" class="w-12 h-12 text-mm-black"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="users" class="w-5 h-5 text-mm-black"></i>
+                        <h3 class="text-xl font-bold text-mm-black">Christina Reaching Out</h3>
+                    </div>
+                    <p class="text-gray-700">Special message and outreach video from Christina supporting the MM1030 mission.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photos Coming Soon -->
+<section class="py-20 bg-mm-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center py-20">
+            <div class="bg-white rounded-2xl p-16 shadow-lg scroll-reveal">
+                <i data-lucide="image" class="w-24 h-24 text-gray-400 mx-auto mb-6"></i>
+                <h3 class="text-4xl font-bold text-mm-black mb-4">Photos Coming Soon</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                    Our photo gallery is currently being prepared. We'll be sharing amazing photos from our tower running adventures, training sessions, and events.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                        <span>Training Sessions</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                        <span>Tower Conquests</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                        <span>Team Moments</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                        <span>Event Highlights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Categories Preview -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-4">
+                What to Expect
+            </h2>
+            <p class="text-lg text-gray-600">
+                Categories we'll be featuring in our gallery
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-mm-gray rounded-xl p-8 text-center scroll-reveal hover:shadow-lg transition-all duration-300">
+                <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="mountain" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-mm-black mb-2">Tower Runs</h3>
+                <p class="text-gray-600">Action shots from our tower running events and challenges</p>
+            </div>
+
+            <div class="bg-mm-gray rounded-xl p-8 text-center scroll-reveal hover:shadow-lg transition-all duration-300" style="animation-delay: 0.1s;">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="dumbbell" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-mm-black mb-2">Training</h3>
+                <p class="text-gray-600">Behind-the-scenes training sessions and preparation</p>
+            </div>
+
+            <div class="bg-mm-gray rounded-xl p-8 text-center scroll-reveal hover:shadow-lg transition-all duration-300" style="animation-delay: 0.2s;">
+                <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="trophy" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-mm-black mb-2">Achievements</h3>
+                <p class="text-gray-600">Celebrating milestones and personal records</p>
+            </div>
+
+            <div class="bg-mm-gray rounded-xl p-8 text-center scroll-reveal hover:shadow-lg transition-all duration-300" style="animation-delay: 0.3s;">
+                <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="users" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-mm-black mb-2">Team Events</h3>
+                <p class="text-gray-600">Group activities and community gatherings</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-20 bg-mm-black text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 scroll-reveal">
+            Want to Be Featured?
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto text-gray-300 scroll-reveal" style="animation-delay: 0.1s;">
+            Join our tower running community and be part of our growing gallery of champions.
+        </p>
+        <button type="button" onclick="navigateTo('contact')" class="bg-white text-mm-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-200 transition-all duration-300 btn-hover inline-flex items-center gap-2 scroll-reveal" style="animation-delay: 0.2s;">
+            <i data-lucide="mail" class="w-6 h-6"></i>
+            <span>Get In Touch</span>
+        </button>
+    </div>
+</section>

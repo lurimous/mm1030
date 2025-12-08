@@ -279,281 +279,588 @@
     </div>
 </section>
 
-<!-- Tower Roadmap Section -->
-<section class="py-20 bg-mm-gray overflow-hidden">
+<!-- All Towers Graph Section -->
+<section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-4xl md:text-5xl font-bold text-mm-black border-b-2 border-mm-black inline-block pb-2 mb-6">
-                Tower Roadmap
+                All 40 Towers
             </h2>
-            <p class="text-lg text-gray-700">Top 10 Towers sorted by height - Tallest to Shortest</p>
+            <p class="text-lg text-gray-700">Complete visualization of MM1030 mission targets</p>
         </div>
 
-        <!-- Horizontal Tower Comparison -->
-        <div class="relative">
-            <!-- Scrollable container -->
-            <div class="overflow-x-auto pb-32">
-                <div class="flex items-end justify-center gap-4 md:gap-6 min-w-max px-4">
-                    
-                    <!-- Burj Khalifa - 830m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 415px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-gray-800 to-gray-600 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- UAE Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/AE/flat/64.png" alt="UAE Flag" class="w-full h-full object-cover"/>
+        <!-- Towers Grid - 10 per row -->
+        <div class="space-y-12">
+            <!-- Row 1: Towers 1-10 -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 1-10</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                    <!-- Burj Khalifa - 828m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-blue-700 to-blue-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 100%;">
+                                <img src="https://flagsapi.com/AE/flat/32.png" alt="UAE" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Burj Khalifa</p>
-                                <p class="text-xs text-gray-600">Dubai, UAE</p>
-                                <p class="text-xs text-gray-500">830m</p>
-                            </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Burj Khalifa</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">828m</p>
                         </div>
                     </div>
 
                     <!-- Merdeka 118 - 679m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 339px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- Malaysian Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/MY/flat/64.png" alt="Malaysian Flag" class="w-full h-full object-cover"/>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 82%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Merdeka 118</p>
-                                <p class="text-xs text-gray-600">Kuala Lumpur, MY</p>
-                                <p class="text-xs text-gray-500">679m</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Merdeka 118</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">679m</p>
+                        </div>
+                    </div>
+
+                    <!-- Tokyo Skytree - 634m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-purple-700 to-purple-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 77%;">
+                                <img src="https://flagsapi.com/JP/flat/32.png" alt="JP" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Tokyo Skytree</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">634m</p>
                         </div>
                     </div>
 
                     <!-- Shanghai Tower - 632m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 316px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-blue-800 to-blue-600 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- China Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/CN/flat/64.png" alt="China Flag" class="w-full h-full object-cover"/>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-yellow-700 to-yellow-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 76%;">
+                                <img src="https://flagsapi.com/CN/flat/32.png" alt="CN" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Shanghai Tower</p>
-                                <p class="text-xs text-gray-600">Shanghai, China</p>
-                                <p class="text-xs text-gray-500">632m</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Shanghai Tower</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">632m</p>
+                        </div>
+                    </div>
+
+                    <!-- Makkah Clock - 601m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-green-700 to-green-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 73%;">
+                                <img src="https://flagsapi.com/SA/flat/32.png" alt="SA" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Makkah Clock</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">601m</p>
+                        </div>
+                    </div>
+
+                    <!-- Lotte World Tower - 555m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-indigo-700 to-indigo-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 67%;">
+                                <img src="https://flagsapi.com/KR/flat/32.png" alt="KR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Lotte World</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">555m</p>
                         </div>
                     </div>
 
                     <!-- CN Tower - 553m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 276px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-purple-800 to-purple-600 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- Canada Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/CA/flat/64.png" alt="Canada Flag" class="w-full h-full object-cover"/>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-pink-700 to-pink-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 67%;">
+                                <img src="https://flagsapi.com/CA/flat/32.png" alt="CA" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">CN Tower</p>
-                                <p class="text-xs text-gray-600">Toronto, Canada</p>
-                                <p class="text-xs text-gray-500">553m</p>
-                            </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">CN Tower</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">553m</p>
                         </div>
                     </div>
 
-                    <!-- Petronas Twin Towers - 452m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 226px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-yellow-600 to-yellow-400 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- Malaysian Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/MY/flat/64.png" alt="Malaysian Flag" class="w-full h-full object-cover"/>
+                    <!-- One World Trade - 541m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-cyan-700 to-cyan-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 65%;">
+                                <img src="https://flagsapi.com/US/flat/32.png" alt="US" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Petronas Twin Towers</p>
-                                <p class="text-xs text-gray-600">Kuala Lumpur, MY</p>
-                                <p class="text-xs text-gray-500">452m</p>
-                            </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">One WTC</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">541m</p>
                         </div>
                     </div>
 
-                    <!-- Willis Tower - 442m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 221px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-indigo-800 to-indigo-600 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- USA Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/US/flat/64.png" alt="USA Flag" class="w-full h-full object-cover"/>
+                    <!-- Taipei 101 - 508m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-teal-700 to-teal-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 61%;">
+                                <img src="https://flagsapi.com/TW/flat/32.png" alt="TW" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Willis Tower</p>
-                                <p class="text-xs text-gray-600">Chicago, USA</p>
-                                <p class="text-xs text-gray-500">442m</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Taipei 101</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">508m</p>
+                        </div>
+                    </div>
+
+                    <!-- ICC Hong Kong - 484m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-orange-700 to-orange-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 58%;">
+                                <img src="https://flagsapi.com/HK/flat/32.png" alt="HK" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">ICC HK</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">484m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Towers 11-20 -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 11-20</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                    <!-- Lakhta Center - 462m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-slate-700 to-slate-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 56%;">
+                                <img src="https://flagsapi.com/RU/flat/32.png" alt="RU" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Lakhta</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">462m</p>
+                        </div>
+                    </div>
+
+                    <!-- Vincom Landmark - 461m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-rose-700 to-rose-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 56%;">
+                                <img src="https://flagsapi.com/VN/flat/32.png" alt="VN" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Landmark 81</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">461m</p>
+                        </div>
+                    </div>
+
+                    <!-- Petronas Towers - 452m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 55%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Petronas</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">452m</p>
+                        </div>
+                    </div>
+
+                    <!-- Exchange 106 - 445m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 54%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Exchange 106</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">445m</p>
                         </div>
                     </div>
 
                     <!-- KL Tower - 421m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 210px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-blue-600 to-blue-400 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- Malaysian Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/MY/flat/64.png" alt="Malaysian Flag" class="w-full h-full object-cover"/>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 51%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">KL Tower</p>
-                                <p class="text-xs text-gray-600">Kuala Lumpur, MY</p>
-                                <p class="text-xs text-gray-500">421m</p>
-                            </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">KL Tower</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">421m</p>
                         </div>
                     </div>
 
-                    <!-- Empire State Building - 381m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 190px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-slate-700 to-slate-500 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building-2" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- USA Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/US/flat/64.png" alt="USA Flag" class="w-full h-full object-cover"/>
+                    <!-- Al Hamra - 413m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-lime-700 to-lime-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 50%;">
+                                <img src="https://flagsapi.com/KW/flat/32.png" alt="KW" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Empire State Building</p>
-                                <p class="text-xs text-gray-600">New York, USA</p>
-                                <p class="text-xs text-gray-500">381m</p>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Al Hamra</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">413m</p>
+                        </div>
+                    </div>
+
+                    <!-- Autograph Tower - 383m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-amber-700 to-amber-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 46%;">
+                                <img src="https://flagsapi.com/ID/flat/32.png" alt="ID" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Autograph</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">383m</p>
+                        </div>
+                    </div>
+
+                    <!-- Four Seasons KL - 343m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 41%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Four Seasons</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">343m</p>
                         </div>
                     </div>
 
                     <!-- Eiffel Tower - 330m -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 165px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-orange-800 to-orange-600 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- France Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/FR/flat/64.png" alt="France Flag" class="w-full h-full object-cover"/>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-sky-700 to-sky-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 40%;">
+                                <img src="https://flagsapi.com/FR/flat/32.png" alt="FR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Eiffel Tower</p>
-                                <p class="text-xs text-gray-600">Paris, France</p>
-                                <p class="text-xs text-gray-500">330m</p>
-                            </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Eiffel Tower</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">330m</p>
                         </div>
                     </div>
 
-                    <!-- Avala Tower - 205m (Conquered) -->
-                    <div class="tower-item flex flex-col items-center" style="min-width: 100px;">
-                        <div class="relative" style="height: 102px; width: 80px;">
-                            <div class="absolute bottom-0 w-full bg-gradient-to-t from-green-800 to-green-600 rounded-t-lg shadow-xl" style="height: 100%;">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i data-lucide="building" class="w-8 h-8 text-white opacity-50"></i>
-                                </div>
-                            </div>
-                            <!-- Serbia Flag Badge -->
-                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 rounded overflow-hidden shadow-md">
-                                <img src="https://flagsapi.com/RS/flat/64.png" alt="Serbia Flag" class="w-full h-full object-cover"/>
-                            </div>
-                            <!-- Conquered Badge -->
-                            <div class="absolute -top-8 left-1/2 -translate-x-1/2">
-                                <div class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold whitespace-nowrap flex items-center gap-1">
-                                    <i data-lucide="check" class="w-3 h-3"></i>
-                                    <span>Conquered</span>
-                                </div>
+                    <!-- Q1 Tower - 323m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-emerald-700 to-emerald-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 39%;">
+                                <img src="https://flagsapi.com/AU/flat/32.png" alt="AU" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
                             </div>
                         </div>
-                        <div class="mt-8 transform rotate-45 origin-top-left">
-                            <div class="whitespace-nowrap">
-                                <p class="text-sm font-bold text-mm-black">Avala Tower</p>
-                                <p class="text-xs text-gray-600">Belgrade, Serbia</p>
-                                <p class="text-xs text-gray-500">205m</p>
-                            </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Q1 Tower</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">323m</p>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <!-- Scroll hint for mobile -->
-            <div class="md:hidden text-center mt-8 text-sm text-gray-500 flex items-center justify-center gap-2">
-                <i data-lucide="arrow-left" class="w-4 h-4"></i>
-                <span>Scroll to see all towers</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <!-- Row 3: Towers 21-30 -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 21-30</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                    <!-- Palais Royale - 320m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-fuchsia-700 to-fuchsia-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 39%;">
+                                <img src="https://flagsapi.com/IN/flat/32.png" alt="IN" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Palais Royale</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">320m</p>
+                        </div>
+                    </div>
+
+                    <!-- MahaNakhon - 314m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-violet-700 to-violet-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 38%;">
+                                <img src="https://flagsapi.com/TH/flat/32.png" alt="TH" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">MahaNakhon</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">314m</p>
+                        </div>
+                    </div>
+
+                    <!-- Telekom Tower - 310m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 37%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Telekom</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">310m</p>
+                        </div>
+                    </div>
+
+                    <!-- The Shard - 310m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-zinc-700 to-zinc-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 37%;">
+                                <img src="https://flagsapi.com/GB/flat/32.png" alt="GB" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">The Shard</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">310m</p>
+                        </div>
+                    </div>
+
+                    <!-- Aspire Tower - 300m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-neutral-700 to-neutral-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 36%;">
+                                <img src="https://flagsapi.com/QA/flat/32.png" alt="QA" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Aspire</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">300m</p>
+                        </div>
+                    </div>
+
+                    <!-- Guoco Tower - 290m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-stone-700 to-stone-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 35%;">
+                                <img src="https://flagsapi.com/SG/flat/32.png" alt="SG" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Guoco</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">290m</p>
+                        </div>
+                    </div>
+
+                    <!-- Skyland Istanbul - 284m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-900 to-red-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 34%;">
+                                <img src="https://flagsapi.com/TR/flat/32.png" alt="TR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Skyland</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">284m</p>
+                        </div>
+                    </div>
+
+                    <!-- Torre KOI - 279m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-green-900 to-green-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 34%;">
+                                <img src="https://flagsapi.com/MX/flat/32.png" alt="MX" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Torre KOI</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">279m</p>
+                        </div>
+                    </div>
+
+                    <!-- Astaka Tower - 270m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 33%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Astaka</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">270m</p>
+                        </div>
+                    </div>
+
+                    <!-- PBCom Tower - 259m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-blue-900 to-blue-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 31%;">
+                                <img src="https://flagsapi.com/PH/flat/32.png" alt="PH" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">PBCom</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">259m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4: Towers 31-40 -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 31-40</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                    <!-- Commerzbank - 259m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-yellow-900 to-yellow-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 31%;">
+                                <img src="https://flagsapi.com/DE/flat/32.png" alt="DE" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Commerzbank</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">259m</p>
+                        </div>
+                    </div>
+
+                    <!-- Batu Caves - 256m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 31%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Batu Caves</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">256m</p>
+                        </div>
+                    </div>
+
+                    <!-- KOMTAR - 249m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 30%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">KOMTAR</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">249m</p>
+                        </div>
+                    </div>
+
+                    <!-- Torre de Cristal - 249m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-purple-900 to-purple-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 30%;">
+                                <img src="https://flagsapi.com/ES/flat/32.png" alt="ES" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Cristal</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">249m</p>
+                        </div>
+                    </div>
+
+                    <!-- Bahrain WTC - 240m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-indigo-900 to-indigo-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 29%;">
+                                <img src="https://flagsapi.com/BH/flat/32.png" alt="BH" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Bahrain WTC</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">240m</p>
+                        </div>
+                    </div>
+
+                    <!-- Alvear Tower - 235m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-pink-900 to-pink-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 28%;">
+                                <img src="https://flagsapi.com/AR/flat/32.png" alt="AR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Alvear</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">235m</p>
+                        </div>
+                    </div>
+
+                    <!-- Unicredit - 231m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-cyan-900 to-cyan-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 28%;">
+                                <img src="https://flagsapi.com/IT/flat/32.png" alt="IT" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Unicredit</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">231m</p>
+                        </div>
+                    </div>
+
+                    <!-- Cairo Tower - 187m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-teal-900 to-teal-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 23%;">
+                                <img src="https://flagsapi.com/EG/flat/32.png" alt="EG" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Cairo</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">187m</p>
+                        </div>
+                    </div>
+
+                    <!-- Mirante do Vale - 170m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-orange-900 to-orange-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 21%;">
+                                <img src="https://flagsapi.com/BR/flat/32.png" alt="BR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Mirante</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">170m</p>
+                        </div>
+                    </div>
+
+                    <!-- Kuantan Tower - 6m -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-green-700 to-green-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 5%;">
+                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                                <div class="text-[8px] text-white font-bold">✓</div>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <p class="text-[8px] md:text-xs font-bold text-green-600 line-clamp-2">Kuantan</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">6m</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Legend -->
-        <div class="flex flex-wrap items-center justify-center gap-6 mt-16 text-sm">
+        <div class="flex flex-wrap items-center justify-center gap-6 mt-12 text-sm">
             <div class="flex items-center gap-2">
                 <div class="w-8 h-6 rounded overflow-hidden shadow-sm">
                     <img src="https://flagsapi.com/MY/flat/64.png" alt="Malaysian Flag" class="w-full h-full object-cover"/>
                 </div>
-                <span class="text-gray-700">Malaysian Tower</span>
+                <span class="text-gray-700">Malaysian Tower (10 total)</span>
             </div>
             <div class="flex items-center gap-2">
                 <div class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                    <i data-lucide="check" class="w-3 h-3"></i>
-                    <span>Conquered</span>
+                    <span>✓</span>
                 </div>
-                <span class="text-gray-700">Successfully Climbed</span>
+                <span class="text-gray-700">Conquered</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="bg-gradient-to-t from-blue-700 to-blue-500 w-6 h-8 rounded-t"></div>
+                <span class="text-gray-700">International Tower (30 total)</span>
             </div>
         </div>
 
         <!-- View Full List CTA -->
         <div class="text-center mt-12">
             <button type="button" onclick="navigateTo('list-of-towers')" class="bg-mm-black text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition-all duration-300 btn-hover inline-flex items-center gap-2">
-                <span>View Complete List of 40 Towers</span>
+                <span>View Detailed Tower List</span>
                 <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </button>
         </div>
@@ -571,7 +878,7 @@
                 <div class="relative h-full min-h-[400px] md:min-h-full">
                     <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate dramatic upward perspective photograph of her mid-climb on tower stairs, shot from below looking up. Wearing athletic gear with Malaysian flag elements (red, white, yellow, blue accents), climbing modern glass and steel stairwell with strong geometric lines. Intense focus, sweat glistening, muscles engaged. Strong directional lighting from above creates dramatic shadows. Architectural photography meets sports action, ultra-sharp, Nikon Z9, 14-24mm ultra-wide lens, f/4, high contrast black and white with selective color on Malaysian flag elements."
                          class="w-full h-full object-cover" 
-                         src="/static/images/image_2.jpg"/>
+                         src="/static/images/suwaibah_running.jpg"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
                         <div class="text-white">
                             <h2 class="text-4xl md:text-5xl font-bold mb-2">The Challenge</h2>

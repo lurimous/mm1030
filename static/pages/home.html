@@ -282,7 +282,7 @@
 <!-- All Towers Graph Section -->
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
+        <div class="text-center mb-40">
             <h2 class="text-4xl md:text-5xl font-bold text-mm-black border-b-2 border-mm-black inline-block pb-2 mb-6">
                 All 40 Towers
             </h2>
@@ -290,136 +290,166 @@
         </div>
 
         <!-- Towers Grid - 10 per row -->
-        <div class="space-y-12">
+        <div class="space-y-56">
             <!-- Row 1: Towers 1-10 -->
             <div>
-                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 1-10</h3>
-                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center relative z-30 -mt-32">Towers 1-10</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2 mt-40">
                     <!-- Burj Khalifa - 828m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-blue-700 to-blue-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 100%;">
-                                <img src="https://flagsapi.com/AE/flat/32.png" alt="UAE" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <!-- Tower image positioned on top of bar -->
+                            <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                <img src="/static/images/towers/international_burj_khalifa.png" alt="Burj Khalifa" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
                             </div>
+                            <div class="w-full bg-gradient-to-t from-blue-700 to-blue-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 100%;"></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/AE/flat/32.png" alt="AE" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Burj Khalifa</p>
                             <p class="text-[7px] md:text-xs text-gray-600">828m</p>
                         </div>
                     </div>
 
                     <!-- Merdeka 118 - 679m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 82%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 82%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_merdeka_118.png" alt="Merdeka 118" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Merdeka 118</p>
                             <p class="text-[7px] md:text-xs text-gray-600">679m</p>
                         </div>
                     </div>
 
                     <!-- Tokyo Skytree - 634m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-purple-700 to-purple-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 77%;">
-                                <img src="https://flagsapi.com/JP/flat/32.png" alt="JP" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-purple-700 to-purple-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 77%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_tokyo_skytree.png" alt="Tokyo Skytree" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/JP/flat/32.png" alt="JP" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Tokyo Skytree</p>
                             <p class="text-[7px] md:text-xs text-gray-600">634m</p>
                         </div>
                     </div>
 
                     <!-- Shanghai Tower - 632m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-yellow-700 to-yellow-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 76%;">
-                                <img src="https://flagsapi.com/CN/flat/32.png" alt="CN" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-yellow-700 to-yellow-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 76%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_shanghai_tower.png" alt="Shanghai Tower" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/CN/flat/32.png" alt="CN" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Shanghai Tower</p>
                             <p class="text-[7px] md:text-xs text-gray-600">632m</p>
                         </div>
                     </div>
 
                     <!-- Makkah Clock - 601m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-green-700 to-green-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 73%;">
-                                <img src="https://flagsapi.com/SA/flat/32.png" alt="SA" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-green-700 to-green-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 73%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_makkah_royal_clock_tower.png" alt="Makkah Clock" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/SA/flat/32.png" alt="SA" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Makkah Clock</p>
                             <p class="text-[7px] md:text-xs text-gray-600">601m</p>
                         </div>
                     </div>
 
                     <!-- Lotte World Tower - 555m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-indigo-700 to-indigo-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 67%;">
-                                <img src="https://flagsapi.com/KR/flat/32.png" alt="KR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-indigo-700 to-indigo-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 67%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_lotte_world_tower.png" alt="Lotte World" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/KR/flat/32.png" alt="KR" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Lotte World</p>
                             <p class="text-[7px] md:text-xs text-gray-600">555m</p>
                         </div>
                     </div>
 
                     <!-- CN Tower - 553m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-pink-700 to-pink-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 67%;">
-                                <img src="https://flagsapi.com/CA/flat/32.png" alt="CA" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-pink-700 to-pink-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 67%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_cn_tower.png" alt="CN Tower" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/CA/flat/32.png" alt="CA" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">CN Tower</p>
                             <p class="text-[7px] md:text-xs text-gray-600">553m</p>
                         </div>
                     </div>
 
                     <!-- One World Trade - 541m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-cyan-700 to-cyan-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 65%;">
-                                <img src="https://flagsapi.com/US/flat/32.png" alt="US" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-cyan-700 to-cyan-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 65%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_one_world_trade_center.png" alt="One WTC" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/US/flat/32.png" alt="US" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">One WTC</p>
                             <p class="text-[7px] md:text-xs text-gray-600">541m</p>
                         </div>
                     </div>
 
                     <!-- Taipei 101 - 508m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-teal-700 to-teal-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 61%;">
-                                <img src="https://flagsapi.com/TW/flat/32.png" alt="TW" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-teal-700 to-teal-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 61%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_taipei_101.png" alt="Taipei 101" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/TW/flat/32.png" alt="TW" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Taipei 101</p>
                             <p class="text-[7px] md:text-xs text-gray-600">508m</p>
                         </div>
                     </div>
 
                     <!-- ICC Hong Kong - 484m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-orange-700 to-orange-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 58%;">
-                                <img src="https://flagsapi.com/HK/flat/32.png" alt="HK" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-orange-700 to-orange-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 58%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_international_commerce_centre.png" alt="ICC HK" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/HK/flat/32.png" alt="HK" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">ICC HK</p>
                             <p class="text-[7px] md:text-xs text-gray-600">484m</p>
                         </div>
@@ -429,133 +459,164 @@
 
             <!-- Row 2: Towers 11-20 -->
             <div>
-                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 11-20</h3>
-                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center relative z-30 -mt-32">Towers 11-20</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2 mt-40">
                     <!-- Lakhta Center - 462m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-slate-700 to-slate-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 56%;">
-                                <img src="https://flagsapi.com/RU/flat/32.png" alt="RU" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-slate-700 to-slate-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 56%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_lakhta_center.png" alt="Lakhta" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div>
                             </div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/RU/flat/32.png" alt="RU" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Lakhta</p>
                             <p class="text-[7px] md:text-xs text-gray-600">462m</p>
                         </div>
                     </div>
 
                     <!-- Vincom Landmark - 461m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-rose-700 to-rose-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 56%;">
-                                <img src="https://flagsapi.com/VN/flat/32.png" alt="VN" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-rose-700 to-rose-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 56%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_vincom_landmark_81.png" alt="Landmark 81" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/VN/flat/32.png" alt="VN" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Landmark 81</p>
                             <p class="text-[7px] md:text-xs text-gray-600">461m</p>
                         </div>
                     </div>
 
                     <!-- Petronas Towers - 452m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 55%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 55%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_petronas_twin_towers.png" alt="Petronas" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Petronas</p>
                             <p class="text-[7px] md:text-xs text-gray-600">452m</p>
                         </div>
                     </div>
 
                     <!-- Exchange 106 - 445m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 54%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 54%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_the_exchange_106.png" alt="Exchange 106" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Exchange 106</p>
                             <p class="text-[7px] md:text-xs text-gray-600">445m</p>
                         </div>
                     </div>
 
                     <!-- KL Tower - 421m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 51%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 51%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_kl_tower.png" alt="KL Tower" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">KL Tower</p>
                             <p class="text-[7px] md:text-xs text-gray-600">421m</p>
                         </div>
                     </div>
 
                     <!-- Al Hamra - 413m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-lime-700 to-lime-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 50%;">
-                                <img src="https://flagsapi.com/KW/flat/32.png" alt="KW" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-lime-700 to-lime-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 50%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_al_hamra_tower.png" alt="Al Hamra" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/KW/flat/32.png" alt="KW" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Al Hamra</p>
                             <p class="text-[7px] md:text-xs text-gray-600">413m</p>
                         </div>
                     </div>
 
                     <!-- Autograph Tower - 383m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-amber-700 to-amber-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 46%;">
-                                <img src="https://flagsapi.com/ID/flat/32.png" alt="ID" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-amber-700 to-amber-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 46%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_autograph_tower.png" alt="Autograph" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/ID/flat/32.png" alt="ID" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Autograph</p>
                             <p class="text-[7px] md:text-xs text-gray-600">383m</p>
                         </div>
                     </div>
 
                     <!-- Four Seasons KL - 343m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 41%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 41%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_four_seasons_place_kl.png" alt="Four Seasons" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Four Seasons</p>
                             <p class="text-[7px] md:text-xs text-gray-600">343m</p>
                         </div>
                     </div>
 
                     <!-- Eiffel Tower - 330m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-sky-700 to-sky-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 40%;">
-                                <img src="https://flagsapi.com/FR/flat/32.png" alt="FR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-sky-700 to-sky-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 40%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_eiffel_tower.png" alt="Eiffel Tower" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/FR/flat/32.png" alt="FR" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Eiffel Tower</p>
                             <p class="text-[7px] md:text-xs text-gray-600">330m</p>
                         </div>
                     </div>
 
                     <!-- Q1 Tower - 323m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-emerald-700 to-emerald-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 39%;">
-                                <img src="https://flagsapi.com/AU/flat/32.png" alt="AU" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-emerald-700 to-emerald-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 39%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_q1_tower.png" alt="Q1 Tower" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/AU/flat/32.png" alt="AU" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Q1 Tower</p>
                             <p class="text-[7px] md:text-xs text-gray-600">323m</p>
                         </div>
@@ -565,133 +626,164 @@
 
             <!-- Row 3: Towers 21-30 -->
             <div>
-                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 21-30</h3>
-                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center relative z-30 -mt-32">Towers 21-30</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2 mt-40">
                     <!-- Palais Royale - 320m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-fuchsia-700 to-fuchsia-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 39%;">
-                                <img src="https://flagsapi.com/IN/flat/32.png" alt="IN" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-fuchsia-700 to-fuchsia-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 39%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_palais_royale.png" alt="Palais Royale" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div>
                             </div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/IN/flat/32.png" alt="IN" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Palais Royale</p>
                             <p class="text-[7px] md:text-xs text-gray-600">320m</p>
                         </div>
                     </div>
 
                     <!-- MahaNakhon - 314m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-violet-700 to-violet-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 38%;">
-                                <img src="https://flagsapi.com/TH/flat/32.png" alt="TH" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-violet-700 to-violet-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 38%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_mahanakhon.png" alt="MahaNakhon" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/TH/flat/32.png" alt="TH" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">MahaNakhon</p>
                             <p class="text-[7px] md:text-xs text-gray-600">314m</p>
                         </div>
                     </div>
 
                     <!-- Telekom Tower - 310m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 37%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 37%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_telekom_tower.png" alt="Telekom" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Telekom</p>
                             <p class="text-[7px] md:text-xs text-gray-600">310m</p>
                         </div>
                     </div>
 
                     <!-- The Shard - 310m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-zinc-700 to-zinc-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 37%;">
-                                <img src="https://flagsapi.com/GB/flat/32.png" alt="GB" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-zinc-700 to-zinc-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 37%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_the_shard.png" alt="The Shard" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/GB/flat/32.png" alt="GB" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">The Shard</p>
                             <p class="text-[7px] md:text-xs text-gray-600">310m</p>
                         </div>
                     </div>
 
                     <!-- Aspire Tower - 300m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-neutral-700 to-neutral-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 36%;">
-                                <img src="https://flagsapi.com/QA/flat/32.png" alt="QA" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-neutral-700 to-neutral-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 36%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_aspire_tower.png" alt="Aspire" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/QA/flat/32.png" alt="QA" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Aspire</p>
                             <p class="text-[7px] md:text-xs text-gray-600">300m</p>
                         </div>
                     </div>
 
                     <!-- Guoco Tower - 290m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-stone-700 to-stone-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 35%;">
-                                <img src="https://flagsapi.com/SG/flat/32.png" alt="SG" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-stone-700 to-stone-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 35%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_guoco_tower.png" alt="Guoco" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/SG/flat/32.png" alt="SG" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Guoco</p>
                             <p class="text-[7px] md:text-xs text-gray-600">290m</p>
                         </div>
                     </div>
 
                     <!-- Skyland Istanbul - 284m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-900 to-red-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 34%;">
-                                <img src="https://flagsapi.com/TR/flat/32.png" alt="TR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-900 to-red-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 34%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_skyland_istanbul.png" alt="Skyland" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/TR/flat/32.png" alt="TR" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Skyland</p>
                             <p class="text-[7px] md:text-xs text-gray-600">284m</p>
                         </div>
                     </div>
 
                     <!-- Torre KOI - 279m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-green-900 to-green-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 34%;">
-                                <img src="https://flagsapi.com/MX/flat/32.png" alt="MX" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-green-900 to-green-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 34%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_torre_koi.png" alt="Torre KOI" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MX/flat/32.png" alt="MX" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Torre KOI</p>
                             <p class="text-[7px] md:text-xs text-gray-600">279m</p>
                         </div>
                     </div>
 
                     <!-- Astaka Tower - 270m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 33%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 33%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_the_astaka_tower_a.png" alt="Astaka" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Astaka</p>
                             <p class="text-[7px] md:text-xs text-gray-600">270m</p>
                         </div>
                     </div>
 
                     <!-- PBCom Tower - 259m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-blue-900 to-blue-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 31%;">
-                                <img src="https://flagsapi.com/PH/flat/32.png" alt="PH" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-blue-900 to-blue-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 31%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_pbcom_tower.png" alt="PBCom" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/PH/flat/32.png" alt="PH" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">PBCom</p>
                             <p class="text-[7px] md:text-xs text-gray-600">259m</p>
                         </div>
@@ -701,138 +793,172 @@
 
             <!-- Row 4: Towers 31-40 -->
             <div>
-                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center">Towers 31-40</h3>
-                <div class="grid grid-cols-10 gap-1 md:gap-2">
+                <h3 class="text-xl font-bold text-gray-700 mb-4 text-center relative z-30 -mt-32">Towers 31-40</h3>
+                <div class="grid grid-cols-10 gap-1 md:gap-2 mt-40">
                     <!-- Commerzbank - 259m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-yellow-900 to-yellow-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 31%;">
-                                <img src="https://flagsapi.com/DE/flat/32.png" alt="DE" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-yellow-900 to-yellow-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 31%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_commerzbank_tower.png" alt="Commerzbank" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div>
                             </div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/DE/flat/32.png" alt="DE" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Commerzbank</p>
                             <p class="text-[7px] md:text-xs text-gray-600">259m</p>
                         </div>
                     </div>
 
                     <!-- Batu Caves - 256m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 31%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 31%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_batu_caves_stairs.png" alt="Batu Caves" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Batu Caves</p>
                             <p class="text-[7px] md:text-xs text-gray-600">256m</p>
                         </div>
                     </div>
 
                     <!-- KOMTAR - 249m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 30%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 30%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_komtar_tower.png" alt="KOMTAR" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">KOMTAR</p>
                             <p class="text-[7px] md:text-xs text-gray-600">249m</p>
                         </div>
                     </div>
 
                     <!-- Torre de Cristal - 249m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-purple-900 to-purple-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 30%;">
-                                <img src="https://flagsapi.com/ES/flat/32.png" alt="ES" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-purple-900 to-purple-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 30%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_torre_de_cristal.png" alt="Cristal" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/ES/flat/32.png" alt="ES" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Cristal</p>
                             <p class="text-[7px] md:text-xs text-gray-600">249m</p>
                         </div>
                     </div>
 
                     <!-- Bahrain WTC - 240m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-indigo-900 to-indigo-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 29%;">
-                                <img src="https://flagsapi.com/BH/flat/32.png" alt="BH" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-indigo-900 to-indigo-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 29%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_bahrain_world_trade_center.png" alt="Bahrain WTC" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/BH/flat/32.png" alt="BH" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Bahrain WTC</p>
                             <p class="text-[7px] md:text-xs text-gray-600">240m</p>
                         </div>
                     </div>
 
                     <!-- Alvear Tower - 235m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-pink-900 to-pink-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 28%;">
-                                <img src="https://flagsapi.com/AR/flat/32.png" alt="AR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-pink-900 to-pink-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 28%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_alvear_tower.png" alt="Alvear" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/AR/flat/32.png" alt="AR" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Alvear</p>
                             <p class="text-[7px] md:text-xs text-gray-600">235m</p>
                         </div>
                     </div>
 
                     <!-- Unicredit - 231m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-cyan-900 to-cyan-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 28%;">
-                                <img src="https://flagsapi.com/IT/flat/32.png" alt="IT" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                            </div>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-cyan-900 to-cyan-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 28%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_unicredit_tower.png" alt="Unicredit" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/IT/flat/32.png" alt="IT" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Unicredit</p>
                             <p class="text-[7px] md:text-xs text-gray-600">231m</p>
                         </div>
                     </div>
 
-                    <!-- Cairo Tower - 187m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-teal-900 to-teal-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 23%;">
-                                <img src="https://flagsapi.com/EG/flat/32.png" alt="EG" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                    <!-- Kuantan Tower - 188m -->
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-green-700 to-green-500 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 24%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/malaysian_kuantan_tower.png" alt="Kuantan" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div>
+                                <div class="text-[8px] text-white font-bold">✓</div>
                             </div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
+                            <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Kuantan Tower</p>
+                            <p class="text-[7px] md:text-xs text-gray-600">188m</p>
+                        </div>
+                    </div>
+
+                    <!-- Cairo Tower - 187m -->
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-teal-900 to-teal-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 23%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_cairo_tower.png" alt="Cairo" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div></div>
+                        </div>
+                        <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/EG/flat/32.png" alt="EG" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Cairo</p>
                             <p class="text-[7px] md:text-xs text-gray-600">187m</p>
                         </div>
                     </div>
 
                     <!-- Mirante do Vale - 170m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-orange-900 to-orange-700 rounded-t flex flex-col items-center justify-start p-1" style="height: 21%;">
-                                <img src="https://flagsapi.com/BR/flat/32.png" alt="BR" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
+                    <div class="flex flex-col items-center overflow-visible">
+                        <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
+                            <div class="w-full bg-gradient-to-t from-orange-900 to-orange-700 rounded-t flex flex-col items-center justify-start p-1 relative" style="height: 21%;">
+                                <!-- Tower image positioned on top of bar -->
+                                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 z-20">
+                                    <img src="/static/images/towers/international_mirante_do_vale.png" alt="Mirante" class="h-32 md:h-48 min-w-[120px] md:min-w-[160px] w-auto object-contain"/>
+                                </div>
                             </div>
                         </div>
                         <div class="mt-2 text-center">
+                            <img src="https://flagsapi.com/BR/flat/32.png" alt="BR" class="w-6 h-4 md:w-8 md:h-6 rounded shadow-sm mb-1 mx-auto block"/>
                             <p class="text-[8px] md:text-xs font-bold text-gray-800 line-clamp-2">Mirante</p>
                             <p class="text-[7px] md:text-xs text-gray-600">170m</p>
                         </div>
                     </div>
 
-                    <!-- Kuantan Tower - 6m -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-full flex flex-col items-center justify-end" style="height: 200px;">
-                            <div class="w-full bg-gradient-to-t from-green-700 to-green-500 rounded-t flex flex-col items-center justify-start p-1" style="height: 5%;">
-                                <img src="https://flagsapi.com/MY/flat/32.png" alt="MY" class="w-4 h-3 md:w-6 md:h-4 rounded shadow-sm mb-1"/>
-                                <div class="text-[8px] text-white font-bold">✓</div>
-                            </div>
-                        </div>
-                        <div class="mt-2 text-center">
-                            <p class="text-[8px] md:text-xs font-bold text-green-600 line-clamp-2">Kuantan</p>
-                            <p class="text-[7px] md:text-xs text-gray-600">6m</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1071,19 +1197,22 @@
                 <!-- Image 1: Back -->
                 <div class="absolute top-0 right-0 w-64 h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-6">
                     <img alt="Action photograph of Malaysian youth athletes training on tower stairs, diverse group of teenagers wearing matching red and white training gear, energetic and motivated expressions. Indoor modern stairwell training facility, bright lighting, coach supervising in background. Dynamic training scene showing teamwork and determination. Sports photography, Canon R6, 24-70mm, f/4, vibrant colors emphasizing youth energy and Malaysian national colors."
-                         class="w-full h-full object-cover" />
+                         class="w-full h-full object-cover" 
+                         src="/static/images/image_home_01.jpg"/>
                 </div>
 
                 <!-- Image 2: Middle -->
                 <div class="absolute top-16 left-8 w-72 h-96 rounded-2xl overflow-hidden shadow-2xl transform -rotate-3 z-10">
                     <img alt="Inspiring photograph of Malaysian children aged 8-12 at tower running workshop, wearing colorful athletic wear, learning proper stair climbing technique from instructor. Indoor sports facility with modern stairs visible. Kids showing excitement and determination, mix of boys and girls, diverse Malaysian ethnicities. Bright educational environment, natural lighting, professional sports education photography, Nikon Z6, 35mm, f/2.8, warm tones, shallow depth of field."
-                         class="w-full h-full object-cover" />
+                         class="w-full h-full object-cover" 
+                         src="/static/images/image_home_02.jpg"/>
                 </div>
 
                 <!-- Image 3: Front (Malaysian flag/unity) -->
                 <div class="absolute bottom-0 right-16 w-80 h-64 rounded-2xl overflow-hidden shadow-2xl z-20">
                     <img alt="Emotional photograph of diverse group of Malaysian athletes standing together holding Malaysian flag (Jalur Gemilang) at top of tower, victorious poses, arms raised in celebration. Mix of ages and ethnicities representing Malaysian unity. Rooftop location with Kuala Lumpur skyline visible in background, late afternoon golden light. Wide-angle group shot, professional sports documentary photography, Sony A7IV, 24mm, f/5.6, patriotic and inspiring mood, rich colors with flag prominently displayed."
-                         class="w-full h-full object-cover" />
+                         class="w-full h-full object-cover" 
+                         src="/static/images/image_home_03.jpg"/>
                 </div>
             </div>
 
@@ -1170,7 +1299,8 @@
             <div class="gallery-item gallery-tall rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal">
                 <div class="gallery-image-wrapper">
                     <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate breathtaking vertical photograph looking straight up a modern glass and steel tower stairwell with her climbing in center, shot from ground level looking up 50+ floors. Geometric spiral pattern of stairs creates mesmerizing symmetry. Natural light filtering from top, creating dramatic lighting gradient. Architectural sports photography, ultra-wide angle lens, Nikon 14mm, f/8 for maximum depth of field, high contrast, vertiginous perspective emphasizing height and challenge."
-                         class="w-full h-full object-cover gallery-image" />
+                         class="w-full h-full object-cover gallery-image" 
+                         src="/static/images/image_home_04.jpg"/>
                 </div>
             </div>
 
@@ -1178,7 +1308,8 @@
             <div class="gallery-item gallery-wide rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.1s;">
                 <div class="gallery-image-wrapper">
                     <img alt="Panoramic sunrise photograph of Kuala Lumpur skyline with all major towers visible: Petronas Twin Towers, KL Tower, Merdeka 118, Exchange 106. Shot from elevated viewpoint, city awakening with warm golden light, light morning mist. Ultra-wide cityscape, professional architectural photography, Phase One camera, 28mm tilt-shift lens, f/11, HDR blend, rich warm tones, Malaysian pride and ambition visualized."
-                         class="w-full h-full object-cover gallery-image" />
+                         class="w-full h-full object-cover gallery-image" 
+                         src="/static/images/image_home_05.jpg"/>
                 </div>
             </div>
 
@@ -1186,7 +1317,8 @@
             <div class="gallery-item rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.2s;">
                 <div class="gallery-image-wrapper">
                     <img alt="Close-up detail shot of athletic legs in compression wear and running shoes on modern tower stairs, mid-stride. Focus on powerful calf muscles, professional running shoes gripping stair edge. Shallow depth of field, background stairs blurred. Sports detail photography emphasizing strength and technique, Sony A1, 85mm, f/1.8, high shutter speed freezing motion, dramatic side lighting creating texture."
-                         class="w-full h-full object-cover gallery-image" />
+                         class="w-full h-full object-cover gallery-image" 
+                         src="/static/images/image_home_06.jpg"/>
                 </div>
             </div>
 
@@ -1194,7 +1326,8 @@
             <div class="gallery-item gallery-tall rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.3s;">
                 <div class="gallery-image-wrapper">
                     <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate powerful full-body portrait of her in training gear, standing on tower stairs with Malaysian flag draped over shoulders, looking up toward light source above with determined expression. Dramatic low-angle shot emphasizing height and aspiration. Backlit creating rim light effect, stairwell extending up behind her. Inspirational sports portrait, medium format, 50mm, f/4, cinematic color grading, heroic composition."
-                         class="w-full h-full object-cover gallery-image" />
+                         class="w-full h-full object-cover gallery-image" 
+                         src="/static/images/image_home_07.jpg"/>
                 </div>
             </div>
 
@@ -1202,7 +1335,8 @@
             <div class="gallery-item rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.4s;">
                 <div class="gallery-image-wrapper">
                     <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate candid training moment of her checking sports watch/fitness tracker on wrist while pausing on stairs, sweat visible, focused expression studying metrics. Close-up shot showing determination and data-driven training. Natural gym lighting, professional sports documentary photography, Canon R3, 35mm, f/2, authentic moment, slightly desaturated with punch of color on watch display."
-                         class="w-full h-full object-cover gallery-image" />
+                         class="w-full h-full object-cover gallery-image" 
+                         src="/static/images/image_home_08.jpg"/>
                 </div>
             </div>
 
@@ -1210,7 +1344,8 @@
             <div class="gallery-item gallery-wide rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-reveal" style="animation-delay: 0.5s;">
                 <div class="gallery-image-wrapper">
                     <img alt="Using the reference image of Dr. Suwaibah Muhammad Nasir: Generate group celebration photo with her alongside young Malaysian athletes (mixed ages 10-18) at finish line of tower climb event, everyone wearing race bibs and medals, arms raised in victory, genuine smiles and exhausted but happy faces. Malaysian flags and MM1030 banners visible in background. Community sports event photography, wide-angle, Fuji GFX, 23mm, f/5.6, vibrant colors, joyful and inclusive atmosphere."
-                         class="w-full h-full object-cover gallery-image" />
+                         class="w-full h-full object-cover gallery-image" 
+                         src="/static/images/image_home_09.jpg"/>
                 </div>
             </div>
 

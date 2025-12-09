@@ -6,7 +6,10 @@
       "Bash(else echo \"does not exist\")",
       "Bash(fi:*)",
       "Bash(cat:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(python extract_image.py:*)",
+      "Bash(python:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "ask": []

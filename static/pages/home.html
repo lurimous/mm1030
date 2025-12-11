@@ -95,6 +95,69 @@
     </div>
 </section>
 
+<!-- Featured Event - Batu Caves Challenge -->
+<section class="py-16 bg-gradient-to-br from-red-600 via-red-500 to-orange-600 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-0">
+                <!-- Left: Event Details -->
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="inline-block bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-bold mb-4 animate-pulse">
+                        <i data-lucide="trophy" class="w-4 h-4 inline-block mr-2"></i>
+                        UPCOMING EVENT
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-mm-black mb-4 leading-tight">
+                        Dr. Suwaibah Trophy:<br/>
+                        Batu Caves Stair Climb Challenge
+                    </h2>
+
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <i data-lucide="calendar" class="w-5 h-5 text-red-600"></i>
+                            <span class="text-lg font-semibold">28 March 2026</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-red-600"></i>
+                            <span class="text-lg">Batu Caves, Selangor</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <i data-lucide="trending-up" class="w-5 h-5 text-red-600"></i>
+                            <span class="text-lg">272 Steps to Glory</span>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Join Malaysia's premier vertical running challenge at the iconic Batu Caves. Test your limits, conquer 272 steps, and be part of the MM1030 legacy.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <button type="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeXPidDMMnqqPRenf72oYCRYJor6ncyRU7z1JTZFhwLTlP1hQ/viewform?usp=header', '_blank')" class="bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all duration-300 inline-flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform">
+                            <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                            <span>Register Now</span>
+                        </button>
+                        <button type="button" onclick="navigateTo('mission')" class="bg-white border-2 border-gray-300 text-mm-black px-8 py-4 rounded-lg text-lg font-bold hover:border-mm-black transition-all duration-300 inline-flex items-center gap-2">
+                            <i data-lucide="info" class="w-6 h-6"></i>
+                            <span>Learn More</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Event Image -->
+                <div class="relative h-64 md:h-auto bg-gradient-to-br from-red-100 to-orange-100">
+                    <img src="/static/images/mission_square.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Penaung Diraja Section -->
 <section class="py-20 bg-gradient-to-br from-white via-yellow-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -286,6 +349,40 @@
     </div>
 </section>
 
+<!-- Mission Banner Section -->
+<section class="py-20 bg-mm-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-mm-black border-b-2 border-mm-black inline-block pb-2 mb-6">
+                The MM1030 Mission
+            </h2>
+            <p class="text-lg text-gray-700">
+                Conquering towers across Malaysia and the world, promoting peace through sport
+            </p>
+        </div>
+
+        <div class="scroll-reveal">
+            <div class="rounded-xl overflow-hidden shadow-2xl">
+                <img src="/static/images/mission_banner.jpg" alt="MM1030 Mission Banner" class="w-full h-auto object-cover"/>
+            </div>
+        </div>
+
+        <!-- Event Date and Enrollment -->
+        <div class="text-center mt-8 scroll-reveal">
+            <div class="inline-block bg-white rounded-xl p-6 shadow-lg border-2 border-gray-200 hover:border-mm-black transition-all duration-300">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <i data-lucide="calendar" class="w-6 h-6 text-mm-black"></i>
+                    <p class="text-2xl font-bold text-mm-black">28 March 2026</p>
+                </div>
+                <button type="button" id="enrollButton" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeXPidDMMnqqPRenf72oYCRYJor6ncyRU7z1JTZFhwLTlP1hQ/viewform?usp=header', '_blank')" class="bg-mm-black text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition-all duration-300 inline-flex items-center gap-2 shadow-lg hover:shadow-xl">
+                    <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                    <span>Click to Enroll</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- All Towers Graph Section -->
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -469,7 +566,7 @@
                 <h3 class="text-xl font-bold text-gray-700 mb-4 text-center relative z-30 -mt-32">Towers 11-20</h3>
                 <div class="grid grid-cols-10 gap-1 md:gap-2 mt-40">
                     <!-- Lakhta Center - 462m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Lakhta_Center', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-slate-700 to-slate-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 56%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -486,7 +583,7 @@
                     </div>
 
                     <!-- Vincom Landmark - 461m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Landmark_81', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-rose-700 to-rose-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 56%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -502,7 +599,7 @@
                     </div>
 
                     <!-- Petronas Towers - 452m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Petronas_Towers', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 55%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -518,7 +615,7 @@
                     </div>
 
                     <!-- Exchange 106 - 445m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/The_Exchange_106', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 54%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -534,7 +631,7 @@
                     </div>
 
                     <!-- KL Tower - 421m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Kuala_Lumpur_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 51%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -550,7 +647,7 @@
                     </div>
 
                     <!-- Al Hamra - 413m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Al_Hamra_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-lime-700 to-lime-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 50%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -566,7 +663,7 @@
                     </div>
 
                     <!-- Autograph Tower - 383m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Autograph_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-amber-700 to-amber-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 46%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -582,7 +679,7 @@
                     </div>
 
                     <!-- Four Seasons KL - 343m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Four_Seasons_Place_Kuala_Lumpur', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 41%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -598,7 +695,7 @@
                     </div>
 
                     <!-- Eiffel Tower - 330m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Eiffel_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-sky-700 to-sky-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 40%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -614,7 +711,7 @@
                     </div>
 
                     <!-- Q1 Tower - 323m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Q1_(building)', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-emerald-700 to-emerald-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 39%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -636,7 +733,7 @@
                 <h3 class="text-xl font-bold text-gray-700 mb-4 text-center relative z-30 -mt-32">Towers 21-30</h3>
                 <div class="grid grid-cols-10 gap-1 md:gap-2 mt-40">
                     <!-- Palais Royale - 320m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Palais_Royale', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-fuchsia-700 to-fuchsia-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 39%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -653,7 +750,7 @@
                     </div>
 
                     <!-- MahaNakhon - 314m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/MahaNakhon', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-violet-700 to-violet-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 38%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -669,7 +766,7 @@
                     </div>
 
                     <!-- Telekom Tower - 310m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Telekom_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 37%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -685,7 +782,7 @@
                     </div>
 
                     <!-- The Shard - 310m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/The_Shard', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-zinc-700 to-zinc-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 37%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -701,7 +798,7 @@
                     </div>
 
                     <!-- Aspire Tower - 300m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Aspire_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-neutral-700 to-neutral-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 36%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -717,7 +814,7 @@
                     </div>
 
                     <!-- Guoco Tower - 290m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Guoco_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-stone-700 to-stone-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 35%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -733,7 +830,7 @@
                     </div>
 
                     <!-- Skyland Istanbul - 284m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Skyland_Istanbul', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-900 to-red-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 34%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -749,7 +846,7 @@
                     </div>
 
                     <!-- Torre KOI - 279m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Torre_KOI', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-green-900 to-green-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 34%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -765,7 +862,7 @@
                     </div>
 
                     <!-- Astaka Tower - 270m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/The_Astaka', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 33%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -781,7 +878,7 @@
                     </div>
 
                     <!-- PBCom Tower - 259m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/PBCom_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-blue-900 to-blue-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 31%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -803,7 +900,7 @@
                 <h3 class="text-xl font-bold text-gray-700 mb-4 text-center relative z-30 -mt-32">Towers 31-40</h3>
                 <div class="grid grid-cols-10 gap-1 md:gap-2 mt-40">
                     <!-- Commerzbank - 259m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Commerzbank_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-yellow-900 to-yellow-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 31%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -820,7 +917,7 @@
                     </div>
 
                     <!-- Batu Caves - 256m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Batu_Caves', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 31%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -836,7 +933,7 @@
                     </div>
 
                     <!-- KOMTAR - 249m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Komtar', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-red-700 to-red-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 30%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -852,7 +949,7 @@
                     </div>
 
                     <!-- Torre de Cristal - 249m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Torre_de_Cristal', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-purple-900 to-purple-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 30%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -868,7 +965,7 @@
                     </div>
 
                     <!-- Bahrain WTC - 240m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Bahrain_World_Trade_Center', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-indigo-900 to-indigo-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 29%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -884,7 +981,7 @@
                     </div>
 
                     <!-- Alvear Tower - 235m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Alvear_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-pink-900 to-pink-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 28%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -900,7 +997,7 @@
                     </div>
 
                     <!-- Unicredit - 231m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/UniCredit_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-cyan-900 to-cyan-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 28%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -916,7 +1013,7 @@
                     </div>
 
                     <!-- Kuantan Tower - 188m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Kuantan_188_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-green-700 to-green-500 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 24%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -934,7 +1031,7 @@
                     </div>
 
                     <!-- Cairo Tower - 187m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Cairo_Tower', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-teal-900 to-teal-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 23%;">
                                 <!-- Tower image positioned on top of bar -->
@@ -950,7 +1047,7 @@
                     </div>
 
                     <!-- Mirante do Vale - 170m -->
-                    <div class="flex flex-col items-center overflow-visible">
+                    <div class="flex flex-col items-center overflow-visible cursor-pointer hover:opacity-80 transition-opacity" onclick="window.open('https://en.wikipedia.org/wiki/Mirante_do_Vale', '_blank')">
                         <div class="w-full flex flex-col items-center justify-end relative overflow-visible" style="height: 200px;">
                             <div class="w-full bg-gradient-to-t from-orange-900 to-orange-700 rounded-t flex flex-col items-center justify-start p-1 relative z-[99]" style="height: 21%;">
                                 <!-- Tower image positioned on top of bar -->

@@ -21,119 +21,128 @@
 
         <!-- Merchandise Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 scroll-reveal">
-            <!-- Merchandise Item 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <img src="/static/images/merch/shirt.png">
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-mm-black mb-2">MM1030 T-Shirt</h3>
-                    <p class="text-gray-600 mb-4">
+            <!-- Merchandise Item 1: T-Shirt -->
+            <div class="relative rounded-xl shadow-lg overflow-hidden cursor-pointer group h-[32rem]" onclick="navigateTo('contact')">
+                <img src="/static/images/merch/shirt.png" alt="MM1030 T-Shirt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 via-10% to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 class="text-2xl font-bold mb-0 group-hover:mb-2 transition-all duration-300 group-hover:-translate-y-2">MM1030 T-Shirt</h3>
+                    <p class="text-white/90 mb-0 group-hover:mb-3 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                         Premium quality cotton t-shirt featuring the iconic MM1030 logo
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-2xl font-bold text-mm-black">RM 65</span>
-                        <button type="button" class="bg-mm-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 btn-hover">
+                        <span class="text-2xl font-bold">RM 65</span>
+                        <span class="bg-white text-mm-black px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-gray-200 transition-colors">
                             Order Now
-                        </button>
+                        </span>
                     </div>
                 </div>
             </div>
 
-            <!-- Merchandise Item 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="aspect-square bg-gray-200 image-placeholder">
-                    <i data-lucide="image" class="w-16 h-16 text-gray-400"></i>
-                    <p class="mt-2">Cap</p>
+            <!-- Merchandise Item 2: Tracksuit -->
+            <div class="relative rounded-xl shadow-lg overflow-hidden cursor-pointer group h-[32rem]" onclick="navigateTo('contact')">
+                <img src="/static/images/merch/tracksuit.png" alt="MM1030 Tracksuit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 via-10% to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 class="text-2xl font-bold mb-0 group-hover:mb-2 transition-all duration-300 group-hover:-translate-y-2">MM1030 Tracksuit</h3>
+                    <p class="text-white/90 mb-0 group-hover:mb-3 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                        Professional tracksuit set perfect for training and tower climbing events
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold">RM 80</span>
+                        <span class="bg-white text-mm-black px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-gray-200 transition-colors">
+                            Order Now
+                        </span>
+                    </div>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-mm-black mb-2">MM1030 Cap</h3>
-                    <p class="text-gray-600 mb-4">
+            </div>
+
+            <!-- Merchandise Item 3: Jacket -->
+            <div class="relative rounded-xl shadow-lg overflow-hidden cursor-pointer group h-[32rem]" onclick="navigateTo('contact')">
+                <img src="/static/images/merch/jacket.png" alt="MM1030 Jacket" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 via-10% to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 class="text-2xl font-bold mb-0 group-hover:mb-2 transition-all duration-300 group-hover:-translate-y-2">MM1030 Jacket</h3>
+                    <p class="text-white/90 mb-0 group-hover:mb-3 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                        Lightweight performance jacket with MM1030 branding for all weather conditions
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold">RM 110</span>
+                        <span class="bg-white text-mm-black px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-gray-200 transition-colors">
+                            Order Now
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Merchandise Item 4: Cap -->
+            <div class="relative rounded-xl shadow-lg overflow-hidden cursor-pointer group h-[32rem]" onclick="navigateTo('contact')">
+                <img src="/static/images/merch/cap.jpg" alt="MM1030 Cap" class="w-full h-full object-contain scale-90 group-hover:scale-100 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 via-10% to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 class="text-2xl font-bold mb-0 group-hover:mb-2 transition-all duration-300 group-hover:-translate-y-2">MM1030 Cap</h3>
+                    <p class="text-white/90 mb-0 group-hover:mb-3 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                         Stylish cap with embroidered MM1030 logo for all outdoor adventures
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-2xl font-bold text-mm-black">RM 35</span>
-                        <button type="button" class="bg-mm-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 btn-hover">
+                        <span class="text-2xl font-bold">RM 35</span>
+                        <span class="bg-white text-mm-black px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-gray-200 transition-colors">
                             Order Now
-                        </button>
+                        </span>
                     </div>
                 </div>
             </div>
 
-            <!-- Merchandise Item 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="aspect-square bg-gray-200 image-placeholder">
-                    <i data-lucide="image" class="w-16 h-16 text-gray-400"></i>
-                    <p class="mt-2">Water Bottle</p>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-mm-black mb-2">MM1030 Water Bottle</h3>
-                    <p class="text-gray-600 mb-4">
+            <!-- Merchandise Item 5: Water Bottle -->
+            <div class="relative rounded-xl shadow-lg overflow-hidden cursor-pointer group h-[32rem]" onclick="navigateTo('contact')">
+                <img src="/static/images/merch/water_bottle.jpg" alt="MM1030 Water Bottle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 via-10% to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 class="text-2xl font-bold mb-0 group-hover:mb-2 transition-all duration-300 group-hover:-translate-y-2">MM1030 Water Bottle</h3>
+                    <p class="text-white/90 mb-0 group-hover:mb-3 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                         Durable stainless steel water bottle perfect for your climbing adventures
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-2xl font-bold text-mm-black">RM 45</span>
-                        <button type="button" class="bg-mm-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 btn-hover">
+                        <span class="text-2xl font-bold">RM 45</span>
+                        <span class="bg-white text-mm-black px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-gray-200 transition-colors">
                             Order Now
-                        </button>
+                        </span>
                     </div>
                 </div>
             </div>
 
-            <!-- Merchandise Item 4 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="aspect-square bg-gray-200 image-placeholder">
-                    <i data-lucide="image" class="w-16 h-16 text-gray-400"></i>
-                    <p class="mt-2">Tote Bag</p>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-mm-black mb-2">MM1030 Tote Bag</h3>
-                    <p class="text-gray-600 mb-4">
+            <!-- Merchandise Item 6: Tote Bag -->
+            <div class="relative rounded-xl shadow-lg overflow-hidden cursor-pointer group h-[32rem]" onclick="navigateTo('contact')">
+                <img src="/static/images/merch/tote_bag.jpg" alt="MM1030 Tote Bag" class="w-full h-full object-contain scale-90 group-hover:scale-100 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 via-10% to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 class="text-2xl font-bold mb-0 group-hover:mb-2 transition-all duration-300 group-hover:-translate-y-2">MM1030 Tote Bag</h3>
+                    <p class="text-white/90 mb-0 group-hover:mb-3 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                         Eco-friendly canvas tote bag with bold MM1030 graphics
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-2xl font-bold text-mm-black">RM 30</span>
-                        <button type="button" class="bg-mm-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 btn-hover">
+                        <span class="text-2xl font-bold">RM 30</span>
+                        <span class="bg-white text-mm-black px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-gray-200 transition-colors">
                             Order Now
-                        </button>
+                        </span>
                     </div>
                 </div>
             </div>
 
-            <!-- Merchandise Item 5 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="aspect-square bg-gray-200 image-placeholder">
-                    <i data-lucide="image" class="w-16 h-16 text-gray-400"></i>
-                    <p class="mt-2">Poster</p>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-mm-black mb-2">MM1030 Poster</h3>
-                    <p class="text-gray-600 mb-4">
-                        High-quality poster featuring all 40 towers in the MM1030 mission
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-2xl font-bold text-mm-black">RM 25</span>
-                        <button type="button" class="bg-mm-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 btn-hover">
-                            Order Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Merchandise Item 6 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="aspect-square bg-gray-200 image-placeholder">
-                    <i data-lucide="image" class="w-16 h-16 text-gray-400"></i>
-                    <p class="mt-2">Keychain</p>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-mm-black mb-2">MM1030 Keychain</h3>
-                    <p class="text-gray-600 mb-4">
+            <!-- Merchandise Item 7: Keychain -->
+            <div class="relative rounded-xl shadow-lg overflow-hidden cursor-pointer group h-[32rem]" onclick="navigateTo('contact')">
+                <img src="/static/images/merch/keychain.jpg" alt="MM1030 Keychain" class="w-full h-full object-contain scale-90 group-hover:scale-100 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 via-10% to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 class="text-2xl font-bold mb-0 group-hover:mb-2 transition-all duration-300 group-hover:-translate-y-2">MM1030 Keychain</h3>
+                    <p class="text-white/90 mb-0 group-hover:mb-3 text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                         Metal keychain with engraved MM1030 logo as a reminder of the mission
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-2xl font-bold text-mm-black">RM 15</span>
-                        <button type="button" class="bg-mm-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 btn-hover">
+                        <span class="text-2xl font-bold">RM 15</span>
+                        <span class="bg-white text-mm-black px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-gray-200 transition-colors">
                             Order Now
-                        </button>
+                        </span>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM1030 Project Budget</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 4px solid #0066cc;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #0066cc;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            color: #555;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            font-style: italic;
+        }
+        .meta-info {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .meta-info p {
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        th {
+            background: #0066cc;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        tr:hover {
+            background: #f9f9f9;
+        }
+        .budget-section {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+        }
+        .amount {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .total-box {
+            background: #0066cc;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 20px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .print-button:hover {
+            background: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>MM1030 PROJECT BUDGET</h1>
+        <p class="subtitle">Misi Menawan 10 Menara Malaysia & 30 Menara Tertinggi Dunia</p>
+        <p><strong>1 World 1 Hope</strong></p>
+    </div>
+
+    <div class="meta-info">
+        <p><strong>Project Leader:</strong> Major Dr. Suwaibah Muhammad Nasir</p>
+        <p><strong>Royal Patron:</strong> Tengku Hassanal Ibrahim Alam Shah Al-Sultan Abdullah</p>
+        <p><strong>Website:</strong> mm1030.com</p>
+        <p><strong>Document Date:</strong> January 2026</p>
+    </div>
+
+    <h2>PROJECT OVERVIEW</h2>
+    <p>MM1030 is a humanitarian mission combining two objectives:</p>
+    <ul>
+        <li><strong>MM (Malaysia Mission):</strong> Conquer 10 towers in Malaysia</li>
+        <li><strong>1030 (International Mission):</strong> Conquer 30 of the world's tallest towers</li>
+    </ul>
+
+    <div class="total-box">
+        <div>TOTAL ESTIMATED BUDGET</div>
+        <div style="font-size: 32px; margin-top: 10px;"><strong>RM 4,000,000</strong></div>
+        <div style="font-size: 18px;">(Approximately USD 1,000,000)</div>
+    </div>
+
+    <h2>BUDGET SUMMARY</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th style="text-align: right;">Amount (MYR)</th>
+                <th style="text-align: right;">Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Travel & Logistics</td>
+                <td style="text-align: right;" class="amount">RM 1,800,000</td>
+                <td style="text-align: right;">45%</td>
+            </tr>
+            <tr>
+                <td>Accommodation</td>
+                <td style="text-align: right;" class="amount">RM 1,000,000</td>
+                <td style="text-align: right;">25%</td>
+            </tr>
+            <tr>
+                <td>Team & Support Staff</td>
+                <td style="text-align: right;" class="amount">RM 600,000</td>
+                <td style="text-align: right;">15%</td>
+            </tr>
+            <tr>
+                <td>Humanitarian Activities</td>
+                <td style="text-align: right;" class="amount">RM 400,000</td>
+                <td style="text-align: right;">10%</td>
+            </tr>
+            <tr>
+                <td>Contingency Fund</td>
+                <td style="text-align: right;" class="amount">RM 400,000</td>
+                <td style="text-align: right;">10%</td>
+            </tr>
+            <tr>
+                <td>Training & Preparation</td>
+                <td style="text-align: right;" class="amount">RM 320,000</td>
+                <td style="text-align: right;">8%</td>
+            </tr>
+            <tr>
+                <td>Media & Promotion</td>
+                <td style="text-align: right;" class="amount">RM 320,000</td>
+                <td style="text-align: right;">8%</td>
+            </tr>
+            <tr>
+                <td>Competition & Registration Fees</td>
+                <td style="text-align: right;" class="amount">RM 200,000</td>
+                <td style="text-align: right;">5%</td>
+            </tr>
+            <tr>
+                <td>Insurance & Safety</td>
+                <td style="text-align: right;" class="amount">RM 160,000</td>
+                <td style="text-align: right;">4%</td>
+            </tr>
+            <tr style="background: #e3f2fd; font-weight: bold;">
+                <td><strong>TOTAL</strong></td>
+                <td style="text-align: right;"><strong>RM 4,000,000</strong></td>
+                <td style="text-align: right;"><strong>100%</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>DETAILED BUDGET BREAKDOWN</h2>
+
+    <div class="budget-section">
+        <h3>1. TRAVEL & LOGISTICS (45% - RM 1,800,000)</h3>
+        
+        <h4>International Travel</h4>
+        <ul>
+            <li><strong>Airfare:</strong> RM 900,000
+                <ul>
+                    <li>Economy/Business class flights to 30+ countries</li>
+                    <li>Multiple trips per tower for reconnaissance/competition</li>
+                    <li>Team travel (10-person support team)</li>
+                </ul>
+            </li>
+            <li><strong>Ground Transportation:</strong> RM 150,000
+                <ul>
+                    <li>Local transport in each country</li>
+                    <li>Airport transfers</li>
+                    <li>Equipment transport</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Domestic Travel (10 Malaysian Towers)</h4>
+        <ul>
+            <li>Menara Rebung TM</li>
+            <li>Menara Alor Setar (165.5m)</li>
+            <li>Menara Komtar, Penang (232m)</li>
+            <li>Menara Kuantan 188 (188m)</li>
+            <li>KL Tower (421m)</li>
+            <li>Petronas Twin Towers (452m)</li>
+            <li>Merdeka 118 (678.9m)</li>
+            <li>Plus 3 additional Malaysian towers</li>
+        </ul>
+        <p><strong>Estimated:</strong> RM 50,000</p>
+
+        <h4>Visa & Documentation</h4>
+        <ul>
+            <li>Visa applications for 30+ countries</li>
+            <li>Entry permits and tower access fees</li>
+            <li>Insurance documentation</li>
+        </ul>
+        <p><strong>Estimated:</strong> RM 100,000</p>
+
+        <h4>Shipping & Equipment Transport</h4>
+        <p><strong>Estimated:</strong> RM 100,000</p>
+    </div>
+
+    <div class="budget-section">
+        <h3>2. ACCOMMODATION (25% - RM 1,000,000)</h3>
+        <ul>
+            <li>International stays: 30 countries × average 5-7 days per location</li>
+            <li>Team accommodation: 10-person support team</li>
+            <li>Hotel costs: Variable by country</li>
+            <li>Training camps: Extended stays for preparation</li>
+            <li>Contingency stays: Weather delays, rescheduling</li>
+        </ul>
+        
+        <table>
+            <tr>
+                <td>Developed countries (USA, Europe, Japan)</td>
+                <td style="text-align: right;" class="amount">RM 600,000</td>
+            </tr>
+            <tr>
+                <td>Developing countries (Southeast Asia, others)</td>
+                <td style="text-align: right;" class="amount">RM 250,000</td>
+            </tr>
+            <tr>
+                <td>Domestic accommodation (Malaysia)</td>
+                <td style="text-align: right;" class="amount">RM 150,000</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="budget-section">
+        <h3>3. TEAM & SUPPORT STAFF (15% - RM 600,000)</h3>
+        
+        <h4>10-Person Support Team includes:</h4>
+        <ul>
+            <li>Medical personnel (doctor/physiotherapist)</li>
+            <li>Nutritionist</li>
+            <li>Videographer/photographer</li>
+            <li>Media relations officer</li>
+            <li>Logistics coordinator</li>
+            <li>Safety personnel</li>
+            <li>Administrative staff</li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>Salaries/honorariums</td>
+                <td style="text-align: right;" class="amount">RM 350,000</td>
+            </tr>
+            <tr>
+                <td>Per diem allowances</td>
+                <td style="text-align: right;" class="amount">RM 150,000</td>
+            </tr>
+            <tr>
+                <td>Professional fees</td>
+                <td style="text-align: right;" class="amount">RM 100,000</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="budget-section">
+        <h3>4. TRAINING & PREPARATION (8% - RM 320,000)</h3>
+        <table>
+            <tr>
+                <td>Physical training facilities</td>
+                <td style="text-align: right;" class="amount">RM 80,000</td>
+            </tr>
+            <tr>
+                <td>Mental preparation/sports psychology</td>
+                <td style="text-align: right;" class="amount">RM 40,000</td>
+            </tr>
+            <tr>
+                <td>Medical check-ups & health monitoring</td>
+                <td style="text-align: right;" class="amount">RM 60,000</td>
+            </tr>
+            <tr>
+                <td>Specialized equipment (running gear, training aids, safety equipment)</td>
+                <td style="text-align: right;" class="amount">RM 80,000</td>
+            </tr>
+            <tr>
+                <td>Nutritional supplements</td>
+                <td style="text-align: right;" class="amount">RM 60,000</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="budget-section">
+        <h3>5. HUMANITARIAN ACTIVITIES (10% - RM 400,000)</h3>
+        <p>As this is promoted as a "humanitarian mission," funds allocated for:</p>
+        <ul>
+            <li>Refugee camp support (countries visited)</li>
+            <li>Welfare programs in visited locations</li>
+            <li>Community engagement activities</li>
+            <li>Educational initiatives</li>
+            <li>Peace promotion activities (as World Peace Ambassador)</li>
+        </ul>
+    </div>
+
+    <div class="budget-section">
+        <h3>6. MEDIA & PROMOTION (8% - RM 320,000)</h3>
+        <table>
+            <tr>
+                <td>Video production & editing</td>
+                <td style="text-align: right;" class="amount">RM 100,000</td>
+            </tr>
+            <tr>
+                <td>Photography</td>
+                <td style="text-align: right;" class="amount">RM 50,000</td>
+            </tr>
+            <tr>
+                <td>Social media management</td>
+                <td style="text-align: right;" class="amount">RM 50,000</td>
+            </tr>
+            <tr>
+                <td>Website maintenance (mm1030.com)</td>
+                <td style="text-align: right;" class="amount">RM 20,000</td>
+            </tr>
+            <tr>
+                <td>Promotional materials</td>
+                <td style="text-align: right;" class="amount">RM 40,000</td>
+            </tr>
+            <tr>
+                <td>Documentary production</td>
+                <td style="text-align: right;" class="amount">RM 60,000</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="budget-section">
+        <h3>7. COMPETITION & REGISTRATION FEES (5% - RM 200,000)</h3>
+        <table>
+            <tr>
+                <td>Tower running event fees & private tower access</td>
+                <td style="text-align: right;" class="amount">RM 120,000</td>
+            </tr>
+            <tr>
+                <td>Administrative fees</td>
+                <td style="text-align: right;" class="amount">RM 50,000</td>
+            </tr>
+            <tr>
+                <td>Association memberships</td>
+                <td style="text-align: right;" class="amount">RM 30,000</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="budget-section">
+        <h3>8. INSURANCE & SAFETY (4% - RM 160,000)</h3>
+        <ul>
+            <li>Personal accident insurance</li>
+            <li>Travel insurance (team)</li>
+            <li>Equipment insurance</li>
+            <li>Liability insurance</li>
+            <li>Medical evacuation coverage</li>
+        </ul>
+    </div>
+
+    <div class="budget-section">
+        <h3>9. CONTINGENCY FUND (10% - RM 400,000)</h3>
+        <ul>
+            <li>Emergency funds</li>
+            <li>Currency fluctuations</li>
+            <li>Unexpected delays</li>
+            <li>Additional permits/fees</li>
+            <li>Medical emergencies</li>
+        </ul>
+    </div>
+
+    <h2>REVENUE SOURCES & SPONSORSHIP</h2>
+    
+    <h3>Confirmed Sponsors</h3>
+    <ul>
+        <li><strong>GISB Holding Sdn Bhd</strong> - Flight tickets & accommodation (partial)</li>
+        <li><strong>Government support</strong> - Moral support only (no financial sponsorship from Defense Ministry)</li>
+    </ul>
+
+    <h3>Potential Revenue Streams</h3>
+    <ul>
+        <li>Corporate sponsorships</li>
+        <li>Individual donations</li>
+        <li>Merchandise sales</li>
+        <li>Media rights</li>
+        <li>Product endorsements</li>
+        <li>Fundraising events</li>
+        <li>Grants from NGOs</li>
+    </ul>
+
+    <h2>PROJECT MILESTONES</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Description</th>
+                <th style="text-align: right;">Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Phase 1</strong></td>
+                <td>Malaysian Towers (Year 1) - July-December<br>Complete 10 Malaysian towers</td>
+                <td style="text-align: right;" class="amount">RM 500,000</td>
+            </tr>
+            <tr>
+                <td><strong>Phase 2</strong></td>
+                <td>Southeast Asian Towers<br>Philippines, Singapore, Thailand, Indonesia</td>
+                <td style="text-align: right;" class="amount">RM 800,000</td>
+            </tr>
+            <tr>
+                <td><strong>Phase 3</strong></td>
+                <td>Global Towers<br>Europe, Middle East, Americas, Asia</td>
+                <td style="text-align: right;" class="amount">RM 2,700,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>ACCOUNTABILITY MEASURES</h2>
+    <ul>
+        <li>Monthly financial reports</li>
+        <li>Transparent expenditure tracking</li>
+        <li>Social media updates on fund utilization</li>
+        <li>Regular progress reports to sponsors</li>
+        <li>Public documentation of humanitarian activities</li>
+        <li>Annual audit</li>
+    </ul>
+
+    <div class="note">
+        <h3>Budget Notes</h3>
+        <ol>
+            <li><strong>Exchange Rate:</strong> USD 1 = RM 4.00 (approximate)</li>
+            <li><strong>Timeline:</strong> Multi-year project with phased implementation</li>
+            <li><strong>Team Size:</strong> 10-person support team for international missions</li>
+            <li><strong>Frequency Goal:</strong> Approximately 4 towers per month (subject to country approvals)</li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        <p><strong>Prepared by:</strong> MM1030 Secretariat</p>
+        <p><strong>Contact:</strong> Via mm1030.com</p>
+        <p><strong>Royal Patron:</strong> Tengku Hassanal Ibrahim Alam Shah Al-Sultan Abdullah Ri'ayatuddin Al-Mustafa Billah Shah</p>
+        <hr style="margin: 20px 0;">
+        <p style="font-style: italic;">This budget is based on publicly available information about the MM1030 mission. Actual costs may vary based on final itinerary, exchange rates, and unforeseen circumstances.</p>
+        <p>© 2025 Sekretariat MM1030. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
